@@ -52,6 +52,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_2.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_2.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Left_Waterfall.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Waterfall/Left_Waterfall.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_1.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_1.asset.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_0.asset" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +72,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Waterfall/Center_Waterfall.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_8.asset.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_9.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_7.asset.meta" root0="FORCE_HIGHLIGHTING" />
@@ -119,7 +122,7 @@
       <updated>1589131435885</updated>
       <workItem from="1589131459353" duration="627000" />
       <workItem from="1589221149059" duration="3419000" />
-      <workItem from="1589307165209" duration="1521000" />
+      <workItem from="1589307165209" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>
@@ -170,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589311680180</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created a left waterfall animation sprite">
+      <created>1589311951296</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589311951296</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added animation tiles to a palette">
+      <created>1589312449954</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589312449954</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -197,12 +214,14 @@
     <MESSAGE value="set up scene, added foreground tiles, farground tiles on scene" />
     <MESSAGE value="added new tilemap and updated scene with some tiles" />
     <MESSAGE value="added new package 2d tilemap extras" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new package 2d tilemap extras" />
+    <MESSAGE value="created a left waterfall animation sprite" />
+    <MESSAGE value="added animation tiles to a palette" />
+    <option name="LAST_COMMIT_MESSAGE" value="added animation tiles to a palette" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589311682010">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589312453712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589311682010" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589312453712" />
   </component>
 </project>
