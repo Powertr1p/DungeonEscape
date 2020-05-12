@@ -29,33 +29,55 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_7.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_7.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_4.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_5.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_3.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_6.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_3.asset.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_3.asset.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_6.asset.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Grey_Cavern/Grey_Cavern.png.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Far_Cavern/Far_Cavern.jpg.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_5.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Black_Cave/Black_Cavern_2.png.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_5.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_4.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_2.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_3.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_2.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_14.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_14.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_13.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_13.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_12.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_12.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_11.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_11.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_10.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_10.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_1.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_2.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_2.asset.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Far_Cavern.jpg.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Black_Cavern_2.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_1.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_1.asset.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_0.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_0.asset.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Grey_Cavern.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_7.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_7.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_6.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_6.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Grey_Cavern/Grey_Cavern.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Far_Cavern/Far_Cavern.jpg.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_9.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_5.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Environment/Black_Cave/Black_Cavern_2.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_5.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Caverns/Black_Cavern_2_4.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_8.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_9.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_7.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_8.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_6.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_7.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_5.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Tilemap/Tiles/Items/Foreground_Elements_6.asset" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1bj2yIjQEWsBX0M843cwNf3QJ9Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,6 +119,7 @@
       <updated>1589131435885</updated>
       <workItem from="1589131459353" duration="627000" />
       <workItem from="1589221149059" duration="3419000" />
+      <workItem from="1589307165209" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>
@@ -133,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589228078999</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added new tilemap and updated scene with some tiles">
+      <created>1589307264975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589307264975</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -148,6 +178,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -157,12 +188,13 @@
     <MESSAGE value="added vegetation palette and slice sprites" />
     <MESSAGE value="added midground tiles on scene" />
     <MESSAGE value="set up scene, added foreground tiles, farground tiles on scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up scene, added foreground tiles, farground tiles on scene" />
+    <MESSAGE value="added new tilemap and updated scene with some tiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new tilemap and updated scene with some tiles" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589228081737">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589307271266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589228081737" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589307271266" />
   </component>
 </project>
