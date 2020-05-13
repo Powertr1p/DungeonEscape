@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589393833792</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="sliced up player sprites">
+      <created>1589397057398</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589397057398</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -229,7 +236,8 @@
     <MESSAGE value="added composite collider to ground layer" />
     <MESSAGE value="imported assets from store" />
     <MESSAGE value="imported assets from store (part2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported assets from store (part2)" />
+    <MESSAGE value="sliced up player sprites" />
+    <option name="LAST_COMMIT_MESSAGE" value="sliced up player sprites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="807" y="456" key="VCS.ChangelistChooser" timestamp="1589390818408">
@@ -240,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589393851552">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589397060916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589393851552" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397060916" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
