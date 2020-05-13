@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="" />
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/.idea.DungeonEscape.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/contentModel.xml" afterDir="false" />
@@ -31,6 +29,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1589131459353" duration="627000" />
       <workItem from="1589221149059" duration="3419000" />
       <workItem from="1589307165209" duration="3064000" />
-      <workItem from="1589390777129" duration="3440000" />
+      <workItem from="1589390777129" duration="5014000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>
@@ -240,6 +239,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="sliced up player sprites" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="742" y="230" key="RollbackChangesDialog" timestamp="1589397975003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="230" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397975003" />
     <state x="807" y="456" key="VCS.ChangelistChooser" timestamp="1589390818408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
