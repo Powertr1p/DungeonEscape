@@ -8,9 +8,14 @@ namespace Player
     public class Movement : MonoBehaviour
     {
         private Rigidbody2D _rigidbody2D;
+
+        [SerializeField] LayerMask _groundLayer;
         
         [SerializeField] private float _movementSpeed = 1f;
         [SerializeField] private float _jumpForce = 5f;
+
+        private float _rayDistance = 0.6f;
+        
 
         private void OnEnable()
         {
@@ -21,6 +26,11 @@ namespace Player
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+        }
+
+        private void FixedUpdate()
+        {
+            Debug.DrawRay(transform.position, Vector2.down * _rayDistance, Color.green);
         }
 
         private void MoveCharacter(float direction)
@@ -37,7 +47,8 @@ namespace Player
         
         private bool IsGrounded()
         {
-            var hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Floor"));
+            var hit = Physics2D.Raycast(transform.position, Vector2.down, _rayDistance, _groundLayer.value);
+            
             return hit.collider != null;
         }
 
