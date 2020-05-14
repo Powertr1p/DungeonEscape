@@ -1,16 +1,21 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEditor;
+using UnityEngine;
 
 namespace Player
 {
-    [RequireComponent(typeof(PlayerInput))]
+    [RequireComponent(typeof(InputHandler))]
     public class Movement : MonoBehaviour
     {
         private Rigidbody2D _rigidbody2D;
-        private float _movementSpeed = 5f;
+        
+        [SerializeField] private float _movementSpeed = 1f;
+        [SerializeField] private float _jumpForce = 5f;
 
         private void OnEnable()
         {
-            GetComponent<PlayerInput>().OnMovementButtonPressed += MoveCharacter;
+            GetComponent<InputHandler>().OnMovementButtonPressed += MoveCharacter;
+            GetComponent<InputHandler>().OnJumpButtonPressed += TryJump;
         }
 
         private void Awake()
@@ -18,14 +23,29 @@ namespace Player
             _rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
-        private void FixedUpdate()
-        {
-        
-        }
-
         private void MoveCharacter(float direction)
         {
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
         }
+
+        private void TryJump()
+        {
+            if (!IsGrounded()) return;
+            
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
+        }
+        
+        private bool IsGrounded()
+        {
+            var hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, LayerMask.GetMask("Floor"));
+            return hit.collider != null;
+        }
+
+        private void OnDisable()
+        {
+            GetComponent<InputHandler>().OnMovementButtonPressed -= MoveCharacter;
+            GetComponent<InputHandler>().OnJumpButtonPressed -= TryJump;
+        }
+        
     }
 }
