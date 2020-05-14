@@ -37,7 +37,7 @@ namespace Player
         
         private bool IsGrounded()
         {
-            var hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, LayerMask.GetMask("Floor"));
+            var hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Floor"));
             return hit.collider != null;
         }
 
