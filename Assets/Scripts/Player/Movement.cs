@@ -48,7 +48,6 @@ namespace Player
         private bool IsGrounded()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down, _rayDistance, _groundLayer.value);
-            
             return hit.collider != null;
         }
 
