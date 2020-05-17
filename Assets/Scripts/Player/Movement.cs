@@ -28,11 +28,6 @@ namespace Player
             _rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
-        private void FixedUpdate()
-        {
-            Debug.DrawRay(transform.position, Vector2.down * _rayDistance, Color.green);
-        }
-
         private void MoveCharacter(float direction)
         {
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
