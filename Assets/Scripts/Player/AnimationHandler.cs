@@ -17,11 +17,12 @@ namespace Player
 
       private void Awake()
       {
-         _animator = GetComponent<Animator>();
+         _animator = GetComponentInChildren<Animator>();
       }
 
       private void SetMoveAnimationParam(float param)
       {
+         Debug.Log(param);
          _animator.SetFloat(Move, param);
       }
    
