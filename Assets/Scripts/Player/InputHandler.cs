@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-
 namespace Player
 {
+    [RequireComponent(typeof(AnimationHandler))]
     public class InputHandler : MonoBehaviour
     {
         public event Action<float> OnMovementButtonPressed;
