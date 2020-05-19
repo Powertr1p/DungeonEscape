@@ -23,7 +23,7 @@ namespace Player
       private void SetMoveAnimationParam(float param)
       {
          Debug.Log(param);
-         _animator.SetFloat(Move, param);
+         _animator.SetFloat(Move, Mathf.Abs(param));
       }
    
    }
