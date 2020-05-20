@@ -18,11 +18,11 @@ namespace Player
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
         
-        private void Flip (float direction)
+        private void Flip (float facingDirection)
         {
-            if (Math.Abs(direction) < 1) return;
+            if (Math.Abs(facingDirection) < 1) return;
             
-            _spriteRenderer.flipX = Math.Abs(direction - 1) > 1;
+            _spriteRenderer.flipX = Math.Abs(facingDirection - 1) > 1;
         }
     }
 }
