@@ -25,6 +25,11 @@ namespace Player
          Debug.Log(param);
          _animator.SetFloat(Move, Mathf.Abs(param));
       }
+
+      private void TryFlipSprite(float direction)
+      {
+         
+      }
    
    }
 }
