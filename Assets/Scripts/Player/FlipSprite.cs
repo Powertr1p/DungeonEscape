@@ -20,10 +20,9 @@ namespace Player
         
         private void Flip (float direction)
         {
-            if (direction == 1)
-                _spriteRenderer.flipX = false;
-            if (direction == -1)
-                _spriteRenderer.flipX = true;
+            if (Math.Abs(direction) < 1) return;
+            
+            _spriteRenderer.flipX = Math.Abs(direction - 1) > 1;
         }
     }
 }
