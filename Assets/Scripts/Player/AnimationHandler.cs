@@ -9,29 +9,38 @@ namespace Player
    {
       private Animator _animator;
       private InputHandler _input;
+      private Movement _movement;
 
       private const string Move = "Move";
+      private const string Jumping = "Jumping";
       
       private void Awake()
       {
          _animator = GetComponentInChildren<Animator>();
          _input = GetComponent<InputHandler>();
+         _movement = GetComponent<Movement>();
       }
       
       private void OnEnable()
       {
          _input.OnMovementButtonPressed += SetMoveAnimationParam;
+         _movement.IsJumping += SetJumpAnimationParam;
+      }
+      
+      public void SetJumpAnimationParam(bool isJumping)
+      {
+         _animator.SetBool(Jumping, true);
       }
       
       private void SetMoveAnimationParam(float param)
       {
-         Debug.Log(param);
          _animator.SetFloat(Move, Mathf.Abs(param));
       }
-
+      
       private void OnDisable()
       {
          _input.OnMovementButtonPressed -= SetMoveAnimationParam;
+         _movement.IsJumping -= SetJumpAnimationParam;
       }
    }
 }

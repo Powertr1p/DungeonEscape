@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ namespace Player
     [RequireComponent(typeof(InputHandler))]
     public class Movement : MonoBehaviour
     {
+        public event Action<bool> IsJumping;
+        
         private Rigidbody2D _rigidbody2D;
         private InputHandler _input;
 
@@ -37,8 +40,15 @@ namespace Player
         private void TryJump()
         {
             if (!IsGrounded()) return;
-            
+            StartCoroutine(Jump());
+        }
+
+        private IEnumerator Jump()
+        {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
+            IsJumping?.Invoke(true);
+            yield return new WaitUntil(() => IsGrounded());
+            IsJumping?.Invoke(false);
         }
         
         private bool IsGrounded()
