@@ -19,6 +19,7 @@ namespace Player
         [SerializeField] private float _jumpForce = 5f;
 
         private float _rayDistance = 0.6f;
+        private bool _isGrounded;
         
         private void Awake()
         {
@@ -37,6 +38,12 @@ namespace Player
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
         }
 
+        private void FixedUpdate()
+        {
+            Debug.DrawRay(transform.position, Vector3.down * _rayDistance, Color.green);
+            _isGrounded = IsGrounded();
+        }
+
         private void TryJump()
         {
             if (!IsGrounded()) return;
@@ -45,9 +52,10 @@ namespace Player
 
         private IEnumerator Jump()
         {
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
             IsJumping?.Invoke(true);
-            yield return new WaitUntil(() => IsGrounded());
+            yield return new WaitForSeconds(0.2f);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
+            yield return  new WaitForSeconds(1f);
             IsJumping?.Invoke(false);
         }
         
@@ -62,6 +70,5 @@ namespace Player
             _input.OnMovementButtonPressed -= MoveCharacter;
             _input.OnJumpButtonPressed -= TryJump;
         }
-        
     }
 }

@@ -29,7 +29,7 @@ namespace Player
       
       public void SetJumpAnimationParam(bool isJumping)
       {
-         _animator.SetBool(Jumping, true);
+         _animator.SetBool(Jumping, isJumping);
       }
       
       private void SetMoveAnimationParam(float param)
