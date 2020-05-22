@@ -8,6 +8,7 @@ namespace Player
     public class Movement : MonoBehaviour
     {
         private Rigidbody2D _rigidbody2D;
+        private InputHandler _input;
 
         [SerializeField] LayerMask _groundLayer;
         
@@ -16,18 +17,18 @@ namespace Player
 
         private float _rayDistance = 0.6f;
         
-
-        private void OnEnable()
-        {
-            GetComponent<InputHandler>().OnMovementButtonPressed += MoveCharacter;
-            GetComponent<InputHandler>().OnJumpButtonPressed += TryJump;
-        }
-
         private void Awake()
         {
+            _input = GetComponent<InputHandler>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
         }
-
+        
+        private void OnEnable()
+        {
+            _input.OnMovementButtonPressed += MoveCharacter;
+            _input.OnJumpButtonPressed += TryJump;
+        }
+        
         private void MoveCharacter(float direction)
         {
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
@@ -48,8 +49,8 @@ namespace Player
 
         private void OnDisable()
         {
-            GetComponent<InputHandler>().OnMovementButtonPressed -= MoveCharacter;
-            GetComponent<InputHandler>().OnJumpButtonPressed -= TryJump;
+            _input.OnMovementButtonPressed -= MoveCharacter;
+            _input.OnJumpButtonPressed -= TryJump;
         }
         
     }
