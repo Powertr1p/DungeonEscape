@@ -53,7 +53,6 @@ namespace Player
         private IEnumerator Jump()
         {
             IsJumping?.Invoke(true);
-            yield return new WaitForSeconds(0.2f);
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
             yield return  new WaitForSeconds(1f);
             IsJumping?.Invoke(false);
