@@ -60,7 +60,9 @@ namespace Player
             IsJumping?.Invoke(true);
             
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
-            yield return  new WaitForSeconds(1f);
+            
+            yield return new WaitUntil(() => !_collisions.IsGrounded());
+            yield return new WaitUntil(() => _collisions.IsGrounded());
             
             IsJumping?.Invoke(false);
         }
