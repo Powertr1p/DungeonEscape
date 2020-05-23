@@ -29,6 +29,16 @@ namespace Animations
         private void Update()
         {
             _spriteRenderer.flipX = _playerSprite.flipX;
+            
+            TryFlipSprite();
+        }
+
+        private void TryFlipSprite()
+        {
+            if (_playerSprite.flipX)
+            {
+                //_playerSprite //давать сюда минус по иксу позицию
+            }
         }
     }
 }

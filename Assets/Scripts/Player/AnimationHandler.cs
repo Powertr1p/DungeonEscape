@@ -36,18 +36,16 @@ namespace Player
       private void SetAttackAnimationParam()
       {
          _animator.SetTrigger(Attack);
-
-         CreateSwordArcEffect();
       }
 
-      private void CreateSwordArcEffect() //сделать паблик и пускай анимация удара вызывает этот метод
+      public void CreateSwordArcEffect() //сделать паблик и пускай анимация удара вызывает этот метод
       {
          var swordArc = Instantiate(_swordArcPrefab, transform);
          if (swordArc.TryGetComponent(out SwordArcAnimationHandler handler))
             handler.Init(GetComponentInChildren<SpriteRenderer>());
       }
 
-      public void SetJumpAnimationParam(bool isJumping)
+      private void SetJumpAnimationParam(bool isJumping)
       {
          _animator.SetBool(Jumping, isJumping);
       }

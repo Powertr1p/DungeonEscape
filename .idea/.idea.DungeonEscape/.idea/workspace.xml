@@ -20,28 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Run.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Run.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
@@ -55,12 +38,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A8ED2508-5085-4B43-9CED-C18931A314FE/74/2867bdd3/SynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/a4/19ba213b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,13 +58,46 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SelfDestroySwordArc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerSwordArcCaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
+      <ranges>
+        <range start1="22" end1="42" start2="22" end2="22" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="43" end1="43" start2="23" end2="24" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="44" end1="44" start2="25" end2="26" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="62" end1="63" start2="44" end2="45" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="76" end1="77" start2="58" end2="58" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="78" end1="78" start2="59" end2="62" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="79" end1="79" start2="63" end2="64" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="80" end1="81" start2="65" end2="65" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="83" end1="83" start2="67" end2="96" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="84" end1="114" start2="97" end2="97" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="126" end1="126" start2="109" end2="111" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="290" end1="306" start2="275" end2="275" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="309" end1="310" start2="278" end2="301" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="312" end1="313" start2="303" end2="356" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="315" end1="316" start2="358" end2="371" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="317" end1="319" start2="372" end2="374" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="320" end1="320" start2="375" end2="376" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="321" end1="323" start2="377" end2="379" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="324" end1="324" start2="380" end2="381" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="325" end1="326" start2="382" end2="383" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="328" end1="329" start2="385" end2="386" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="334" end1="335" start2="391" end2="392" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="337" end1="338" start2="394" end2="399" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+      </ranges>
+    </file>
   </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
@@ -288,26 +305,32 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added elements on scene" />
-    <MESSAGE value="added new tile palettes and slice sprites" />
-    <MESSAGE value="added vegetation palette and slice sprites" />
-    <MESSAGE value="added midground tiles on scene" />
-    <MESSAGE value="set up scene, added foreground tiles, farground tiles on scene" />
-    <MESSAGE value="added new tilemap and updated scene with some tiles" />
-    <MESSAGE value="added new package 2d tilemap extras" />
-    <MESSAGE value="created a left waterfall animation sprite" />
-    <MESSAGE value="added animation tiles to a palette" />
-    <MESSAGE value="added waterfall on scene and created 2 more animated assets" />
-    <MESSAGE value="added a few waterfalls on scene" />
-    <MESSAGE value="created a prefab brush and added diamonds as prefab" />
-    <MESSAGE value="added composite collider to ground layer" />
-    <MESSAGE value="imported assets from store" />
-    <MESSAGE value="imported assets from store (part2)" />
-    <MESSAGE value="sliced up player sprites" />
     <MESSAGE value="added new animation and deleted debug features" />
     <MESSAGE value="added run animation and anim class handler" />
     <MESSAGE value="fixed nullrefexception" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed nullrefexception" />
+    <MESSAGE value="running animation now plays properly" />
+    <MESSAGE value="changed frames of run animation" />
+    <MESSAGE value="added a flip sprite logic when player moving" />
+    <MESSAGE value="refactored flipping sprite code" />
+    <MESSAGE value="saved scene and rename argument in Flip method" />
+    <MESSAGE value="added jump animation and setup animator for jumping" />
+    <MESSAGE value="added a meta" />
+    <MESSAGE value="cached reference to input and added disabling to listen an event" />
+    <MESSAGE value="added ne event on jumping for animation purposes and subscribet to it" />
+    <MESSAGE value="jump animation now plays properly" />
+    <MESSAGE value="jump now can perform from running" />
+    <MESSAGE value="changed jump animation sprites" />
+    <MESSAGE value="changed player child sprite position" />
+    <MESSAGE value="incapsulated collision logic into own class" />
+    <MESSAGE value="added attack animation and logic to trigger it" />
+    <MESSAGE value="added sword arc animation" />
+    <MESSAGE value="tuning and created full swing arc animation" />
+    <MESSAGE value="fixed bug with arc animation after unity crash" />
+    <MESSAGE value="asord swing arc now flips to player direction" />
+    <MESSAGE value="refactored a bit animation handler" />
+    <MESSAGE value="refactored a bit movement script" />
+    <MESSAGE value="incapsulated instantiation of sword effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="incapsulated instantiation of sword effect" />
   </component>
   <component name="WindowStateProjectService">
     <state x="557" y="217" key="RollbackChangesDialog" timestamp="1589735319502">
@@ -323,10 +346,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="414" y="236" key="Vcs.Push.Dialog.v2" timestamp="1589921967416">
+    <state x="414" y="236" key="Vcs.Push.Dialog.v2" timestamp="1590232652261">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1589921967416" />
+    <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397060916" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
