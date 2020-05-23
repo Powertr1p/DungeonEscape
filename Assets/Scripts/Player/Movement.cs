@@ -48,7 +48,6 @@ namespace Player
         {
             
         }
-        
 
         private void TryJump()
         {

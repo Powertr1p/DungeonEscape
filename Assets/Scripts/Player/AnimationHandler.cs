@@ -47,6 +47,7 @@ namespace Player
       private void OnDisable()
       {
          _input.OnMovementButtonPressed -= SetMoveAnimationParam;
+         _input.OnAttackButtonPressed -= SetAttackAnimationParam;
          _movement.IsJumping -= SetJumpAnimationParam;
       }
    }

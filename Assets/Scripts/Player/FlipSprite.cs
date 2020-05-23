@@ -7,7 +7,6 @@ namespace Player
     public class FlipSprite : MonoBehaviour
     {
         private InputHandler _input;
-        
         private SpriteRenderer _spriteRenderer;
 
         private void Awake()

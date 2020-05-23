@@ -11,6 +11,7 @@ namespace Player
         {
             Debug.DrawRay(transform.position, Vector3.down * _rayDistance, Color.green);
         }
+        
         public bool IsGrounded()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down, _rayDistance, _groundLayer.value);
