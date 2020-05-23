@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Animations;
 using UnityEngine;
 
 namespace Player
@@ -35,7 +36,8 @@ namespace Player
       private void SetAttackAnimationParam()
       {
          _animator.SetTrigger(Attack);
-         Instantiate(_swordArcPrefab, transform);
+         var swordArc = Instantiate(_swordArcPrefab, transform);
+         swordArc.GetComponent<SwordArcAnimationHandler>().Init(GetComponentInChildren<SpriteRenderer>());
       }
 
       public void SetJumpAnimationParam(bool isJumping)
