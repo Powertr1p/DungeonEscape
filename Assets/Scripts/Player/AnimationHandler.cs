@@ -7,14 +7,17 @@ namespace Player
 {
    public class AnimationHandler : MonoBehaviour
    {
+      [SerializeField] private GameObject _swordArcPrefab;
+      
       private Animator _animator;
+      private Animator _swordAnimator;
       private InputHandler _input;
       private Movement _movement;
 
       private const string Move = "Move";
       private const string Jumping = "Jumping";
       private const string Attack = "Attack";
-      
+
       private void Awake()
       {
          _animator = GetComponentInChildren<Animator>();
@@ -32,6 +35,7 @@ namespace Player
       private void SetAttackAnimationParam()
       {
          _animator.SetTrigger(Attack);
+         Instantiate(_swordArcPrefab, transform);
       }
 
       public void SetJumpAnimationParam(bool isJumping)

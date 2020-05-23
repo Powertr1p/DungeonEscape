@@ -20,10 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Attack.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Attack.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Run.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Run.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SwordArc.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" afterDir="false" />
     </list>
-    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
+    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,20 +55,62 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A8ED2508-5085-4B43-9CED-C18931A314FE/74/2867bdd3/SynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/a4/19ba213b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/89/cf212e8b/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArc.cs" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
+      <ranges>
+        <range start1="22" end1="22" start2="22" end2="42" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="25" end1="26" start2="45" end2="48" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="35" end1="35" start2="57" end2="63" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="37" end1="38" start2="65" end2="67" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="39" end1="39" start2="68" end2="69" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="40" end1="40" start2="70" end2="71" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="44" end1="44" start2="75" end2="78" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="45" end1="46" start2="79" end2="79" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="47" end1="47" start2="80" end2="81" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="49" end1="49" start2="83" end2="112" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="62" end1="62" start2="125" end2="127" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="74" end1="75" start2="139" end2="140" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="77" end1="78" start2="142" end2="143" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="226" end1="236" start2="291" end2="291" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="245" end1="246" start2="300" end2="317" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="248" end1="249" start2="319" end2="384" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="251" end1="252" start2="386" end2="387" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="253" end1="255" start2="388" end2="390" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="256" end1="256" start2="391" end2="392" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="257" end1="259" start2="393" end2="395" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="260" end1="260" start2="396" end2="397" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="261" end1="262" start2="398" end2="399" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="264" end1="265" start2="401" end2="402" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="274" end1="274" start2="411" end2="415" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1bj2yIjQEWsBX0M843cwNf3QJ9Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
