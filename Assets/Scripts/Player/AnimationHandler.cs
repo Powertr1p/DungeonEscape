@@ -13,6 +13,7 @@ namespace Player
 
       private const string Move = "Move";
       private const string Jumping = "Jumping";
+      private const string Attack = "Attack";
       
       private void Awake()
       {
@@ -24,9 +25,15 @@ namespace Player
       private void OnEnable()
       {
          _input.OnMovementButtonPressed += SetMoveAnimationParam;
+         _input.OnAttackButtonPressed += SetAttackAnimationParam;
          _movement.IsJumping += SetJumpAnimationParam;
       }
-      
+
+      private void SetAttackAnimationParam()
+      {
+         _animator.SetTrigger(Attack);
+      }
+
       public void SetJumpAnimationParam(bool isJumping)
       {
          _animator.SetBool(Jumping, isJumping);

@@ -7,6 +7,7 @@ namespace Player
     {
         public event Action<float> OnMovementButtonPressed;
         public event Action OnJumpButtonPressed;
+        public event Action OnAttackButtonPressed;
     
         private void Update()
         {
@@ -15,6 +16,9 @@ namespace Player
 
             if (Input.GetKeyDown(KeyCode.Space))
                 OnJumpButtonPressed?.Invoke();
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+                OnAttackButtonPressed?.Invoke();
         }
     }
 }
