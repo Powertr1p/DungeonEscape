@@ -23,7 +23,6 @@ namespace Animations
 
         private void Start()
         {
-            _spriteRenderer.flipX = _playerSprite.flipX;
             Destroy(gameObject, _animationTime);
         }
 
