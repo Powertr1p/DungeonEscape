@@ -36,8 +36,10 @@ namespace Player
       private void SetAttackAnimationParam()
       {
          _animator.SetTrigger(Attack);
+         
          var swordArc = Instantiate(_swordArcPrefab, transform);
-         swordArc.GetComponent<SwordArcAnimationHandler>().Init(GetComponentInChildren<SpriteRenderer>());
+         if (swordArc.TryGetComponent(out SwordArcAnimationHandler handler))
+            handler.Init(GetComponentInChildren<SpriteRenderer>());
       }
 
       public void SetJumpAnimationParam(bool isJumping)
