@@ -13,7 +13,7 @@ namespace Animations
             _animHandler = GetComponentInParent<AnimationHandler>();
         }
 
-        //calling from animation through event
+        //calling from animation through animation event (Attack animation on Player/Sprite)
         private void StartArcAnimation()
         {
             _animHandler.CreateSwordArcEffect();

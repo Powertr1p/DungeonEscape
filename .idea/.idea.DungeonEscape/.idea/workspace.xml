@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordArc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
@@ -63,69 +63,35 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SelfDestroySwordArc.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerSwordArcCaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
       </list>
     </option>
   </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
       <ranges>
-        <range start1="22" end1="42" start2="22" end2="22" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="43" end1="43" start2="23" end2="24" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="44" end1="44" start2="25" end2="26" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="62" end1="63" start2="44" end2="45" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="76" end1="77" start2="58" end2="58" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="78" end1="78" start2="59" end2="62" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="79" end1="79" start2="63" end2="64" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="80" end1="81" start2="65" end2="65" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="83" end1="83" start2="67" end2="96" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="84" end1="114" start2="97" end2="97" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="126" end1="126" start2="109" end2="111" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="290" end1="306" start2="275" end2="275" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="309" end1="310" start2="278" end2="301" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="312" end1="313" start2="303" end2="356" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="315" end1="316" start2="358" end2="371" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="317" end1="319" start2="372" end2="374" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="320" end1="320" start2="375" end2="376" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="321" end1="323" start2="377" end2="379" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="324" end1="324" start2="380" end2="381" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="325" end1="326" start2="382" end2="383" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="328" end1="329" start2="385" end2="386" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="334" end1="335" start2="391" end2="392" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="337" end1="338" start2="394" end2="399" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-      </ranges>
-    </file>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
-      <ranges>
-        <range start1="22" end1="22" start2="22" end2="42" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="25" end1="26" start2="45" end2="48" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="35" end1="35" start2="57" end2="63" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="37" end1="38" start2="65" end2="67" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="39" end1="39" start2="68" end2="69" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="40" end1="40" start2="70" end2="71" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="44" end1="44" start2="75" end2="78" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="45" end1="46" start2="79" end2="79" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="47" end1="47" start2="80" end2="81" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="49" end1="49" start2="83" end2="112" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="62" end1="62" start2="125" end2="127" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="74" end1="75" start2="139" end2="140" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="77" end1="78" start2="142" end2="143" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="226" end1="236" start2="291" end2="291" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="245" end1="246" start2="300" end2="317" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="248" end1="249" start2="319" end2="384" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="251" end1="252" start2="386" end2="387" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="253" end1="255" start2="388" end2="390" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="256" end1="256" start2="391" end2="392" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="257" end1="259" start2="393" end2="395" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="260" end1="260" start2="396" end2="397" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="261" end1="262" start2="398" end2="399" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="264" end1="265" start2="401" end2="402" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="274" end1="274" start2="411" end2="415" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="22" end1="23" start2="22" end2="22" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="24" end1="24" start2="23" end2="25" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="26" end1="27" start2="27" end2="27" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="65" end1="67" start2="65" end2="65" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="69" end1="69" start2="67" end2="69" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="75" end1="128" start2="75" end2="94" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="143" end1="143" start2="109" end2="111" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="307" end1="308" start2="275" end2="275" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="332" end1="333" start2="299" end2="301" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="335" end1="336" start2="303" end2="320" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="338" end1="339" start2="322" end2="371" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="340" end1="342" start2="372" end2="374" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="343" end1="343" start2="375" end2="376" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="344" end1="346" start2="377" end2="379" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="347" end1="347" start2="380" end2="381" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="348" end1="350" start2="382" end2="384" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="351" end1="351" start2="385" end2="386" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="357" end1="358" start2="392" end2="397" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="360" end1="361" start2="399" end2="400" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
       </ranges>
     </file>
   </component>
@@ -141,6 +107,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3496708" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29992685" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -305,7 +273,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added new animation and deleted debug features" />
     <MESSAGE value="added run animation and anim class handler" />
     <MESSAGE value="fixed nullrefexception" />
     <MESSAGE value="running animation now plays properly" />
@@ -330,25 +297,93 @@
     <MESSAGE value="refactored a bit animation handler" />
     <MESSAGE value="refactored a bit movement script" />
     <MESSAGE value="incapsulated instantiation of sword effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="incapsulated instantiation of sword effect" />
+    <MESSAGE value="arc animation now called from animation event" />
+    <option name="LAST_COMMIT_MESSAGE" value="arc animation now called from animation event" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="557" y="217" key="RollbackChangesDialog" timestamp="1589735319502">
+    <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="557" y="217" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1589735319502" />
+    <state width="1398" height="313" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590222936740" />
+    <state width="1398" height="313" key="GridCell.Tab.0.center" timestamp="1590222936740">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590222936740" />
+    <state width="1398" height="313" key="GridCell.Tab.0.left" timestamp="1590222936739">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590222936739" />
+    <state width="1398" height="313" key="GridCell.Tab.0.right" timestamp="1590222936740">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590222936740" />
+    <state width="1398" height="313" key="GridCell.Tab.1.bottom" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.1.center" timestamp="1590222936740">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590222936740" />
+    <state width="1398" height="313" key="GridCell.Tab.1.left" timestamp="1590222936740">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590222936740" />
+    <state width="1398" height="313" key="GridCell.Tab.1.right" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.2.bottom" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.2.center" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.2.left" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.2.right" timestamp="1590222936741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1590222936741" />
+    <state width="1398" height="313" key="GridCell.Tab.3.bottom" timestamp="1590222936742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.3.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590222936742" />
+    <state width="1398" height="313" key="GridCell.Tab.3.center" timestamp="1590222936742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.3.center/0.23.1440.877@0.23.1440.877" timestamp="1590222936742" />
+    <state width="1398" height="313" key="GridCell.Tab.3.left" timestamp="1590222936742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.3.left/0.23.1440.877@0.23.1440.877" timestamp="1590222936742" />
+    <state width="1398" height="313" key="GridCell.Tab.3.right" timestamp="1590222936742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="313" key="GridCell.Tab.3.right/0.23.1440.877@0.23.1440.877" timestamp="1590222936742" />
+    <state x="557" y="217" key="RollbackChangesDialog" timestamp="1590164585072">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="557" y="217" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1590164585072" />
     <state x="742" y="230" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397975003" />
-    <state x="807" y="456" key="VCS.ChangelistChooser" timestamp="1589390818408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="807" y="456" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390818408" />
-    <state x="846" y="457" key="VCS.EditChangelistDialog" timestamp="1589390856683">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="414" y="236" key="Vcs.Push.Dialog.v2" timestamp="1590232652261">
+    <state x="605" y="408" key="VCS.ChangelistChooser" timestamp="1589984464376">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="605" y="408" key="VCS.ChangelistChooser/0.23.1440.877@0.23.1440.877" timestamp="1589984464376" />
+    <state x="807" y="456" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390818408" />
+    <state x="635" y="408" key="VCS.EditChangelistDialog" timestamp="1589984457570">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="635" y="408" key="VCS.EditChangelistDialog/0.23.1440.877@0.23.1440.877" timestamp="1589984457570" />
+    <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
+    <state x="-1368" y="246" key="Vcs.Push.Dialog.v2" timestamp="1590263505241">
+      <screen x="-1920" y="-11" width="1920" height="1057" />
+    </state>
+    <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590263505241" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397060916" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">

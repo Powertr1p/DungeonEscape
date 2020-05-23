@@ -29,15 +29,13 @@ namespace Animations
         private void Update()
         {
             _spriteRenderer.flipX = _playerSprite.flipX;
-            
-            TryFlipSprite();
-        }
+            transform.position = _playerSprite.transform.position;
 
-        private void TryFlipSprite()
-        {
-            if (_playerSprite.flipX)
+            if (_spriteRenderer.flipX)
             {
-                //_playerSprite //давать сюда минус по иксу позицию
+                var currentPosition = _playerSprite.transform.position;
+                transform.position = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z);
+                _spriteRenderer.flipY = true;
             }
         }
     }

@@ -38,7 +38,7 @@ namespace Player
          _animator.SetTrigger(Attack);
       }
 
-      public void CreateSwordArcEffect() //сделать паблик и пускай анимация удара вызывает этот метод
+      public void CreateSwordArcEffect()
       {
          var swordArc = Instantiate(_swordArcPrefab, transform);
          if (swordArc.TryGetComponent(out SwordArcAnimationHandler handler))
