@@ -33,30 +33,28 @@ public class MossGiant : Enemy
     {
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
         
+        Flip();
         TryChangeMoveDirection();
         Move();
     }
 
     private void TryChangeMoveDirection()
     {
-        if (transform.position.x == _waypointA.position.x)
+        if (transform.position == _waypointA.position)
         {
             _target = _waypointB.transform;
             ToggleIdleAnimation();
-            Flip(false);
         }
-        else if (transform.position.x == _waypointB.position.x)
+        else if (transform.position == _waypointB.position)
         {
             _target = _waypointA.transform;
             ToggleIdleAnimation();
-            Flip(true);
         }
     }
 
     private void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, _target.position, Speed * Time.deltaTime);
-        
     }
 
     private void ToggleIdleAnimation()
@@ -64,10 +62,11 @@ public class MossGiant : Enemy
         _animator.SetTrigger(Idle);
     }
 
-    private void Flip(bool isFlip)
+    private void Flip()
     {
-        _sprite.flipX = isFlip;
-
+        if (_target.position == _waypointA.position)
+            _sprite.flipX = true;
+        else
+            _sprite.flipX = false;
     }
-    
 }
