@@ -10,16 +10,21 @@ public class MossGiant : Enemy
 
     private Transform _target;
     private Animator _animator;
+    private SpriteRenderer _sprite;
 
     private const string Idle = "Idle";
 
     private void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
+        _sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Start()
     {
+        _waypointA.position = new Vector2(_waypointA.position.x, transform.position.y);
+        _waypointB.position = new Vector2(_waypointB.position.x, transform.position.y);
+        
         _target = _waypointB.transform;
     }
     
@@ -28,7 +33,6 @@ public class MossGiant : Enemy
     {
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
         
-       
         TryChangeMoveDirection();
         Move();
     }
@@ -39,22 +43,31 @@ public class MossGiant : Enemy
         {
             _target = _waypointB.transform;
             ToggleIdleAnimation();
+            Flip(false);
         }
         else if (transform.position.x == _waypointB.position.x)
         {
             _target = _waypointA.transform;
-            ToggleIdleAnimation();   
+            ToggleIdleAnimation();
+            Flip(true);
         }
     }
 
     private void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, _target.position, Speed * Time.deltaTime);
+        
     }
 
     private void ToggleIdleAnimation()
     {
         _animator.SetTrigger(Idle);
+    }
+
+    private void Flip(bool isFlip)
+    {
+        _sprite.flipX = isFlip;
+
     }
     
 }
