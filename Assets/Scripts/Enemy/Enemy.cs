@@ -1,17 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
-{
-    [SerializeField] protected int Health;
-    [SerializeField] protected float Speed;
-    [SerializeField] protected int Gems;
-
-    protected virtual void Attack()
-    {
+namespace Enemy
+{ 
+    public abstract class Enemy : MonoBehaviour 
+    { 
+        [SerializeField] protected int Health;
+        [SerializeField] protected float Speed;
+        [SerializeField] protected int Gems;
+        [SerializeField] protected Transform WaypointA;
+        [SerializeField] protected Transform WaypointB;
         
-    }
-
-    protected abstract void Update();
+        protected virtual void Attack()
+        {
+        
+        }
+        
+        protected abstract void Update();
+}
 }
