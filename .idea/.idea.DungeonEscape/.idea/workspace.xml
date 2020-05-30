@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Enemy_Spider.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Enemy_Spider.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Spider/Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
-    </list>
+    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="" />
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -279,11 +273,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="incapsulated collision logic into own class" />
-    <MESSAGE value="added attack animation and logic to trigger it" />
-    <MESSAGE value="added sword arc animation" />
-    <MESSAGE value="tuning and created full swing arc animation" />
-    <MESSAGE value="fixed bug with arc animation after unity crash" />
     <MESSAGE value="asord swing arc now flips to player direction" />
     <MESSAGE value="refactored a bit animation handler" />
     <MESSAGE value="refactored a bit movement script" />
@@ -304,7 +293,12 @@
     <MESSAGE value="monster now waits for ending idle animation and then after that he flips" />
     <MESSAGE value="added a spider and idle animation to him" />
     <MESSAGE value="added to a spider walking animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to a spider walking animation" />
+    <MESSAGE value="setup animator for a spider" />
+    <MESSAGE value="refactored a bit enemy classes" />
+    <MESSAGE value="added spider logic" />
+    <MESSAGE value="refactored a enemy logic" />
+    <MESSAGE value="created a skeleton enemy and setup'd animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a skeleton enemy and setup'd animation" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -386,12 +380,13 @@
     </state>
     <state x="635" y="408" key="VCS.EditChangelistDialog/0.23.1440.877@0.23.1440.877" timestamp="1589984457570" />
     <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="-1368" y="246" key="Vcs.Push.Dialog.v2" timestamp="1590734871370">
-      <screen x="-1920" y="-11" width="1920" height="1057" />
+    <state x="474" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590850014214">
+      <screen x="0" y="23" width="1650" height="1027" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
+    <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397060916" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
