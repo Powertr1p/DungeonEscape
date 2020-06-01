@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Cinemachine;
+﻿using Interfaces;
 using UnityEngine;
 
 namespace Enemy
 {
-    public abstract class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour, IDamagable
     {
         [SerializeField] protected int Health;
         [SerializeField] protected float Speed;
@@ -18,6 +16,7 @@ namespace Enemy
         protected SpriteRenderer Sprite;
 
         private const string Idle = "Idle";
+        private const string Hit = "Hit";
 
         private void Start()
         {
@@ -75,6 +74,14 @@ namespace Enemy
         private void ToggleIdleAnimation()
         {
             Animator.SetTrigger(Idle);
+        }
+
+        public void ApplyDamage(int damage)
+        {
+            if (Health > 0)
+                Health -= damage;
+            
+            Animator.SetTrigger(Hit);
         }
     }
 }
