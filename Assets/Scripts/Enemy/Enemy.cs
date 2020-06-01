@@ -15,6 +15,8 @@ namespace Enemy
         protected Animator Animator;
         protected SpriteRenderer Sprite;
 
+        protected bool IsHitted = false;
+        
         private const string Idle = "Idle";
         private const string Hit = "Hit";
 
@@ -41,7 +43,9 @@ namespace Enemy
 
             Flip();
             TryChangeMoveDirection();
-            Move();
+            
+            if (!IsHitted)
+                Move();
         }
 
         private void Flip()
@@ -82,7 +86,8 @@ namespace Enemy
                 Health -= damage;
             
             Animator.SetTrigger(Hit);
-            
+            IsHitted = true;
+
             if (Health <= 0)
                 Die();
         }
