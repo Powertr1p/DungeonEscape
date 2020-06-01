@@ -19,6 +19,7 @@ namespace Enemy
         
         private const string Idle = "Idle";
         private const string Hit = "Hit";
+        private const string InCombat = "InCombat";
 
         private void Start()
         {
@@ -87,6 +88,7 @@ namespace Enemy
             
             Animator.SetTrigger(Hit);
             IsHitted = true;
+            Animator.SetBool(InCombat, true);
 
             if (Health <= 0)
                 Die();
