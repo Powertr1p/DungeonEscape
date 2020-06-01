@@ -82,6 +82,15 @@ namespace Enemy
                 Health -= damage;
             
             Animator.SetTrigger(Hit);
+            
+            if (Health <= 0)
+                Die();
         }
+
+        private void Die()
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
