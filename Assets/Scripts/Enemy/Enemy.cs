@@ -44,11 +44,14 @@ namespace Enemy
             
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
 
-            Flip();
+            FlipWhileWalking();
             TryChangeMoveDirection();
             
             if (!IsHitted)
                 Move();
+
+            if (Animator.GetBool(InCombat))
+                FaceToPlayerWhenAttack();
         }
 
         private void CheckDistanceBetweenPlayer()
@@ -59,12 +62,19 @@ namespace Enemy
             Animator.SetBool(InCombat, false);
         }
 
-        private void Flip()
+        private void FlipWhileWalking()
         {
             if (Target.position == WaypointA.position)
                 Sprite.flipX = true;
             else
                 Sprite.flipX = false;
+        }
+
+        private void FaceToPlayerWhenAttack()
+        {
+            var direction = Player.localPosition - transform.position;
+
+            Sprite.flipX = !(direction.x > 0);
         }
 
         private void TryChangeMoveDirection()
