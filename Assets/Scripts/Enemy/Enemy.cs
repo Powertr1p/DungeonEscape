@@ -40,7 +40,7 @@ namespace Enemy
 
         protected virtual void Update()
         {
-            CheckDistanceBetweenPlayer();
+            TryExitCombatMode();
             
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
 
@@ -50,16 +50,15 @@ namespace Enemy
             if (!IsHitted)
                 Move();
 
-            if (Animator.GetBool(InCombat))
+            if (Animator.GetBool(InCombat) == true)
                 FaceToPlayerWhenAttack();
         }
 
-        private void CheckDistanceBetweenPlayer()
+        private void TryExitCombatMode()
         {
-            if (!(Vector3.Distance(this.transform.localPosition, Player.localPosition) > 2f)) return;
+            if (Vector3.Distance(this.transform.localPosition, Player.localPosition) < 2f) return;
             
-            IsHitted = false;
-            Animator.SetBool(InCombat, false);
+            ToggleCombatMode(false);
         }
 
         private void FlipWhileWalking()
@@ -107,11 +106,16 @@ namespace Enemy
                 Health -= damage;
             
             Animator.SetTrigger(Hit);
-            IsHitted = true;
-            Animator.SetBool(InCombat, true);
+            ToggleCombatMode(true);
 
             if (Health <= 0)
                 Die();
+        }
+
+        private void ToggleCombatMode(bool isCombat)
+        {
+            IsHitted = isCombat;
+            Animator.SetBool(InCombat, isCombat);
         }
 
         private void Die()
