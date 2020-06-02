@@ -9,7 +9,7 @@ namespace Player
    public class AnimationHandler : MonoBehaviour
    {
       [SerializeField] private GameObject _swordArcPrefab;
-      
+
       private Animator _animator;
       private Animator _swordAnimator;
       private InputHandler _input;

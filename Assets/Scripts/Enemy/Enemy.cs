@@ -10,6 +10,7 @@ namespace Enemy
         [SerializeField] protected int Gems;
         [SerializeField] protected Transform WaypointA;
         [SerializeField] protected Transform WaypointB;
+        [SerializeField] protected Transform Player;
 
         protected Transform Target;
         protected Animator Animator;
@@ -40,6 +41,8 @@ namespace Enemy
 
         protected virtual void Update()
         {
+            CheckDistanceBetweenPlayer();
+            
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
 
             Flip();
@@ -47,6 +50,14 @@ namespace Enemy
             
             if (!IsHitted)
                 Move();
+        }
+
+        private void CheckDistanceBetweenPlayer()
+        {
+            if (!(Vector3.Distance(this.transform.localPosition, Player.localPosition) > 2f)) return;
+            
+            IsHitted = false;
+            Animator.SetBool(InCombat, false);
         }
 
         private void Flip()
@@ -98,6 +109,5 @@ namespace Enemy
         {
             Destroy(gameObject);
         }
-        
     }
 }
