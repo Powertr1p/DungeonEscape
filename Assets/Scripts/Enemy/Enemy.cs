@@ -38,7 +38,6 @@ namespace Enemy
             Sprite = GetComponentInChildren<SpriteRenderer>();
         }
 
-
         protected virtual void Update()
         {
             CheckDistanceBetweenPlayer();
