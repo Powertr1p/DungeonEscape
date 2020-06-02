@@ -89,17 +89,23 @@ namespace Enemy
                 ToggleIdleAnimation();
             }
         }
-
-        private void Move()
-        {
-            transform.position = Vector2.MoveTowards(transform.position, Target.position, Speed * Time.deltaTime);
-        }
-
+        
         private void ToggleIdleAnimation()
         {
             Animator.SetTrigger(Idle);
         }
 
+        private void Move()
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Target.position, Speed * Time.deltaTime);
+        }
+        
+        private void ToggleCombatMode(bool isCombat)
+        {
+            IsHitted = isCombat;
+            Animator.SetBool(InCombat, isCombat);
+        }
+        
         public void ApplyDamage(int damage)
         {
             if (Health > 0)
@@ -111,13 +117,7 @@ namespace Enemy
             if (Health <= 0)
                 Die();
         }
-
-        private void ToggleCombatMode(bool isCombat)
-        {
-            IsHitted = isCombat;
-            Animator.SetBool(InCombat, isCombat);
-        }
-
+        
         private void Die()
         {
             Destroy(gameObject);
