@@ -54,7 +54,7 @@ namespace Enemy
                 FaceToPlayerWhenAttack();
         }
 
-        private void TryExitCombatMode()
+        protected virtual void TryExitCombatMode()
         {
             if (Vector3.Distance(this.transform.localPosition, Player.localPosition) < 2f) return;
             
@@ -95,12 +95,12 @@ namespace Enemy
             Animator.SetTrigger(Idle);
         }
 
-        private void Move()
+        protected virtual void Move()
         {
             transform.position = Vector2.MoveTowards(transform.position, Target.position, Speed * Time.deltaTime);
         }
         
-        private void ToggleCombatMode(bool isCombat)
+        protected virtual void ToggleCombatMode(bool isCombat)
         {
             IsHitted = isCombat;
             Animator.SetBool(InCombat, isCombat);
