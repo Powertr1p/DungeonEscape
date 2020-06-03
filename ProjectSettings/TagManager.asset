@@ -15,10 +15,10 @@ TagManager:
   - 
   - 
   - Ground
-  - SwordHitbox
+  - PlayerWeaponHitbox
   - PlayerHitbox
-  - 
-  - 
+  - EnemyHitbox
+  - EnemyWeaponHitBox
   - 
   - 
   - 
