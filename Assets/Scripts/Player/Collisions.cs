@@ -4,7 +4,7 @@ namespace Player
 {
     public class Collisions : MonoBehaviour
     {
-        [SerializeField] private float _rayDistance = 0.6f;
+        [SerializeField] private float _rayDistance = 1f;
         [SerializeField] LayerMask _groundLayer;
         
         private void FixedUpdate()
