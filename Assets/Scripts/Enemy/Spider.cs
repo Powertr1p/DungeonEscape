@@ -5,8 +5,19 @@ namespace Enemy
 {
     public class Spider : Enemy
     {
-        protected override void Move()
+        private SpiderAnimationEvent _spiderEvent;
+
+        public override void Init()
         {
+            base.Init();
+            
+            _spiderEvent = GetComponentInChildren<SpiderAnimationEvent>();
+            _spiderEvent.OnFire += Attack;
+        }
+
+        public void Attack()
+        {
+            
         }
     }
 }

@@ -1,11 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public class SpiderAnimationEvent : MonoBehaviour
+namespace Enemy
 {
-    public void Fire()
+    public class SpiderAnimationEvent : MonoBehaviour
     {
-        Debug.Log("Fire");
+        public event Action OnFire;
+    
+        //using through event animation
+        public void Fire()
+        {
+            OnFire?.Invoke();
+        }
     }
 }
