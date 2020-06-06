@@ -1,8 +1,11 @@
-﻿using Interfaces;
+﻿using Core;
+using Interfaces;
 using UnityEngine;
 
 namespace Enemy
 {
+    
+    [RequireComponent(typeof(DamageDealer))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
         [SerializeField] protected int Health;
@@ -15,13 +18,14 @@ namespace Enemy
         protected Transform Target;
         protected Animator Animator;
         protected SpriteRenderer Sprite;
+        protected DamageDealer Damage;
 
         protected bool IsHitted = false;
         
         private const string Idle = "Idle";
         private const string Hit = "Hit";
         private const string InCombat = "InCombat";
-
+        
         private void Start()
         {
             Init();
@@ -36,6 +40,7 @@ namespace Enemy
         {
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();
+            Damage = GetComponent<DamageDealer>();
         }
 
         protected virtual void Update()
@@ -53,6 +58,8 @@ namespace Enemy
             if (Animator.GetBool(InCombat) == true)
                 FaceToPlayerWhenAttack();
         }
+        
+        protected int GetDamageValue() => Damage.GetDamageValue;
 
         protected virtual void TryExitCombatMode()
         {

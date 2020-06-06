@@ -5,6 +5,10 @@ namespace Enemy
 {
     public class Spider : Enemy
     {
+        [SerializeField] private GameObject _acidPrefab;
+
+        [SerializeField] private float _projectileSpeed = 0;
+        
         private SpiderAnimationEvent _spiderEvent;
 
         protected override void Init()
@@ -17,7 +21,8 @@ namespace Enemy
 
         private void Attack()
         {
-            //instantiate acid
+            var projectile = Instantiate(_acidPrefab, transform.position, Quaternion.identity);
+            projectile.GetComponent<SpiderAcid>().Init(GetDamageValue(), _projectileSpeed);
         }
 
         protected override void Move()

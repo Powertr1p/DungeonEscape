@@ -1,29 +1,33 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Interfaces;
+﻿using Interfaces;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class SpiderAcid : MonoBehaviour
+namespace Enemy
 {
-   private int _damage = 0;
-   private int _speed = 0;
+   [RequireComponent(typeof(Collider2D))]
+   public class SpiderAcid : MonoBehaviour
+   {
+      private int _damage;
+      private float _speed;
    
-   public void Init(int damage, int speed)
-   {
-      _damage = damage;
-      _speed = speed;
-   }
+      public void Init(int damage, float speed)
+      {
+         _damage = damage;
+         _speed = speed;
+         
+         Destroy(gameObject, 3f);
+      }
 
-   private void Update()
-   {
-      transform.Translate(Vector2.right * _speed * Time.deltaTime);
-   }
+      private void Update()
+      {
+         transform.Translate(Vector2.right * _speed * Time.deltaTime);
+      }
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
-      if (other.TryGetComponent(out IDamagable entity))
-         entity.ApplyDamage(_damage);
+      private void OnTriggerEnter2D(Collider2D other)
+      {
+         if (other.TryGetComponent(out IDamagable entity))
+            entity.ApplyDamage(_damage);
+         
+         Destroy(gameObject);
+      }
    }
 }

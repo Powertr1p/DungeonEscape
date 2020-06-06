@@ -13,7 +13,7 @@ namespace Core
 
     private void Awake()
     {
-      _damage = GetComponentInParent<DamageDealer>().WeaponDamage;
+      _damage = GetComponentInParent<DamageDealer>().GetDamageValue;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

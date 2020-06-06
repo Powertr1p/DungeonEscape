@@ -4,7 +4,7 @@ namespace Core
 {
     public class DamageDealer : MonoBehaviour
     {
-        [SerializeField] private int _damage = 1;
-        public int WeaponDamage => _damage;
+        [SerializeField] private int _damageValue = 1;
+        public int GetDamageValue => _damageValue;
     }
 }
