@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace Enemy
 {
-    
     [RequireComponent(typeof(DamageDealer))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {

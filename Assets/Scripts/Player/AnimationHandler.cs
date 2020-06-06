@@ -6,6 +6,8 @@ using UnityEngine;
 
 namespace Player
 {
+   [RequireComponent(typeof(InputHandler))]
+   [RequireComponent(typeof(Movement))]
    public class AnimationHandler : MonoBehaviour
    {
       [SerializeField] private GameObject _swordArcPrefab;

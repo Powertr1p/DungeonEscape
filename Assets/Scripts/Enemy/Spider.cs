@@ -28,7 +28,11 @@ namespace Enemy
 
         protected override void Move()
         {
-            
+        }
+
+        private void OnEnable()
+        {
+            _spiderEvent.OnFire -= Attack;
         }
     }
 }
