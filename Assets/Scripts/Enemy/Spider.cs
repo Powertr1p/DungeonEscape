@@ -20,6 +20,10 @@ namespace Enemy
             _spiderEvent.OnFire += Attack;
         }
 
+        protected override void Update()
+        {
+        }
+
         private void Attack()
         {
             var projectile = Instantiate(_acidPrefab, _projectileSpawnPivot.position, Quaternion.identity);
@@ -30,7 +34,7 @@ namespace Enemy
         {
         }
 
-        private void OnEnable()
+        private void OnDisable()
         {
             _spiderEvent.OnFire -= Attack;
         }
