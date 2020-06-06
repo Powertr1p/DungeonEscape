@@ -20,11 +20,13 @@ namespace Enemy
         protected DamageDealer Damage;
 
         protected bool IsHitted = false;
+        protected bool IsDead = false;
         
         private const string Idle = "Idle";
         private const string Hit = "Hit";
         private const string InCombat = "InCombat";
-        
+        private const string Death = "Death";
+
         private void Start()
         {
             Init();
@@ -44,6 +46,8 @@ namespace Enemy
 
         protected virtual void Update()
         {
+            if (IsDead) return;
+            
             TryExitCombatMode();
             
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
@@ -126,7 +130,8 @@ namespace Enemy
         
         private void Die()
         {
-            Destroy(gameObject);
+            Animator.SetTrigger(Death);
+            IsDead = true;
         }
     }
 }
