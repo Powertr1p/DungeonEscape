@@ -32,7 +32,7 @@ namespace Enemy
             Target = WaypointB.transform;
         }
 
-        public virtual void Init()
+        protected virtual void Init()
         {
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();

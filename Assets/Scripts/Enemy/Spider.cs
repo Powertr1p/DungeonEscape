@@ -7,7 +7,7 @@ namespace Enemy
     {
         private SpiderAnimationEvent _spiderEvent;
 
-        public override void Init()
+        protected override void Init()
         {
             base.Init();
             
@@ -15,7 +15,12 @@ namespace Enemy
             _spiderEvent.OnFire += Attack;
         }
 
-        public void Attack()
+        private void Attack()
+        {
+            //instantiate acid
+        }
+
+        protected override void Move()
         {
             
         }
