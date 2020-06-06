@@ -7,7 +7,8 @@ namespace Enemy
     {
         [SerializeField] private GameObject _acidPrefab;
 
-        [SerializeField] private float _projectileSpeed = 0;
+        [SerializeField] private float _projectileSpeed = 0.15f;
+        [SerializeField] private Transform _projectileSpawnPivot;
         
         private SpiderAnimationEvent _spiderEvent;
 
@@ -21,7 +22,7 @@ namespace Enemy
 
         private void Attack()
         {
-            var projectile = Instantiate(_acidPrefab, transform.position, Quaternion.identity);
+            var projectile = Instantiate(_acidPrefab, _projectileSpawnPivot.position, Quaternion.identity);
             projectile.GetComponent<SpiderAcid>().Init(GetDamageValue(), _projectileSpeed);
         }
 

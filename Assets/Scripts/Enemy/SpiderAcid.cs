@@ -17,9 +17,9 @@ namespace Enemy
          Destroy(gameObject, 3f);
       }
 
-      private void Update()
+      private void FixedUpdate()
       {
-         transform.Translate(Vector2.right * _speed * Time.deltaTime);
+         transform.Translate(Vector2.right * _speed);
       }
 
       private void OnTriggerEnter2D(Collider2D other)
