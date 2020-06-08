@@ -2,6 +2,6 @@
 {
     interface ICollectable
     {
-        void Collect(int value);
+        void Collect(int value, Player.Player player);
     }
 }

@@ -9,10 +9,16 @@ namespace Collectables
     
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (other.TryGetComponent(out Player.Player player))
+            {
+                Collect(_diamondValue, player);
+            }
         }
-
-        public void Collect(int value)
+        
+        public void Collect(int value, Player.Player player)
         {
+            player.Diamonds += value;
+            Destroy(gameObject);
         }
     }
 }
