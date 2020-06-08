@@ -15,7 +15,7 @@ namespace Collectables
         
         public void Collect(int value, Player.Player player)
         {
-            player.Diamonds += value;
+            player.DiamondsCount += value;
             Destroy(gameObject);
         }
     }

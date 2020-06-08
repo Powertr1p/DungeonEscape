@@ -5,17 +5,7 @@ namespace Player
 {
     public class Player : MonoBehaviour, IDamagable
     {
-        private int _diamondsCount = 0;
-
-        public int Diamonds
-        {
-            get => _diamondsCount;
-            set
-            {
-                _diamondsCount = value;
-                Diamonds = _diamondsCount;
-            }
-        }
+        public int DiamondsCount = 0;
 
         public void ApplyDamage(int damage)
         {
