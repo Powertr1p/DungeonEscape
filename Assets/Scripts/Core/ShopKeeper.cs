@@ -13,7 +13,7 @@ namespace Core
             if (other.TryGetComponent(out Player.Player player))
             {
                 _shopMenu.SetActive(true); 
-                ShopUIUpdater.Instance.OpenShop(player.DiamondsCount);
+                ShopUIUpdater.Instance.UpdateDiamondsCount(player.DiamondsCount);
             }
         }
 

@@ -28,7 +28,7 @@ namespace Core
             _instance = this;
         }
 
-        public void OpenShop(int gemsCount)
+        public void UpdateDiamondsCount(int gemsCount)
         {
             _diamondsCount.text = gemsCount.ToString() + "G";
         }
