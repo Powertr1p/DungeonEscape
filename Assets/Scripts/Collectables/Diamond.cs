@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Collectables
 {
-    public class Diamond : MonoBehaviour, ICollectable
+    public class Diamond : MonoBehaviour, ICollectible
     {
-        [SerializeField] private int _diamondValue = 1;
-    
+        public int DiamondValue = 1;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent(out Player.Player player))
-                Collect(_diamondValue, player);
+                Collect(DiamondValue, player);
         }
         
         public void Collect(int value, Player.Player player)

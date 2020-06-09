@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using Collectables;
+using Core;
 using Interfaces;
 using UnityEngine;
 
@@ -9,10 +10,11 @@ namespace Enemy
     {
         [SerializeField] protected int Health;
         [SerializeField] protected float Speed;
-        [SerializeField] protected int Gems;
+        [SerializeField] protected int Diamonds = 1;
         [SerializeField] protected Transform WaypointA;
         [SerializeField] protected Transform WaypointB;
         [SerializeField] protected Transform Player;
+        [SerializeField] protected GameObject DiamondPrefab;
 
         protected Transform Target;
         protected Animator Animator;
@@ -132,6 +134,9 @@ namespace Enemy
         {
             Animator.SetTrigger(Death);
             IsDead = true;
+
+            var diamond = Instantiate(DiamondPrefab, transform.position, Quaternion.identity);
+            diamond.GetComponent<Diamond>().DiamondValue = Diamonds;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Interfaces
 {
-    interface ICollectable
+    interface ICollectible
     {
         void Collect(int value, Player.Player player);
     }
