@@ -7,6 +7,9 @@ namespace Core
     public class ShopUIUpdater : MonoBehaviour
     {
         private static ShopUIUpdater _instance;
+        [SerializeField] private GameObject _selectingLine;
+
+        public bool IsShopEnabled;
 
         public static ShopUIUpdater Instance
         {
@@ -30,7 +33,14 @@ namespace Core
 
         public void UpdateDiamondsCount(int gemsCount)
         {
-            _diamondsCount.text = gemsCount.ToString() + "G";
+            _diamondsCount.text = gemsCount + "G";
+        }
+
+        public void UpdateSelectionLinePosition(float yPosition)
+        {
+            _selectingLine.transform.localPosition = new Vector3(_selectingLine.transform.localPosition.x, yPosition,
+                _selectingLine.transform.localPosition.z);
+            _selectingLine.SetActive(true);
         }
     }
 }

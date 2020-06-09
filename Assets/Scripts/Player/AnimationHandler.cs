@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Animations;
+using Core;
 using UnityEngine;
 
 namespace Player
@@ -37,6 +38,8 @@ namespace Player
 
       private void SetAttackAnimationParam()
       {
+         if (ShopUIUpdater.Instance.IsShopEnabled) return;
+         
          _animator.SetTrigger(Attack);
       }
 
