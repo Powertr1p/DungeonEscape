@@ -120,6 +120,8 @@ namespace Enemy
         
         public void ApplyDamage(int damage)
         {
+            if (IsDead) return;
+
             if (Health > 0)
                 Health -= damage;
             
@@ -133,10 +135,11 @@ namespace Enemy
         private void Die()
         {
             Animator.SetTrigger(Death);
-            IsDead = true;
-
+            
             var diamond = Instantiate(DiamondPrefab, transform.position, Quaternion.identity);
             diamond.GetComponent<Diamond>().DiamondValue = Diamonds;
+            
+            IsDead = true;
         }
     }
 }
