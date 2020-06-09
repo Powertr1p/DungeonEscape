@@ -10,7 +10,11 @@ namespace Core
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            _shopMenu.SetActive(true);
+            if (other.TryGetComponent(out Player.Player player))
+            {
+                _shopMenu.SetActive(true); 
+                ShopUIUpdater.Instance.OpenShop(player.DiamondsCount);
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)

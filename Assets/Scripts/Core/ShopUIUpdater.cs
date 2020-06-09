@@ -8,7 +8,7 @@ namespace Core
     {
         private static ShopUIUpdater _instance;
 
-        public static ShopUIUpdater UInstance
+        public static ShopUIUpdater Instance
         {
             get
             {
@@ -22,16 +22,15 @@ namespace Core
         }
 
         [SerializeField] private Text _diamondsCount;
-        [SerializeField] private Player.Player _player;
 
         private void Awake()
         {
             _instance = this;
         }
 
-        private void Update()
+        public void OpenShop(int gemsCount)
         {
-            _diamondsCount.text = _player.DiamondsCount.ToString();
+            _diamondsCount.text = gemsCount.ToString() + "G";
         }
     }
 }
