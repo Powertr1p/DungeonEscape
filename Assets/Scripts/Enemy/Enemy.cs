@@ -1,7 +1,9 @@
-﻿using Collectables;
+﻿using System.Collections;
+using Collectables;
 using Core;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Enemy
 {
