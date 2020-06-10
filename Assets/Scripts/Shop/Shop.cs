@@ -25,19 +25,7 @@ namespace Shop
 
         public void SelectItem(int itemId)
         {
-            switch (itemId)
-            {
-                case 0:
-                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_upperItemYLinePosition);
-                    break;
-                case 1:
-                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_middleItemYLinePosition);
-                    break;
-                case 2:
-                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_downItemYLinePosition);
-                    break;
-            }
-
+            ShopDisplayUI.Instance.UpdateSelectionLinePosition(itemId);
             _currentSelectedItemId = itemId;
         }
 
@@ -49,7 +37,7 @@ namespace Shop
 
         private void TryConsumePlayerDiamonds(int itemPrice)
         {
-            var player = GetComponentInChildren<ShopToggler>().GetCostumer();
+            var player = GetComponentInChildren<ShopToggler>().GetPlayer();
             if (player == null) return;
 
             if (player.DiamondsCount >= itemPrice)

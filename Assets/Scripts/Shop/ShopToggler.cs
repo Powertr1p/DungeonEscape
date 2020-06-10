@@ -10,7 +10,7 @@ namespace Shop
         [SerializeField] private GameObject _shopMenu;
 
         private Player.Player _player;
-        public Player.Player GetCostumer() => _player;
+        public Player.Player GetPlayer() => _player;
 
         private void OnEnable()
         {
@@ -24,8 +24,7 @@ namespace Shop
                 _player = player;
                 
                 ToggleShop(true); 
-                ShopUIUpdater.Instance.UpdateDiamondsCount(player.DiamondsCount);
-                ShopUIUpdater.Instance.PrintItemAttributes();
+                ShopDisplayUI.Instance.DisplayPlayerDiamonds(player.DiamondsCount);
             }
         }
 
@@ -39,7 +38,7 @@ namespace Shop
         private void ToggleShop(bool isOpen)
         {
             _shopMenu.SetActive(isOpen);
-            ShopUIUpdater.Instance.IsShopEnabled = isOpen;
+            ShopDisplayUI.Instance.IsShopEnabled = isOpen;
         }
     }
 }

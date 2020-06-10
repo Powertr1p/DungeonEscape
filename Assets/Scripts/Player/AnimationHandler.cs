@@ -39,7 +39,7 @@ namespace Player
 
       private void SetAttackAnimationParam()
       {
-         if (ShopUIUpdater.Instance.IsShopEnabled) return;
+         if (ShopDisplayUI.Instance.IsShopEnabled) return;
          
          _animator.SetTrigger(Attack);
       }
