@@ -49,8 +49,7 @@ namespace Shop
                 _itemPricesToDisplay[i].text = $"{_itemsInStock.GetItemById(i).ItemPrice}G";
             }
         }
-       
-
+        
         public void DisplayPlayerDiamonds(int gemsCount)
         {
             _diamondsCount.text = $"{gemsCount}G";
