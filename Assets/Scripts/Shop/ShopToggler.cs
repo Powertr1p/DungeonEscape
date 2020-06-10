@@ -10,7 +10,7 @@ namespace Shop
         [SerializeField] private GameObject _shopMenu;
 
         private Player.Player _player;
-        public Player.Player GetPlayer() => _player;
+        public Player.Player GetCostumer() => _player;
 
         private void OnEnable()
         {

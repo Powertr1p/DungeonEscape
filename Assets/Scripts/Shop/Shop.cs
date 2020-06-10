@@ -37,7 +37,7 @@ namespace Shop
 
         private void TryConsumePlayerDiamonds(int itemPrice)
         {
-            var player = GetComponentInChildren<ShopToggler>().GetPlayer();
+            var player = GetComponentInChildren<ShopToggler>().GetCostumer();
             if (player == null) return;
 
             if (player.DiamondsCount >= itemPrice)
