@@ -41,7 +41,7 @@ namespace Shop
             PrintItemsNameAndPrice();
         }
 
-        public void PrintItemsNameAndPrice()
+        private void PrintItemsNameAndPrice()
         {
             for (int i = 0; i < _itemNamesToDisplay.Length; i++)
             {

@@ -22,16 +22,13 @@ namespace Shop
             if (other.TryGetComponent(out Player.Player player))
             {
                 _player = player;
-                
-                ToggleShop(true); 
-                ShopDisplayUI.Instance.DisplayPlayerDiamonds(player.DiamondsCount);
+                ToggleShop(true);
             }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             ToggleShop(false);
-
             _player = null;
         }
 
@@ -39,6 +36,9 @@ namespace Shop
         {
             _shopMenu.SetActive(isOpen);
             ShopDisplayUI.Instance.IsShopEnabled = isOpen;
+            
+            if (isOpen)
+                ShopDisplayUI.Instance.DisplayPlayerDiamonds(_player.DiamondsCount);
         }
     }
 }
