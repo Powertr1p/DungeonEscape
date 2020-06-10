@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Animations;
 using Core;
+using Shop;
 using UnityEngine;
 
 namespace Player

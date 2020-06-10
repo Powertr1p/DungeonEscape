@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Core;
 using UnityEngine;
 
-namespace Core
+namespace Shop
 {
     [RequireComponent(typeof(Collider2D))]
     public class ShopToggler : MonoBehaviour
