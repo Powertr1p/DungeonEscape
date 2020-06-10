@@ -27,10 +27,5 @@ namespace Shop
         {
             return _itemsInStock.Find(x => x.GetId == id);
         }
-
-        public List<Item> GetAllItems()
-        {
-            return _itemsInStock;
-        }
     }
 }

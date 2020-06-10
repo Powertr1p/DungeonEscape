@@ -1,32 +1,65 @@
-﻿using Core;
+﻿using System;
+using Core;
 using UnityEngine;
 
 namespace Shop
 {
+    [RequireComponent(typeof(ShopItems))]
     public class Shop : MonoBehaviour
     {
-        private float positionY = 0;
+        private ShopItems _itemsInStock;
+        
+        private int _upperItemYLinePosition = 164;
+        private int _middleItemYLinePosition = 54;
+        private int _downItemYLinePosition = -54;
+        
+        private int _currentSelectedItem;
 
-        public void SelectItem(int itemNumber)
+        private void Awake()
         {
-            switch (itemNumber)
+            _itemsInStock = GetComponent<ShopItems>();
+        }
+
+        public void SelectItem(int itemId)
+        {
+            switch (itemId)
             {
+                case 0:
+                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_upperItemYLinePosition);
+                    break;
                 case 1:
-                    positionY = 164;
+                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_middleItemYLinePosition);
                     break;
                 case 2:
-                    positionY = 54;
-                    break;
-                case 3:
-                    positionY = -54;
+                    ShopUIUpdater.Instance.UpdateSelectionLinePosition(_downItemYLinePosition);
                     break;
             }
-            ShopUIUpdater.Instance.UpdateSelectionLinePosition(positionY);
+
+            _currentSelectedItem = itemId;
         }
 
         public void BuyItem()
         {
-            
+            var itemPrice = _itemsInStock.GetItemById(_currentSelectedItem).ItemPrice;
+            TryConsumePlayerDiamonds(itemPrice);
         }
+
+        private void TryConsumePlayerDiamonds(int itemPrice)
+        {
+            var player = GetComponentInChildren<ShopToggler>().GetCostumer();
+            if (player == null) return;
+
+            if (player.DiamondsCount >= itemPrice)
+            {
+                player.DiamondsCount -= itemPrice;
+                Debug.Log("Purchased!");
+            }
+            else
+            {
+                
+            }
+        }
+        
+        
     }
 }

@@ -8,21 +8,32 @@ namespace Shop
     {
         [SerializeField] private GameObject _shopMenu;
 
+        private Player.Player _player;
+        public Player.Player GetCostumer() => _player;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent(out Player.Player player))
             {
-                _shopMenu.SetActive(true); 
+                _player = player;
+                
+                ToggleShop(true); 
                 ShopUIUpdater.Instance.UpdateDiamondsCount(player.DiamondsCount);
                 ShopUIUpdater.Instance.PrintItemAttributes();
-                ShopUIUpdater.Instance.IsShopEnabled = true;
             }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            _shopMenu.SetActive(false);
-            ShopUIUpdater.Instance.IsShopEnabled = false;
+            ToggleShop(false);
+
+            _player = null;
+        }
+
+        private void ToggleShop(bool isOpen)
+        {
+            _shopMenu.SetActive(isOpen);
+            ShopUIUpdater.Instance.IsShopEnabled = isOpen;
         }
     }
 }
