@@ -38,7 +38,10 @@ namespace Shop
             ShopDisplayUI.Instance.IsShopEnabled = isOpen;
             
             if (isOpen)
+            {
                 ShopDisplayUI.Instance.DisplayPlayerDiamonds(_player.DiamondsCount);
+                ShopDisplayUI.Instance.PrintItemsNameAndPrice();
+            }
         }
     }
 }

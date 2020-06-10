@@ -36,12 +36,7 @@ namespace Shop
             _instance = this;
         }
 
-        private void Start()
-        {
-            PrintItemsNameAndPrice();
-        }
-
-        private void PrintItemsNameAndPrice()
+        public void PrintItemsNameAndPrice()
         {
             for (int i = 0; i < _itemNamesToDisplay.Length; i++)
             {
