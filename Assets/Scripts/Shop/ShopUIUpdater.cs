@@ -7,6 +7,7 @@ namespace Shop
     {
         private static ShopUIUpdater _instance;
         [SerializeField] private GameObject _selectingLine;
+        [SerializeField]
 
         public bool IsShopEnabled;
 

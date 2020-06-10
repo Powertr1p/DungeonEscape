@@ -23,5 +23,10 @@ namespace Shop
             }
             ShopUIUpdater.Instance.UpdateSelectionLinePosition(positionY);
         }
+
+        public void BuyItem()
+        {
+            
+        }
     }
 }
