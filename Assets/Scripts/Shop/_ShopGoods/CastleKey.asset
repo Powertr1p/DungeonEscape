@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb1dece4823f42508880b9d402d6cfa, type: 3}
   m_Name: CastleKey
   m_EditorClassIdentifier: 
-  ItemName: 
-  ItemPrice: 0
+  _id: 2
+  ItemName: A Key To The Castle
+  ItemPrice: 100

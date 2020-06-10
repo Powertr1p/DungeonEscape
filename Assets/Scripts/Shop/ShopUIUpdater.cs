@@ -6,9 +6,15 @@ namespace Shop
     public class ShopUIUpdater : MonoBehaviour
     {
         private static ShopUIUpdater _instance;
+        
         [SerializeField] private GameObject _selectingLine;
-        [SerializeField]
+        [SerializeField] private ShopItems _itemsInStock;
 
+        [SerializeField] private Text _diamondsCount;
+        
+        [SerializeField] private Text[] _itemNamesToDisplay;
+        [SerializeField] private Text[] _itemPricesToDisplay;
+        
         public bool IsShopEnabled;
 
         public static ShopUIUpdater Instance
@@ -24,11 +30,18 @@ namespace Shop
             }
         }
 
-        [SerializeField] private Text _diamondsCount;
-
         private void Awake()
         {
             _instance = this;
+        }
+
+        public void PrintItemAttributes()
+        {
+            for (int i = 0; i < _itemNamesToDisplay.Length; i++)
+            {
+                _itemNamesToDisplay[i].text = _itemsInStock.GetItemById(i).ItemName;
+                _itemPricesToDisplay[i].text = $"{_itemsInStock.GetItemById(i).ItemPrice}G";
+            }
         }
 
         public void UpdateDiamondsCount(int gemsCount)

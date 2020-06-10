@@ -14,6 +14,7 @@ namespace Shop
             {
                 _shopMenu.SetActive(true); 
                 ShopUIUpdater.Instance.UpdateDiamondsCount(player.DiamondsCount);
+                ShopUIUpdater.Instance.PrintItemAttributes();
                 ShopUIUpdater.Instance.IsShopEnabled = true;
             }
         }

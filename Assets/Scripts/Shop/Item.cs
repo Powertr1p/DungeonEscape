@@ -3,18 +3,14 @@ using UnityEngine;
 
 namespace Shop
 {
-    [CreateAssetMenu(menuName = "ShopItems")]
+    [CreateAssetMenu(menuName = "ShopItem")]
     public class Item : ScriptableObject
     {
+        [SerializeField] private int _id;
+        
         public string ItemName;
         public int ItemPrice;
         
-        private static int _id;
         public int GetId => _id;
-
-        private void OnEnable()
-        {
-            ++_id;
-        }
     }
 }

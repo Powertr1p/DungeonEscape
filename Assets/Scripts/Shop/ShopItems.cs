@@ -8,9 +8,9 @@ namespace Shop
     {
         [SerializeField] private Item[] _shopItems;
         
-        private List<Item> _itemsInStock = new List<Item>();
+        private readonly List<Item> _itemsInStock = new List<Item>();
 
-        private void Awake()
+        private void Start()
         {
             foreach (var item in _shopItems)
             {
@@ -26,6 +26,11 @@ namespace Shop
         public Item GetItemById(int id)
         {
             return _itemsInStock.Find(x => x.GetId == id);
+        }
+
+        public List<Item> GetAllItems()
+        {
+            return _itemsInStock;
         }
     }
 }
