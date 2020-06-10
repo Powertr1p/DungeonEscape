@@ -6,27 +6,26 @@ namespace Shop
 {
     public class ShopItems : MonoBehaviour
     {
-        private Item[] _shopItems;
-        private List<Item> _itemsInStock;
+        [SerializeField] private Item[] _shopItems;
+        
+        private List<Item> _itemsInStock = new List<Item>();
 
         private void Awake()
         {
-            throw new NotImplementedException();
+            foreach (var item in _shopItems)
+            {
+                AddItem(item);
+            }
         }
 
-        private void AddItem()
+        private void AddItem(Item item)
         {
-        
+            _itemsInStock.Add(item);
         }
 
-        private void DeleteItem()
+        public Item GetItemById(int id)
         {
-        
-        }
-
-        public void GetItemById(int id)
-        {
-        
+            return _itemsInStock.Find(x => x.GetId == id);
         }
     }
 }
