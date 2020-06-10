@@ -7,6 +7,8 @@ namespace Shop
     [RequireComponent(typeof(ShopItems))]
     public class Shop : MonoBehaviour
     {
+        public event Action<bool> ToggleShop;
+        
         private ShopItems _itemsInStock;
         
         private int _upperItemYLinePosition = 164;
@@ -56,7 +58,7 @@ namespace Shop
             }
             else
             {
-                
+                ToggleShop?.Invoke(false);
             }
         }
         

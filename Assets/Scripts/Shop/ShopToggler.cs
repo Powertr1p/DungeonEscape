@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System;
+using Core;
 using UnityEngine;
 
 namespace Shop
@@ -10,6 +11,11 @@ namespace Shop
 
         private Player.Player _player;
         public Player.Player GetCostumer() => _player;
+
+        private void OnEnable()
+        {
+            GetComponentInParent<Shop>().ToggleShop += ToggleShop;
+        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -34,6 +40,11 @@ namespace Shop
         {
             _shopMenu.SetActive(isOpen);
             ShopUIUpdater.Instance.IsShopEnabled = isOpen;
+        }
+
+        private void OnDisable()
+        {
+            GetComponentInParent<Shop>().ToggleShop -= ToggleShop;
         }
     }
 }
