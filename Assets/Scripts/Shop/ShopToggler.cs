@@ -41,10 +41,5 @@ namespace Shop
             _shopMenu.SetActive(isOpen);
             ShopUIUpdater.Instance.IsShopEnabled = isOpen;
         }
-
-        private void OnDisable()
-        {
-            GetComponentInParent<Shop>().ToggleShop -= ToggleShop;
-        }
     }
 }

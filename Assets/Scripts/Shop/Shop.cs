@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Core;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ namespace Shop
         private int _middleItemYLinePosition = 54;
         private int _downItemYLinePosition = -54;
         
-        private int _currentSelectedItem;
+        private int _currentSelectedItemId;
 
         private void Awake()
         {
@@ -37,12 +38,12 @@ namespace Shop
                     break;
             }
 
-            _currentSelectedItem = itemId;
+            _currentSelectedItemId = itemId;
         }
 
-        public void BuyItem()
+        public void TryBuyItem()
         {
-            var itemPrice = _itemsInStock.GetItemById(_currentSelectedItem).ItemPrice;
+            var itemPrice = _itemsInStock.GetItemById(_currentSelectedItemId).ItemPrice;
             TryConsumePlayerDiamonds(itemPrice);
         }
 
@@ -54,14 +55,16 @@ namespace Shop
             if (player.DiamondsCount >= itemPrice)
             {
                 player.DiamondsCount -= itemPrice;
-                Debug.Log("Purchased!");
+                
+                if (_currentSelectedItemId == GameManager.Instance.GetWinConditionItemId)
+                    GameManager.Instance.HasWinCondition = true;
             }
             else
             {
-                ToggleShop?.Invoke(false);
+                Debug.Log("Not enough diamonds!");
             }
+
+            ToggleShop?.Invoke(false);
         }
-        
-        
     }
 }

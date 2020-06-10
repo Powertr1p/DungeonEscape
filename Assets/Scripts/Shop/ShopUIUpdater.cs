@@ -22,10 +22,8 @@ namespace Shop
             get
             {
                 if (_instance == null)
-                {
                     Debug.LogError("Instance is null");
-                }
-
+                
                 return _instance;
             }
         }
