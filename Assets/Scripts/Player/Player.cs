@@ -1,16 +1,37 @@
+using System;
 using Interfaces;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Player
 {
     public class Player : MonoBehaviour, IDamagable
     {
-        public int DiamondsCount = 0;
+        public event Action DiamondsCountUpdated;
+
+        private int _diamondsCount = 0;
+        public int DiamondsCount => _diamondsCount;
+
+        private void Start()
+        {
+            DiamondsCountUpdated?.Invoke();
+        }
 
         public void ApplyDamage(int damage)
         {
             Debug.Log("Player was attacked!");
         }
+
+        public void AddDiamonds(int amount)
+        {
+            _diamondsCount += amount;
+            DiamondsCountUpdated?.Invoke();
+        }
+
+        public void RemoveDiamonds(int amount)
+        {
+            _diamondsCount -= amount;
+            DiamondsCountUpdated?.Invoke();
+        }
+        
     }
 }

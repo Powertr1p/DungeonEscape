@@ -42,7 +42,7 @@ namespace Shop
 
             if (player.DiamondsCount >= itemPrice)
             {
-                player.DiamondsCount -= itemPrice;
+                player.RemoveDiamonds(itemPrice);
                 
                 if (_currentSelectedItemId == GameManager.Instance.GetWinConditionItemId)
                     GameManager.Instance.HasWinCondition = true;
