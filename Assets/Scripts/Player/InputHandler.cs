@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 namespace Player
 {
@@ -19,8 +20,9 @@ namespace Player
         private void Update()
         {
             if (!_player.IsAlive) return;
-            
-            var horizontalInput = Input.GetAxisRaw("Horizontal");
+
+            var horizontalInput = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+            Debug.Log(horizontalInput);
             OnMovementButtonPressed?.Invoke(horizontalInput);
 
             if (Input.GetKeyDown(KeyCode.Space))
