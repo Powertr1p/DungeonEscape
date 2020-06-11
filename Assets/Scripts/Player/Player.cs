@@ -8,9 +8,12 @@ namespace Player
     {
         public event Action DiamondsCountUpdated;
         public event Action<int> DamageTaken;
+        public event Action Died;
 
         private int _livesRemaining = 4;
         private int _diamondsCount = 0;
+
+        public bool IsAlive { get; private set; } = true;
         public int DiamondsCount => _diamondsCount;
 
         private void Start()
@@ -20,15 +23,17 @@ namespace Player
 
         public void ApplyDamage(int damage)
         {
-            if (_livesRemaining > 0)
+            if (!IsAlive) return;
+
+            _livesRemaining -= damage;
+            DamageTaken?.Invoke(_livesRemaining);
+            
+            if (_livesRemaining <= 0)
             {
-                _livesRemaining -= damage;
-                DamageTaken?.Invoke(_livesRemaining);   
+                Died?.Invoke();
+                IsAlive = false;
             }
-            else
-            {
-                //play death   
-            }
+            
         }
 
         public void AddDiamonds(int amount)

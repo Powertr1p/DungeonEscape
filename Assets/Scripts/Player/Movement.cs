@@ -37,18 +37,6 @@ namespace Player
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
         }
 
-        private void TryAttack()
-        {
-            if (!_collisions.IsGrounded()) return;
-            
-            Attack();
-        }
-
-        private void Attack()
-        {
-            
-        }
-
         private void TryJump()
         {
             if (!_collisions.IsGrounded()) return;

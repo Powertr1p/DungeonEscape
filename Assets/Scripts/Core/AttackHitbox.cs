@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using Interfaces;
-using Player;
 using UnityEngine;
 
 namespace Core
 {
-  [RequireComponent(typeof(Collider2D))]
-  public class AttackHitbox : MonoBehaviour
-  {
+  [RequireComponent(typeof(Collider2D))] 
+  public class AttackHitbox : MonoBehaviour 
+  { 
     private int _damage;
     private bool _canDamage = true;
 
@@ -33,6 +32,5 @@ namespace Core
       yield return new WaitForSeconds(0.5f);
       _canDamage = true;
     }
-
   }
 }

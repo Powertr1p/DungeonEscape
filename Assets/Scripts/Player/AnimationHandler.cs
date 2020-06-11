@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using Animations;
-using Core;
 using Shop;
 using UnityEngine;
 
@@ -10,6 +7,7 @@ namespace Player
 {
    [RequireComponent(typeof(InputHandler))]
    [RequireComponent(typeof(Movement))]
+   [RequireComponent(typeof(Player))]
    public class AnimationHandler : MonoBehaviour
    {
       [SerializeField] private GameObject _swordArcPrefab;
@@ -18,16 +16,21 @@ namespace Player
       private Animator _swordAnimator;
       private InputHandler _input;
       private Movement _movement;
+      private Player _player;
 
+      private bool _isAlive => _player.IsAlive;
+      
       private const string Move = "Move";
       private const string Jumping = "Jumping";
       private const string Attack = "Attack";
+      private const string Death = "Death";
 
       private void Awake()
       {
          _animator = GetComponentInChildren<Animator>();
          _input = GetComponent<InputHandler>();
          _movement = GetComponent<Movement>();
+         _player = GetComponent<Player>();
       }
       
       private void OnEnable()
@@ -35,12 +38,13 @@ namespace Player
          _input.OnMovementButtonPressed += SetMoveAnimationParam;
          _input.OnAttackButtonPressed += SetAttackAnimationParam;
          _movement.IsJumping += SetJumpAnimationParam;
+         _player.Died += Die;
       }
 
       private void SetAttackAnimationParam()
       {
-         if (ShopDisplayUI.Instance.IsShopEnabled) return;
-         
+         if (ShopDisplayUI.Instance.IsShopEnabled || _animator.GetBool(Jumping)) return;
+
          _animator.SetTrigger(Attack);
       }
 
@@ -60,12 +64,18 @@ namespace Player
       {
          _animator.SetFloat(Move, Mathf.Abs(param));
       }
+
+      private void Die()
+      {
+         _animator.SetTrigger(Death);
+      }
       
       private void OnDisable()
       {
          _input.OnMovementButtonPressed -= SetMoveAnimationParam;
          _input.OnAttackButtonPressed -= SetAttackAnimationParam;
          _movement.IsJumping -= SetJumpAnimationParam;
+         _player.Died -= Die;
       }
    }
 }
