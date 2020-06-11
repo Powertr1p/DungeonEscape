@@ -13,12 +13,13 @@ namespace Player
         private int _livesRemaining = 4;
         private int _diamondsCount = 0;
 
-        public bool IsAlive { get; private set; } = true;
+        public bool IsAlive => _livesRemaining > 0;
         public int DiamondsCount => _diamondsCount;
 
         private void Start()
         {
             DiamondsCountUpdated?.Invoke();
+            _livesRemaining = 4;
         }
 
         public void ApplyDamage(int damage)
@@ -29,11 +30,7 @@ namespace Player
             DamageTaken?.Invoke(_livesRemaining);
             
             if (_livesRemaining <= 0)
-            {
                 Died?.Invoke();
-                IsAlive = false;
-            }
-            
         }
 
         public void AddDiamonds(int amount)
