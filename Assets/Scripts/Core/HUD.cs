@@ -18,5 +18,10 @@ namespace Core
         {
             _diamondsCount.text = _player.DiamondsCount.ToString();
         }
+
+        private void OnDisable()
+        {
+            _player.DiamondsCountUpdated -= UpdateDiamondsCount;
+        }
     }
 }
