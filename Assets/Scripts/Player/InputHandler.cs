@@ -22,6 +22,7 @@ namespace Player
             if (!_player.IsAlive) return;
 
             var horizontalInput = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+            Debug.Log(horizontalInput);
             OnMovementButtonPressed?.Invoke(horizontalInput);
 
             if (CrossPlatformInputManager.GetButtonDown("B_Button"))
