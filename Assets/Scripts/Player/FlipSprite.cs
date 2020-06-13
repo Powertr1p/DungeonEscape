@@ -22,7 +22,7 @@ namespace Player
         
         private void Flip (float facingDirection)
         {
-            if (Mathf.Abs(facingDirection) < 0) return;
+             if (facingDirection ==  0) return;
 
             _spriteRenderer.flipX = facingDirection < 0;
         }
