@@ -45,9 +45,9 @@ namespace Shop
             }
         }
         
-        public void DisplayPlayerDiamonds(int gemsCount)
+        public void DisplayPlayerDiamonds(int diamondsCount)
         {
-            _diamondsCount.text = $"{gemsCount}G";
+            _diamondsCount.text = $"{diamondsCount}G";
         }
 
         public void UpdateSelectionLinePosition(int itemId)

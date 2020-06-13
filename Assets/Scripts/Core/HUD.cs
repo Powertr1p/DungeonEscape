@@ -12,8 +12,12 @@ namespace Core
 
         private void OnEnable()
         {
-            _player.DiamondsCountUpdated += UpdateDiamondsCount;
             _player.DamageTaken += UpdateLivesRemaining;
+        }
+
+        private void Start()
+        {
+            GameManager.Instance.DiamondsCountUpdated += UpdateDiamondsCount;
         }
 
         private void UpdateDiamondsCount()
@@ -29,7 +33,7 @@ namespace Core
         private void OnDisable()
         {
             _player.DamageTaken -= UpdateLivesRemaining;
-            _player.DiamondsCountUpdated -= UpdateDiamondsCount;
+            GameManager.Instance.DiamondsCountUpdated -= UpdateDiamondsCount;
         }
     }
 }

@@ -37,12 +37,9 @@ namespace Shop
 
         private void TryConsumePlayerDiamonds(int itemPrice)
         {
-            var player = GetComponentInChildren<ShopToggler>().GetCostumer();
-            if (player == null) return;
-
-            if (player.DiamondsCount >= itemPrice)
+            if (GameManager.Instance.PlayerDiamondsCount >= itemPrice)
             {
-                player.RemoveDiamonds(itemPrice);
+                GameManager.Instance.RemoveDiamonds(itemPrice);
                 
                 if (_currentSelectedItemId == GameManager.Instance.GetWinConditionItemId)
                     GameManager.Instance.HasWinCondition = true;

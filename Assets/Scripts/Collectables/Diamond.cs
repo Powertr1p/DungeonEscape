@@ -1,4 +1,5 @@
-﻿using Interfaces;
+﻿using Core;
+using Interfaces;
 using UnityEngine;
 
 namespace Collectables
@@ -9,13 +10,13 @@ namespace Collectables
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.TryGetComponent(out Player.Player player))
-                Collect(DiamondValue, player);
+            if (other.GetComponent<Player.Player>())
+                Collect(DiamondValue);
         }
         
-        public void Collect(int value, Player.Player player)
+        public void Collect(int value)
         {
-            player.AddDiamonds(value);
+            GameManager.Instance.AddDiamonds(value);
             Destroy(gameObject);
         }
     }

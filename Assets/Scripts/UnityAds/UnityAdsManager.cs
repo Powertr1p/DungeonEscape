@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using Core;
 using Shop;
 using UnityEngine;
 using UnityEngine.Advertisements;
@@ -7,8 +8,6 @@ namespace UnityAds
 {
     public class UnityAdsManager : MonoBehaviour
     {
-        [SerializeField] private Player.Player _player;
-        
         private const string rewardedVideo = "rewardedVideo";
         private const string gameId = "3651032";
 
@@ -38,8 +37,8 @@ namespace UnityAds
             {
                 case ShowResult.Finished:
                     Debug.Log("Ad finished");
-                    _player.AddDiamonds(100);
-                    ShopDisplayUI.Instance.DisplayPlayerDiamonds(_player.DiamondsCount);
+                    GameManager.Instance.AddDiamonds(100);
+                    ShopDisplayUI.Instance.DisplayPlayerDiamonds(GameManager.Instance.PlayerDiamondsCount);
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("Ad skipped");
