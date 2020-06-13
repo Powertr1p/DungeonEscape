@@ -44,6 +44,5 @@ namespace Player
             _diamondsCount -= amount;
             DiamondsCountUpdated?.Invoke();
         }
-        
     }
 }
