@@ -6,7 +6,6 @@ namespace Player
 {
     public class Player : MonoBehaviour, IDamagable
     {
-     
         public event Action<int> DamageTaken;
         public event Action Died;
 

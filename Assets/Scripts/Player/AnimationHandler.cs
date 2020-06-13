@@ -18,8 +18,6 @@ namespace Player
       private Movement _movement;
       private Player _player;
 
-      private bool _isAlive => _player.IsAlive;
-      
       private const string Move = "Move";
       private const string Jumping = "Jumping";
       private const string Attack = "Attack";

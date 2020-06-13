@@ -22,7 +22,7 @@ namespace Core
 
         private void UpdateDiamondsCount()
         {
-            _diamondsCount.text = _player.DiamondsCount.ToString();
+            _diamondsCount.text = GameManager.Instance.PlayerDiamondsCount.ToString();
         }
 
         private void UpdateLivesRemaining(int livesRemaining)
