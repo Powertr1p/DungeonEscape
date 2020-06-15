@@ -9,7 +9,7 @@ namespace UnityAds
     public class UnityAdsManager : MonoBehaviour
     {
         private const string rewardedVideo = "rewardedVideo";
-        private const string gameId = "3651032";
+        private const string gameId = "3651033";
 
         private void Start()
         {
