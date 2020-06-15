@@ -16,8 +16,6 @@ namespace Core
         {
             get
             {
-                if (_instance == null)
-                    Debug.LogError("GameManager is null");
                 return _instance;
             }
         }
