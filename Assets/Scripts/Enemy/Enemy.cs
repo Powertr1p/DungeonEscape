@@ -78,16 +78,26 @@ namespace Enemy
         private void FlipWhileWalking()
         {
             if (Target.position == WaypointA.position)
-                Sprite.flipX = true;
-            else
-                Sprite.flipX = false;
+                FlipSprite(true);
+            else if (Target.position == WaypointB.position)
+                FlipSprite(false);
+        }
+
+        private void FlipSprite(bool isFlip)
+        {
+            var currentDirection = transform.localScale;
+
+            if (isFlip && currentDirection.x < 0 || !isFlip && currentDirection.x > 0) return;
+            
+            var flipped = new Vector2(-currentDirection.x, currentDirection.y);
+            transform.localScale = flipped;
         }
 
         private void FaceToPlayerWhenAttack()
         {
             var direction = Player.localPosition - transform.position;
 
-            Sprite.flipX = !(direction.x > 0);
+            FlipSprite(!(direction.x > 0));
         }
 
         private void TryChangeMoveDirection()
