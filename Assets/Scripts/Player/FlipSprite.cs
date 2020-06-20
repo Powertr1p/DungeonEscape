@@ -24,7 +24,7 @@ namespace Player
         {
              if (facingDirection ==  0) return;
 
-            _spriteRenderer.flipX = facingDirection < 0;
+             _spriteRenderer.transform.localScale = facingDirection < 0 ? new Vector2(-1, 1) : new Vector2(1, 1);
         }
 
         private void OnDisable()
