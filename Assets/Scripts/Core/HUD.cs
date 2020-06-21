@@ -13,6 +13,7 @@ namespace Core
         private void OnEnable()
         {
             _player.DamageTaken += UpdateLivesRemaining;
+            _player.Died += OnDied;
         }
 
         private void Start()
@@ -27,7 +28,17 @@ namespace Core
 
         private void UpdateLivesRemaining(int livesRemaining)
         {
+            if (livesRemaining < 0) return;
+            
             _livesUI[livesRemaining].color = new Color32(255,255,255,50);
+        }
+
+        private void OnDied()
+        {
+            foreach (var section in _livesUI)
+            {
+                section.color = new Color32(255,255,255,50);
+            }
         }
 
         private void OnDisable()
