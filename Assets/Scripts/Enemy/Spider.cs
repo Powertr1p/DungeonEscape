@@ -30,7 +30,7 @@ namespace Enemy
             projectile.GetComponent<SpiderAcid>().Init(GetDamageValue(), _projectileSpeed);
         }
 
-        protected override void Move()
+        protected override void Move(Vector2 position)
         {
         }
 

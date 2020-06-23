@@ -26,10 +26,10 @@ namespace Enemy
         protected bool IsHitted = false;
         protected bool IsDead = false;
         
-        private const string Idle = "Idle";
-        private const string Hit = "Hit";
-        private const string InCombat = "InCombat";
-        private const string Death = "Death";
+        protected const string Idle = "Idle";
+        protected const string Hit = "Hit";
+        protected const string InCombat = "InCombat";
+        protected const string Death = "Death";
 
         private void Start()
         {
@@ -52,28 +52,39 @@ namespace Enemy
         {
             if (IsDead) return;
             
-            TryExitCombatMode();
-            SearchForPlayer();
-            
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
 
             FlipWhileWalking();
             TryChangeMoveDirection();
-            
-            if (!IsHitted)
-                Move();
 
-            if (Animator.GetBool(InCombat) == true)
+            if (Animator.GetBool(InCombat))
                 FaceToPlayerWhenAttack();
+            
+            TryToggleCombat(IsPlayerSpotted());
+            
+            if (IsPlayerSpotted() && !Animator.GetBool(InCombat))
+            {
+                Move(Player.localPosition);
+            }
+            else if (!IsPlayerSpotted() && !Animator.GetBool(InCombat))
+            {
+                Move(Target.position);
+            }
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
 
-        protected virtual void TryExitCombatMode()
+        protected virtual void TryToggleCombat(bool IsPlayerSpotted)
         {
-            if (Vector3.Distance(this.transform.localPosition, Player.localPosition) < 2f) return;
-            
-            ToggleCombatMode(false);
+            if (IsPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
+            {
+                ToggleCombatMode(IsPlayerSpotted);
+                Debug.Log("Toggled");
+            }
+            else if (!IsPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) < 2f)
+            {
+                ToggleCombatMode(IsPlayerSpotted);
+            }
         }
 
         private void FlipWhileWalking()
@@ -120,9 +131,10 @@ namespace Enemy
             Animator.SetTrigger(Idle);
         }
 
-        protected virtual void Move()
+        protected virtual void Move(Vector2 position)
         {
-            transform.position = Vector2.MoveTowards(transform.position, Target.position, Speed * Time.deltaTime);
+            var target = new Vector2(position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, target, Speed * Time.deltaTime);
         }
         
         protected virtual void ToggleCombatMode(bool isCombat)
@@ -145,15 +157,17 @@ namespace Enemy
                 Die();
         }
 
-        protected virtual void SearchForPlayer()
+        protected virtual bool IsPlayerSpotted()
         {
-            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), 2f, LayerMask.GetMask("PlayerHitbox"));
-            if (hit.collider != null)
-            {
-                Debug.Log("Player Spotted");
-            }
-
             Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * 2, 0,0));
+            
+            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), 2f, LayerMask.GetMask("PlayerHitbox"));
+            return hit.collider != null;
+        }
+
+        protected virtual void MoveToPlayer(Vector2 position)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, position, Speed * Time.deltaTime);
         }
         
         private void Die()
