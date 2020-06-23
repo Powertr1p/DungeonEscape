@@ -53,6 +53,7 @@ namespace Enemy
             if (IsDead) return;
             
             TryExitCombatMode();
+            SearchForPlayer();
             
             if (Animator.GetCurrentAnimatorStateInfo(0).IsName(Idle)) return;
 
@@ -142,6 +143,17 @@ namespace Enemy
 
             if (Health <= 0)
                 Die();
+        }
+
+        protected virtual void SearchForPlayer()
+        {
+            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), 2f, LayerMask.GetMask("PlayerHitbox"));
+            if (hit.collider != null)
+            {
+                Debug.Log("Player Spotted");
+            }
+
+            Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * 2, 0,0));
         }
         
         private void Die()
