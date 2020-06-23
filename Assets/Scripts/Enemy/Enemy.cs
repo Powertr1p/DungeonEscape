@@ -165,11 +165,6 @@ namespace Enemy
             return hit.collider != null;
         }
 
-        protected virtual void MoveToPlayer(Vector2 position)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, position, Speed * Time.deltaTime);
-        }
-        
         private void Die()
         {
             Animator.SetTrigger(Death);
