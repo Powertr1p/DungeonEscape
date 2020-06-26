@@ -218,10 +218,10 @@ TextureImporter:
       name: Fire_Swing_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1080
-        width: 70
-        height: 104
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,7 +229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d98ff0efdcc7574e9769433d62c0568
+      spriteID: aa48eedadfa2847749d7e59b8484c4b6
       internalID: 21300000
       vertices: []
       indices: 
@@ -239,10 +239,10 @@ TextureImporter:
       name: Fire_Swing_1
       rect:
         serializedVersion: 2
-        x: 342
-        y: 1080
-        width: 73
-        height: 105
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +250,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c2886ad64e75d4bbfb90e8489a33ce
+      spriteID: 8021df3b4bf83423cb329b13b6ece62b
       internalID: 21300002
       vertices: []
       indices: 
@@ -260,10 +260,10 @@ TextureImporter:
       name: Fire_Swing_2
       rect:
         serializedVersion: 2
-        x: 593
-        y: 1080
-        width: 78
-        height: 105
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,7 +271,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9594ba2bc51e1e44a75c8f2f93cea06
+      spriteID: 8d4eece39d4b24f019b3af4fd391546b
       internalID: 21300004
       vertices: []
       indices: 
@@ -281,10 +281,10 @@ TextureImporter:
       name: Fire_Swing_3
       rect:
         serializedVersion: 2
-        x: 826
-        y: 1080
-        width: 101
-        height: 105
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,7 +292,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f77adfbf1f9dd49b7ee408f1c23a1a
+      spriteID: be9517602015d41ecb3a9da4044a1074
       internalID: 21300006
       vertices: []
       indices: 
@@ -302,10 +302,10 @@ TextureImporter:
       name: Fire_Swing_4
       rect:
         serializedVersion: 2
-        x: 1027
-        y: 1080
-        width: 156
-        height: 105
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,7 +313,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8453ba953fc36a4bbdb74bb5322abd1
+      spriteID: 75ff7d8918dcb484f8355c710ca986c7
       internalID: 21300008
       vertices: []
       indices: 
@@ -324,9 +324,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 1080
-        width: 161
-        height: 122
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d38cb4687642ff648ae2141f57a10202
+      spriteID: 1261a829851b24aa9aa28eb2aba5de25
       internalID: 21300010
       vertices: []
       indices: 
@@ -345,9 +345,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 1080
-        width: 161
-        height: 143
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,7 +355,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41899639b64000c49a55971ef9d3c1d7
+      spriteID: 9e85566941cbb485c8a700d177a7c6e1
       internalID: 21300012
       vertices: []
       indices: 
@@ -366,9 +366,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 824
-        width: 161
-        height: 156
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,7 +376,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20b0635450659c418d93bddb74a911c
+      spriteID: a5157bc38bed84f21a145ceeb9b636b6
       internalID: 21300014
       vertices: []
       indices: 
@@ -387,9 +387,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 824
-        width: 167
-        height: 172
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,7 +397,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365f048464d040b4a8def1dded59b4f5
+      spriteID: 34b8eb1fa3ec14dca8ca20411dad5be9
       internalID: 21300016
       vertices: []
       indices: 
@@ -408,9 +408,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 824
-        width: 167
-        height: 176
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,7 +418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1e03ac41a64314da8f2238a44c1898
+      spriteID: 6e286a7e001b94c9bae32cf21047a152
       internalID: 21300018
       vertices: []
       indices: 
@@ -429,9 +429,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 824
-        width: 160
-        height: 179
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,7 +439,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12f6a552547c36e46ab2c484086b52d7
+      spriteID: 0290633df92ee4b1a831ee7e135b534a
       internalID: 21300020
       vertices: []
       indices: 
@@ -449,10 +449,10 @@ TextureImporter:
       name: Fire_Swing_11
       rect:
         serializedVersion: 2
-        x: 1025
-        y: 824
-        width: 160
-        height: 173
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,7 +460,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a94e81956919c18469fb6a086086ddf7
+      spriteID: 9906ca0b2f6d14bdaa21c63a0beb077c
       internalID: 21300022
       vertices: []
       indices: 
@@ -471,9 +471,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 824
-        width: 161
-        height: 121
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,7 +481,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe1559d0f675cd441b884d636a6c1a60
+      spriteID: f55aaddd8c64749af8f13d6bea3c0b1c
       internalID: 21300024
       vertices: []
       indices: 
@@ -491,10 +491,10 @@ TextureImporter:
       name: Fire_Swing_13
       rect:
         serializedVersion: 2
-        x: 1541
-        y: 825
-        width: 160
-        height: 99
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,7 +502,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5765b483dbfdbec45bab0a4d87b48855
+      spriteID: adb80606aacd141d4bbb71ac286b83d1
       internalID: 21300026
       vertices: []
       indices: 
@@ -512,10 +512,10 @@ TextureImporter:
       name: Fire_Swing_14
       rect:
         serializedVersion: 2
-        x: 77
-        y: 569
-        width: 172
-        height: 106
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,7 +523,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c325c8cc4f7d4444abb105a5c29f471b
+      spriteID: 8bbcfb1d7a32d4b83a5e4916dbfac90a
       internalID: 21300028
       vertices: []
       indices: 
@@ -533,10 +533,10 @@ TextureImporter:
       name: Fire_Swing_15
       rect:
         serializedVersion: 2
-        x: 329
-        y: 569
-        width: 183
-        height: 151
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,7 +544,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94f8b7e52a757644846a43c4f3265bd
+      spriteID: 1c708a9f0eb3140ca89320acdb33b1ff
       internalID: 21300030
       vertices: []
       indices: 
@@ -554,10 +554,10 @@ TextureImporter:
       name: Fire_Swing_16
       rect:
         serializedVersion: 2
-        x: 558
-        y: 569
-        width: 159
-        height: 153
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,7 +565,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f4a0d563fdd3c4429783f6a877864da
+      spriteID: 1d230521488b943b28668c94f03adf42
       internalID: 21300032
       vertices: []
       indices: 
@@ -575,10 +575,10 @@ TextureImporter:
       name: Fire_Swing_17
       rect:
         serializedVersion: 2
-        x: 787
-        y: 569
-        width: 142
-        height: 119
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,7 +586,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e3c591fc5cd5d4680e64a030339a0a
+      spriteID: 6b3e1d8f895a448fabc6cedf9a144445
       internalID: 21300034
       vertices: []
       indices: 
@@ -596,10 +596,10 @@ TextureImporter:
       name: Fire_Swing_18
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 569
-        width: 136
-        height: 103
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,7 +607,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57251b622be767f44bc6ad7d21ba4ce8
+      spriteID: d20fdee8e3ad646c2b3d8043fcffb4e7
       internalID: 21300036
       vertices: []
       indices: 
@@ -617,10 +617,10 @@ TextureImporter:
       name: Fire_Swing_19
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 569
-        width: 133
-        height: 96
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,7 +628,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbfa2f6d7a1bc974d8f9331deb72618d
+      spriteID: 21069c1c27457403ca1ed4e3c5f360c0
       internalID: 21300038
       vertices: []
       indices: 
@@ -638,10 +638,10 @@ TextureImporter:
       name: Fire_Swing_20
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 569
-        width: 130
-        height: 97
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,7 +649,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 688a33835f40e6c4e825f4470d34b40a
+      spriteID: 42fce6704b10a49289bf3a58232447cd
       internalID: 21300040
       vertices: []
       indices: 
@@ -659,10 +659,10 @@ TextureImporter:
       name: Fire_Swing_21
       rect:
         serializedVersion: 2
-        x: 28
-        y: 313
-        width: 133
-        height: 98
+        x: 0
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,7 +670,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdab14df2ea755549b9035f405757c12
+      spriteID: 3322bb45791324de389faa8c4b2af0d2
       internalID: 21300042
       vertices: []
       indices: 
@@ -680,10 +680,10 @@ TextureImporter:
       name: Fire_Swing_22
       rect:
         serializedVersion: 2
-        x: 287
-        y: 313
-        width: 130
-        height: 102
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -691,7 +691,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c958669bccc88d24793a9babcd69dc9c
+      spriteID: 9302fca5c2d9f4855bb24cedcc8ae298
       internalID: 21300044
       vertices: []
       indices: 
@@ -701,10 +701,10 @@ TextureImporter:
       name: Fire_Swing_23
       rect:
         serializedVersion: 2
-        x: 557
-        y: 313
-        width: 116
-        height: 109
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,7 +712,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222c31aa9bd017d4b8e7947983c03d33
+      spriteID: 728a460f339a743c1b66149774e90adb
       internalID: 21300046
       vertices: []
       indices: 
@@ -722,10 +722,10 @@ TextureImporter:
       name: Fire_Swing_24
       rect:
         serializedVersion: 2
-        x: 852
-        y: 313
-        width: 77
-        height: 101
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,7 +733,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c17034ecfc2cab47a8bc0da50797ec1
+      spriteID: 17defe96d7b0641399425657a681bec0
       internalID: 21300048
       vertices: []
       indices: 
@@ -743,10 +743,10 @@ TextureImporter:
       name: Fire_Swing_25
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 313
-        width: 76
-        height: 102
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,7 +754,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b6e927e25bcbfd46aa1ce8af9737930
+      spriteID: e01f6de24f2734917a81b873e52bf322
       internalID: 21300050
       vertices: []
       indices: 
@@ -764,10 +764,10 @@ TextureImporter:
       name: Fire_Swing_26
       rect:
         serializedVersion: 2
-        x: 1370
-        y: 312
-        width: 103
-        height: 104
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,7 +775,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f35f4739725774f4b8308aca3f77a489
+      spriteID: 059f5325cfa434a35987d578caa21884
       internalID: 21300052
       vertices: []
       indices: 
@@ -785,10 +785,10 @@ TextureImporter:
       name: Fire_Swing_27
       rect:
         serializedVersion: 2
-        x: 1626
-        y: 312
-        width: 109
-        height: 105
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,7 +796,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7df821ec07c74bf489d594d95bcd63c9
+      spriteID: a747259e5106b44b286450db162d0572
       internalID: 21300054
       vertices: []
       indices: 
@@ -806,10 +806,10 @@ TextureImporter:
       name: Fire_Swing_28
       rect:
         serializedVersion: 2
-        x: 90
-        y: 56
-        width: 102
-        height: 105
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,7 +817,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e813c61d12968f44495ecf6710d4a665
+      spriteID: c3f84ce5547b845a6b4dc152e611ee74
       internalID: 21300056
       vertices: []
       indices: 
@@ -827,10 +827,10 @@ TextureImporter:
       name: Fire_Swing_29
       rect:
         serializedVersion: 2
-        x: 344
-        y: 56
-        width: 96
-        height: 105
+        x: 256
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,7 +838,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8611a8cb0d1b014ea5b377baee114cf
+      spriteID: 7d817a9a8ce1f4b588c6c45301c3b1a7
       internalID: 21300058
       vertices: []
       indices: 
@@ -848,10 +848,10 @@ TextureImporter:
       name: Fire_Swing_30
       rect:
         serializedVersion: 2
-        x: 595
-        y: 56
-        width: 94
-        height: 106
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,7 +859,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 753d3cdda1ee0ad4d9236ce88b574e70
+      spriteID: 9a61ac0198a7d46228c9131dce41c435
       internalID: 21300060
       vertices: []
       indices: 
@@ -869,10 +869,10 @@ TextureImporter:
       name: Fire_Swing_31
       rect:
         serializedVersion: 2
-        x: 849
-        y: 56
-        width: 92
-        height: 106
+        x: 768
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,7 +880,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152d93fefa7b7574e86ea52b9d06d371
+      spriteID: 436d85237872647a6bf161a8cbab7aa1
       internalID: 21300062
       vertices: []
       indices: 
@@ -890,10 +890,10 @@ TextureImporter:
       name: Fire_Swing_32
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 56
-        width: 87
-        height: 105
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,7 +901,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60ba08cc836a1ce4f8e01095892ca7a0
+      spriteID: fc78635f2f0884f71b5301610d79cdd8
       internalID: 21300064
       vertices: []
       indices: 
@@ -911,10 +911,10 @@ TextureImporter:
       name: Fire_Swing_33
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 56
-        width: 80
-        height: 105
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,7 +922,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e976cf54c1deb0a448e8796a02a82bb4
+      spriteID: 018fa8406308349d7857292bb11e64c0
       internalID: 21300066
       vertices: []
       indices: 
@@ -932,10 +932,10 @@ TextureImporter:
       name: Fire_Swing_34
       rect:
         serializedVersion: 2
-        x: 1621
-        y: 56
-        width: 76
-        height: 105
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,7 +943,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d4a615af04102b47a19934762bdfc6f
+      spriteID: 327f2e93bf1ed4e2a9196ca83389f825
       internalID: 21300068
       vertices: []
       indices: 
