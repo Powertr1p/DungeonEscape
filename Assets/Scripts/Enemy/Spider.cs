@@ -22,6 +22,14 @@ namespace Enemy
 
         protected override void Update()
         {
+            if (IsDead) return;
+
+            TryToggleCombat(IsPlayerSpotted());
+            
+            if (IsPlayerSpotted() && !Animator.GetBool(InCombat))
+                Animator.SetBool(InCombat, true);
+            else if (!IsPlayerSpotted() && Animator.GetBool(InCombat))
+                Animator.SetBool(InCombat, false);
         }
 
         private void Attack()

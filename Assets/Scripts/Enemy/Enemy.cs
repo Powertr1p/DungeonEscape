@@ -17,7 +17,8 @@ namespace Enemy
         [SerializeField] protected Transform WaypointB;
         [SerializeField] protected Transform Player;
         [SerializeField] protected GameObject DiamondPrefab;
-
+        [SerializeField] protected float SpotingRayDistance = 2f;
+        
         protected Transform Target;
         protected Animator Animator;
         protected SpriteRenderer Sprite;
@@ -63,13 +64,10 @@ namespace Enemy
             TryToggleCombat(IsPlayerSpotted());
             
             if (IsPlayerSpotted() && !Animator.GetBool(InCombat))
-            {
                 Move(Player.localPosition);
-            }
             else if (!IsPlayerSpotted() && !Animator.GetBool(InCombat))
-            {
                 Move(Target.position);
-            }
+
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
@@ -77,10 +75,7 @@ namespace Enemy
         protected virtual void TryToggleCombat(bool IsPlayerSpotted)
         {
             if (IsPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
-            {
                 ToggleCombatMode(IsPlayerSpotted);
-                Debug.Log("Toggled");
-            }
             else if (!IsPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) < 2f)
             {
                 ToggleCombatMode(IsPlayerSpotted);
@@ -159,9 +154,9 @@ namespace Enemy
 
         protected virtual bool IsPlayerSpotted()
         {
-            Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * 2, 0,0));
+            Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
             
-            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), 2f, LayerMask.GetMask("PlayerHitbox"));
+            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
 
             return hit.collider != null && hit.collider.GetComponent<Player.Player>().IsAlive;
         }
