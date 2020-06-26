@@ -11,6 +11,7 @@ namespace Player
    public class AnimationHandler : MonoBehaviour
    {
       [SerializeField] private GameObject _swordArcPrefab;
+      [SerializeField] private GameObject _bloodPrefab;
 
       private Animator _animator;
       private Animator _swordAnimator;
@@ -36,6 +37,7 @@ namespace Player
          _input.OnMovementButtonPressed += SetMoveAnimationParam;
          _input.OnAttackButtonPressed += SetAttackAnimationParam;
          _movement.IsJumping += SetJumpAnimationParam;
+         _player.DamageTaken += InstantiateBlood;
          _player.Died += Die;
       }
 
@@ -63,6 +65,13 @@ namespace Player
       private void SetMoveAnimationParam(float param)
       {
          _animator.SetFloat(Move, Mathf.Abs(param));
+      }
+
+      private void InstantiateBlood(int damage)
+      {
+         var direction = GetComponentInChildren<SpriteRenderer>().transform.localScale.x;
+         var blood = Instantiate(_bloodPrefab, transform);
+         blood.transform.localScale *= direction * -1;
       }
 
       private void Die()
