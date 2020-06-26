@@ -162,7 +162,8 @@ namespace Enemy
             Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * 2, 0,0));
             
             var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), 2f, LayerMask.GetMask("PlayerHitbox"));
-            return hit.collider != null;
+
+            return hit.collider != null && hit.collider.GetComponent<Player.Player>().IsAlive;
         }
 
         private void Die()

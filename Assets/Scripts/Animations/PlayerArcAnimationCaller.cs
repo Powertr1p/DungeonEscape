@@ -16,7 +16,7 @@ namespace Animations
         //calling from animation through animation event (Attack animation on Player/Sprite)
         private void StartArcAnimation()
         {
-            _animHandler.CreateSwordArcEffect();
+            _animHandler.CreateSwordArcEffect(transform.localScale.x);
         }
     }
 }

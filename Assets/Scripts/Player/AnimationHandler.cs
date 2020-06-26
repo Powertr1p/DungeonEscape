@@ -46,9 +46,11 @@ namespace Player
          _animator.SetTrigger(Attack);
       }
 
-      public void CreateSwordArcEffect()
+      public void CreateSwordArcEffect(float direction)
       {
          var swordArc = Instantiate(_swordArcPrefab, transform);
+         swordArc.transform.localScale = new Vector3(direction, direction);
+         
          if (swordArc.TryGetComponent(out SwordArcAnimationHandler handler))
             handler.Init(GetComponentInChildren<SpriteRenderer>());
       }
