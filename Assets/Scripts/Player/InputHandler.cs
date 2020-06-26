@@ -21,13 +21,13 @@ namespace Player
         {
             if (!_player.IsAlive) return;
 
-            var horizontalInput = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+            var horizontalInput = Input.GetAxisRaw("Horizontal");
             OnMovementButtonPressed?.Invoke(horizontalInput);
 
-            if (CrossPlatformInputManager.GetButtonDown("B_Button"))
+            if (Input.GetKeyDown(KeyCode.Space))
                 OnJumpButtonPressed?.Invoke();
 
-            if (CrossPlatformInputManager.GetButtonDown("A_Button"))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
                 OnAttackButtonPressed?.Invoke();
         }
     }

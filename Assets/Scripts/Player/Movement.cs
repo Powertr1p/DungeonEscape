@@ -17,7 +17,7 @@ namespace Player
         private Collisions _collisions;
 
         [SerializeField] private float _movementSpeed = 1f;
-        [SerializeField] private float _jumpForce = 5f;
+        [SerializeField] private float _jumpForce = 7f;
 
         private void Awake()
         {
