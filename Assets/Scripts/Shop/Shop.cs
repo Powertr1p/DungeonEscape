@@ -9,9 +9,7 @@ namespace Shop
     public class Shop : MonoBehaviour
     {
         public event Action<bool> ToggleShop;
-        public event Action BootsOfFlightBought;
-        public event Action FlameSwordBought;
-        
+
         private ShopItems _itemsInStock;
         
         private int _upperItemYLinePosition = 164;
@@ -49,10 +47,10 @@ namespace Shop
                 else switch (_currentSelectedItemId)
                 {
                     case 1:
-                        BootsOfFlightBought?.Invoke();
+                        GameManager.Instance.BootsOfFlightBought();
                         break;
                     case 0:
-                        FlameSwordBought?.Invoke();
+                        GameManager.Instance.FlameSwordBought();
                         break;
                 }
             }

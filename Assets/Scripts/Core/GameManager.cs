@@ -7,7 +7,8 @@ namespace Core
     public class GameManager : MonoBehaviour
     {
         public event Action DiamondsCountUpdated;
-        public event Action OnBootsOfFlightBought;
+        public event Action OnBootsOfLightBought;
+        public event Action OnFlameSwordBought;
         
         [SerializeField] private Player.Player _player;
         [SerializeField] private Item _winCondotionItem;
@@ -48,5 +49,16 @@ namespace Core
             _player.DiamondsCount -= amount;
             DiamondsCountUpdated?.Invoke();
         }
+
+        public void BootsOfFlightBought()
+        {
+            OnBootsOfLightBought?.Invoke();
+        }
+
+        public void FlameSwordBought()
+        {
+            OnFlameSwordBought?.Invoke();
+        }
+        
     }
 }

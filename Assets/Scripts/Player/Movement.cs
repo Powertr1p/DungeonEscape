@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Core;
 using UnityEditor;
 using UnityEngine;
 
@@ -30,6 +31,7 @@ namespace Player
         {
             _input.OnMovementButtonPressed += MoveCharacter;
             _input.OnJumpButtonPressed += TryJump;
+            GameManager.Instance.OnBootsOfLightBought += ChangeJumpForce;
         }
         
         private void MoveCharacter(float direction)
@@ -59,6 +61,11 @@ namespace Player
         {
             _input.OnMovementButtonPressed -= MoveCharacter;
             _input.OnJumpButtonPressed -= TryJump;
+        }
+
+        private void ChangeJumpForce()
+        {
+            _jumpForce *= 2;
         }
     }
 }
