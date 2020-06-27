@@ -23,8 +23,7 @@ namespace Enemy
         protected Animator Animator;
         protected SpriteRenderer Sprite;
         protected DamageDealer Damage;
-
-        protected bool IsHitted = false;
+        
         protected bool IsDead = false;
         
         protected const string Idle = "Idle";
@@ -134,7 +133,6 @@ namespace Enemy
         
         protected virtual void ToggleCombatMode(bool isCombat)
         {
-            IsHitted = isCombat;
             Animator.SetBool(InCombat, isCombat);
         }
         
