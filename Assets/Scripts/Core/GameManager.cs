@@ -7,6 +7,7 @@ namespace Core
     public class GameManager : MonoBehaviour
     {
         public event Action DiamondsCountUpdated;
+        public event Action OnBootsOfFlightBought;
         
         [SerializeField] private Player.Player _player;
         [SerializeField] private Item _winCondotionItem;
@@ -21,11 +22,11 @@ namespace Core
         }
 
         public int GetWinConditionItemId => _winCondotionItem.GetId;
-        
-        public bool HasWinCondition { get; set; }
-
         public int PlayerDiamondsCount => _player.DiamondsCount;
-
+      
+        public bool HasWinCondition { get; set; }
+        public bool HasBootsOfFlight { get; set; }
+        
         private void Awake()
         {
             _instance = this;

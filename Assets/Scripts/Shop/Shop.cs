@@ -9,6 +9,8 @@ namespace Shop
     public class Shop : MonoBehaviour
     {
         public event Action<bool> ToggleShop;
+        public event Action BootsOfFlightBought;
+        public event Action FlameSwordBought;
         
         private ShopItems _itemsInStock;
         
@@ -40,9 +42,19 @@ namespace Shop
             if (GameManager.Instance.PlayerDiamondsCount >= itemPrice)
             {
                 GameManager.Instance.RemoveDiamonds(itemPrice);
-                
+
                 if (_currentSelectedItemId == GameManager.Instance.GetWinConditionItemId)
                     GameManager.Instance.HasWinCondition = true;
+                
+                else switch (_currentSelectedItemId)
+                {
+                    case 1:
+                        BootsOfFlightBought?.Invoke();
+                        break;
+                    case 0:
+                        FlameSwordBought?.Invoke();
+                        break;
+                }
             }
             else
             {

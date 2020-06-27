@@ -72,6 +72,7 @@ namespace Player
          var direction = GetComponentInChildren<SpriteRenderer>().transform.localScale.x;
          var blood = Instantiate(_bloodPrefab, transform);
          blood.transform.localScale *= direction * -1;
+         Destroy(blood, 0.5f);
       }
 
       private void Die()
