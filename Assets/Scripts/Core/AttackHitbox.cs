@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using Interfaces;
+using Player;
 using UnityEngine;
 
 namespace Core
-{
+{ 
   [RequireComponent(typeof(Collider2D))] 
   public class AttackHitbox : MonoBehaviour 
   { 
-    private int _damage;
+    protected int Damage;
     private bool _canDamage = true;
 
     private void Awake()
+    { 
+      Init();
+    }
+
+    protected virtual void Init()
     {
-      _damage = GetComponentInParent<DamageDealer>().GetDamageValue;
+      Damage = GetComponentInParent<DamageDealer>().GetDamageValue;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,7 +28,7 @@ namespace Core
         if (!_canDamage) return;
 
         _canDamage = false;
-        entity.ApplyDamage(_damage);
+        entity.ApplyDamage(Damage);
         StartCoroutine(ResetDamageCooldown());
       }
     }

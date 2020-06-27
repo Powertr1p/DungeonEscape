@@ -21,6 +21,9 @@ namespace Player
       private Movement _movement;
       private Player _player;
 
+      private string _currentAttack;
+      
+      private const string FireAttack = "FireAttack";
       private const string Move = "Move";
       private const string Jumping = "Jumping";
       private const string Attack = "Attack";
@@ -43,13 +46,19 @@ namespace Player
          _player.Died += Die;
 
          GameManager.Instance.OnBootsOfLightBought += EnableJumpEffects;
+         GameManager.Instance.OnFlameSwordBought += ChangeAttack;
+      }
+
+      private void Start()
+      {
+         _currentAttack = Attack;
       }
 
       private void SetAttackAnimationParam()
       {
          if (ShopDisplayUI.Instance.IsShopEnabled || _animator.GetBool(Jumping)) return;
 
-         _animator.SetTrigger(Attack);
+         _animator.SetTrigger(_currentAttack);
       }
 
       private void EnableJumpEffects()
@@ -65,6 +74,8 @@ namespace Player
 
       public void CreateSwordArcEffect(float direction)
       {
+         if (_currentAttack == FireAttack) return;
+
          var swordArc = Instantiate(_swordArcPrefab, transform);
          swordArc.transform.localScale = new Vector3(direction, direction);
          
@@ -94,6 +105,11 @@ namespace Player
       {
          _animator.SetTrigger(Death);
       }
+
+      private void ChangeAttack()
+      {
+         _currentAttack = FireAttack;
+      }
       
       private void OnDisable()
       {
@@ -104,6 +120,7 @@ namespace Player
          _player.Died -= Die;
          
          GameManager.Instance.OnBootsOfLightBought -= EnableJumpEffects;
+         GameManager.Instance.OnFlameSwordBought -= ChangeAttack;
       }
    }
 }

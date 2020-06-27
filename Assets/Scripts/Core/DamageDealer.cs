@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Core
 {
     public class DamageDealer : MonoBehaviour
     {
-        [SerializeField] private int _damageValue = 1;
-        public int GetDamageValue => _damageValue;
+        [SerializeField] protected int DamageValue = 1;
+        public int GetDamageValue => DamageValue;
     }
 }
