@@ -1,5 +1,6 @@
 ﻿using System;
 using Animations;
+using Core;
 using Shop;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ namespace Player
    {
       [SerializeField] private GameObject _swordArcPrefab;
       [SerializeField] private GameObject _bloodPrefab;
+      [SerializeField] private GameObject _JumpEffectPrefab;
 
       private Animator _animator;
       private Animator _swordAnimator;
@@ -39,6 +41,8 @@ namespace Player
          _movement.IsJumping += SetJumpAnimationParam;
          _player.DamageTaken += InstantiateBlood;
          _player.Died += Die;
+
+         GameManager.Instance.OnBootsOfLightBought += EnableJumpEffects;
       }
 
       private void SetAttackAnimationParam()
@@ -46,6 +50,17 @@ namespace Player
          if (ShopDisplayUI.Instance.IsShopEnabled || _animator.GetBool(Jumping)) return;
 
          _animator.SetTrigger(Attack);
+      }
+
+      private void EnableJumpEffects()
+      {
+         _movement.IsJumping += SpawnJumpEffects;
+      }
+
+      private void SpawnJumpEffects(bool obj)
+      {
+         var jumpEffect = Instantiate(_JumpEffectPrefab, transform);
+         Destroy(jumpEffect, 1f);
       }
 
       public void CreateSwordArcEffect(float direction)
@@ -85,7 +100,10 @@ namespace Player
          _input.OnMovementButtonPressed -= SetMoveAnimationParam;
          _input.OnAttackButtonPressed -= SetAttackAnimationParam;
          _movement.IsJumping -= SetJumpAnimationParam;
+         _movement.IsJumping -= SpawnJumpEffects;
          _player.Died -= Die;
+         
+         GameManager.Instance.OnBootsOfLightBought -= EnableJumpEffects;
       }
    }
 }

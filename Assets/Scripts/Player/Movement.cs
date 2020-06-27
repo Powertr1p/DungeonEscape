@@ -31,7 +31,8 @@ namespace Player
         {
             _input.OnMovementButtonPressed += MoveCharacter;
             _input.OnJumpButtonPressed += TryJump;
-            GameManager.Instance.OnBootsOfLightBought += ChangeJumpForce;
+            
+            GameManager.Instance.OnBootsOfLightBought += EnableBootsOfFlightParams;
         }
         
         private void MoveCharacter(float direction)
@@ -47,11 +48,12 @@ namespace Player
 
         private IEnumerator Jump()
         {
-            IsJumping?.Invoke(true);
-            
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,  _jumpForce);
             
             yield return new WaitUntil(() => !_collisions.IsGrounded());
+            
+            IsJumping?.Invoke(true);
+           
             yield return new WaitUntil(() => _collisions.IsGrounded());
             
             IsJumping?.Invoke(false);
@@ -61,9 +63,16 @@ namespace Player
         {
             _input.OnMovementButtonPressed -= MoveCharacter;
             _input.OnJumpButtonPressed -= TryJump;
+            
+            GameManager.Instance.OnBootsOfLightBought -= EnableBootsOfFlightParams;
         }
 
-        private void ChangeJumpForce()
+        private void EnableBootsOfFlightParams()
+        {
+            DoubledJumpForce();
+        }
+
+        private void DoubledJumpForce()
         {
             _jumpForce *= 2;
         }

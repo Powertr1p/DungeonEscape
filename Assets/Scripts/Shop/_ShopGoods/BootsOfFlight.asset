@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 1
   ItemName: The Boots of Flight
-  ItemPrice: 400
+  ItemPrice: 1
