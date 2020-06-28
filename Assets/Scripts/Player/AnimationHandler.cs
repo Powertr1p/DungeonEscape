@@ -45,8 +45,8 @@ namespace Player
          _player.DamageTaken += InstantiateBlood;
          _player.Died += Die;
 
-         GameManager.Instance.OnBootsOfLightBought += EnableJumpEffects;
-         GameManager.Instance.OnFlameSwordBought += ChangeAttack;
+         GameEventsHandler.Instance.OnBootsOfLightBought += EnableJumpEffects;
+         GameEventsHandler.Instance.OnFlameSwordBought += ChangeAttack;
       }
 
       private void Start()
@@ -119,8 +119,8 @@ namespace Player
          _movement.IsJumping -= SpawnJumpEffects;
          _player.Died -= Die;
          
-         GameManager.Instance.OnBootsOfLightBought -= EnableJumpEffects;
-         GameManager.Instance.OnFlameSwordBought -= ChangeAttack;
+         GameEventsHandler.Instance.OnBootsOfLightBought -= EnableJumpEffects;
+         GameEventsHandler.Instance.OnFlameSwordBought -= ChangeAttack;
       }
    }
 }

@@ -16,7 +16,7 @@ namespace Collectables
         
         public void Collect(int value)
         {
-            GameManager.Instance.AddDiamonds(value);
+            GameEventsHandler.Instance.AddDiamonds(value);
             Destroy(gameObject);
         }
     }

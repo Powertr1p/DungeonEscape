@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core
 {
-    public class GameManager : MonoBehaviour
+    public class GameEventsHandler : MonoBehaviour
     {
         public event Action DiamondsCountUpdated;
         public event Action OnBootsOfLightBought;
@@ -13,8 +13,8 @@ namespace Core
         [SerializeField] private Player.Player _player;
         [SerializeField] private Item _winCondotionItem;
 
-        private static GameManager _instance;
-        public static GameManager Instance => _instance;
+        private static GameEventsHandler _instance;
+        public static GameEventsHandler Instance => _instance;
 
         public int GetWinConditionItemId => _winCondotionItem.GetId;
         public int PlayerDiamondsCount => _player.DiamondsCount;

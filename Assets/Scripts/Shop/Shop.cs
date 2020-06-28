@@ -37,20 +37,20 @@ namespace Shop
 
         private void TryConsumePlayerDiamonds(int itemPrice)
         {
-            if (GameManager.Instance.PlayerDiamondsCount >= itemPrice)
+            if (GameEventsHandler.Instance.PlayerDiamondsCount >= itemPrice)
             {
-                GameManager.Instance.RemoveDiamonds(itemPrice);
+                GameEventsHandler.Instance.RemoveDiamonds(itemPrice);
 
-                if (_currentSelectedItemId == GameManager.Instance.GetWinConditionItemId)
-                    GameManager.Instance.HasWinCondition = true;
+                if (_currentSelectedItemId == GameEventsHandler.Instance.GetWinConditionItemId)
+                    GameEventsHandler.Instance.HasWinCondition = true;
                 
                 else switch (_currentSelectedItemId)
                 {
                     case 1:
-                        GameManager.Instance.BootsOfFlightBought();
+                        GameEventsHandler.Instance.BootsOfFlightBought();
                         break;
                     case 0:
-                        GameManager.Instance.FlameSwordBought();
+                        GameEventsHandler.Instance.FlameSwordBought();
                         break;
                 }
             }

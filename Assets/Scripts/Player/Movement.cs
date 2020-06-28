@@ -32,7 +32,7 @@ namespace Player
             _input.OnMovementButtonPressed += MoveCharacter;
             _input.OnJumpButtonPressed += TryJump;
             
-            GameManager.Instance.OnBootsOfLightBought += EnableBootsOfFlightParams;
+            GameEventsHandler.Instance.OnBootsOfLightBought += EnableBootsOfFlightParams;
         }
         
         private void MoveCharacter(float direction)
@@ -64,7 +64,7 @@ namespace Player
             _input.OnMovementButtonPressed -= MoveCharacter;
             _input.OnJumpButtonPressed -= TryJump;
             
-            GameManager.Instance.OnBootsOfLightBought -= EnableBootsOfFlightParams;
+            GameEventsHandler.Instance.OnBootsOfLightBought -= EnableBootsOfFlightParams;
         }
 
         private void EnableBootsOfFlightParams()

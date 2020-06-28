@@ -37,8 +37,8 @@ namespace UnityAds
             {
                 case ShowResult.Finished:
                     Debug.Log("Ad finished");
-                    GameManager.Instance.AddDiamonds(100);
-                    ShopDisplayUI.Instance.DisplayPlayerDiamonds(GameManager.Instance.PlayerDiamondsCount);
+                    GameEventsHandler.Instance.AddDiamonds(100);
+                    ShopDisplayUI.Instance.DisplayPlayerDiamonds(GameEventsHandler.Instance.PlayerDiamondsCount);
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("Ad skipped");

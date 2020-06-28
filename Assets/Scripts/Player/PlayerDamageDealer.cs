@@ -10,7 +10,7 @@ namespace Player
         
         private void Start()
         {
-            GameManager.Instance.OnFlameSwordBought += ChangeDamage;
+            GameEventsHandler.Instance.OnFlameSwordBought += ChangeDamage;
         }
 
         private void ChangeDamage()
@@ -21,7 +21,7 @@ namespace Player
         
         private void OnDisable()
         {
-            GameManager.Instance.OnFlameSwordBought -= ChangeDamage;
+            GameEventsHandler.Instance.OnFlameSwordBought -= ChangeDamage;
         }
     }
 }
