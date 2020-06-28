@@ -34,7 +34,13 @@ namespace Player
             
             GameEventsHandler.Instance.OnBootsOfLightBought += EnableBootsOfFlightParams;
         }
-        
+
+        private void Update()
+        {
+            if (!GameEventsHandler.Instance.IsPlayerAlive)
+                OnPlayerDied();
+        }
+
         private void MoveCharacter(float direction)
         {
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
@@ -57,6 +63,11 @@ namespace Player
             yield return new WaitUntil(() => _collisions.IsGrounded());
             
             IsJumping?.Invoke(false);
+        }
+
+        private void OnPlayerDied()
+        {
+            _rigidbody2D.velocity = Vector2.zero;
         }
 
         private void OnDisable()

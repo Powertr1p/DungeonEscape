@@ -14,7 +14,7 @@ namespace Player
         private void Update()
         {
             if (!GameEventsHandler.Instance.IsPlayerAlive) return;
-
+            
             var horizontalInput = Input.GetAxisRaw("Horizontal"); //CrossPlatformInputManager.GetAxisRaw("Horizontal");
             OnMovementButtonPressed?.Invoke(horizontalInput);
 
