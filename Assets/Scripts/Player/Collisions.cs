@@ -13,7 +13,7 @@ namespace Player
 
         private bool _isSpriteFlipped => _spriteFlipper.IsSpriteFlipped;
         
-        private void FixedUpdate() //for debygging
+        private void FixedUpdate() //for debugging
         {
             TryFlipRay();
             Debug.DrawRay(transform.position + _collisionRayOffset, Vector3.down * _rayDistance, Color.green);

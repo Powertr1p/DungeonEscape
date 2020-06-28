@@ -136,7 +136,7 @@ namespace Enemy
             Animator.SetBool(InCombat, isCombat);
         }
         
-        public void ApplyDamage(int damage)
+        public virtual void ApplyDamage(int damage)
         {
             if (IsDead) return;
 

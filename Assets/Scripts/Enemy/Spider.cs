@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Enemy
@@ -6,9 +7,11 @@ namespace Enemy
     public class Spider : Enemy
     {
         [SerializeField] private GameObject _acidPrefab;
+        [SerializeField] private GameObject _bloodPrefab;
 
         [SerializeField] private float _projectileSpeed = 0.15f;
         [SerializeField] private Transform _projectileSpawnPivot;
+        [SerializeField] private Transform _bloodSpawnPivot;
         
         private SpiderAnimationEvent _spiderEvent;
 
@@ -30,6 +33,22 @@ namespace Enemy
                 Animator.SetBool(InCombat, true);
             else if (!IsPlayerSpotted() && Animator.GetBool(InCombat))
                 Animator.SetBool(InCombat, false);
+        }
+
+        public override void ApplyDamage(int damage)
+        {
+            base.ApplyDamage(damage);
+            StartCoroutine(ChangeColorOnHit());
+
+            var blood = Instantiate(_bloodPrefab, _bloodSpawnPivot.position, Quaternion.identity);
+            
+        }
+
+        private IEnumerator ChangeColorOnHit()
+        {
+            Sprite.color = new Color(1,0,0, 1);
+            yield return new WaitForSeconds(0.2f);
+            Sprite.color = new Color(1,1,1, 1);
         }
 
         private void Attack()

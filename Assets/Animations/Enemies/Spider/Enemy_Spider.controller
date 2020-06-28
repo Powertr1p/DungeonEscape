@@ -114,13 +114,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1647354897485584516}
-    m_Position: {x: 300, y: 10, z: 0}
+    m_Position: {x: 460, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6972391386144802586}
     m_Position: {x: 350, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3244261988867234851}
-    m_Position: {x: 60, y: -100, z: 0}
+    m_Position: {x: 30, y: -100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -4390167507750326439}
@@ -182,6 +182,12 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: InCombat
     m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Hit
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
