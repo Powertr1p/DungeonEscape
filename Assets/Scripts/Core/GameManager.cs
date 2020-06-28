@@ -14,17 +14,12 @@ namespace Core
         [SerializeField] private Item _winCondotionItem;
 
         private static GameManager _instance;
-        public static GameManager Instance
-        {
-            get
-            {
-                return _instance;
-            }
-        }
+        public static GameManager Instance => _instance;
 
         public int GetWinConditionItemId => _winCondotionItem.GetId;
         public int PlayerDiamondsCount => _player.DiamondsCount;
-      
+        public bool IsPlayerAlive => _player.IsAlive;
+        
         public bool HasWinCondition { get; set; }
 
         private void Awake()
