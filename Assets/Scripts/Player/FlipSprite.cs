@@ -19,6 +19,8 @@ namespace Player
         {
             _input.OnMovementButtonPressed += Flip;
         }
+
+        public bool IsSpriteFlipped => _spriteRenderer.transform.localScale.x < 0;
         
         private void Flip (float facingDirection)
         {
