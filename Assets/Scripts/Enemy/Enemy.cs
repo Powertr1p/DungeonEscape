@@ -71,7 +71,6 @@ namespace Enemy
                 Move(Player.localPosition);
             else if (!IsPlayerSpotted() && !Animator.GetBool(InCombat))
                 Move(Target.position);
-
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
@@ -157,11 +156,13 @@ namespace Enemy
 
         protected virtual bool IsPlayerSpotted()
         {
+            if (!GameEventsHandler.Instance.IsPlayerAlive) return false;
+            
             Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
             
             var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
 
-            return hit.collider != null && hit.collider.GetComponent<Player.Player>().IsAlive;
+            return !ReferenceEquals(hit.collider, null);
         }
 
         private void Die()
