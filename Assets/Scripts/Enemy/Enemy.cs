@@ -34,11 +34,6 @@ namespace Enemy
         private void Start()
         {
             Init();
-
-            WaypointA.position = new Vector2(WaypointA.position.x, transform.position.y);
-            WaypointB.position = new Vector2(WaypointB.position.x, transform.position.y);
-
-            Target = WaypointB.transform;
         }
 
         protected virtual void Init()
@@ -46,6 +41,16 @@ namespace Enemy
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();
             Damage = GetComponent<DamageDealer>();
+            
+           SetupWaypointsAndTarget();
+        }
+
+        protected virtual void SetupWaypointsAndTarget()
+        {
+            WaypointA.position = new Vector2(WaypointA.position.x, transform.position.y);
+            WaypointB.position = new Vector2(WaypointB.position.x, transform.position.y);
+
+            Target = WaypointB.transform;
         }
 
         protected virtual void Update()

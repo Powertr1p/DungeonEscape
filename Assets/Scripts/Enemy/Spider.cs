@@ -12,7 +12,7 @@ namespace Enemy
         [SerializeField] private float _projectileSpeed = 0.15f;
         [SerializeField] private Transform _projectileSpawnPivot;
         [SerializeField] private Transform _bloodSpawnPivot;
-        
+
         private SpiderAnimationEvent _spiderEvent;
 
         protected override void Init()
@@ -58,6 +58,10 @@ namespace Enemy
         }
 
         protected override void Move(Vector2 position)
+        {
+        }
+
+        protected override void SetupWaypointsAndTarget()
         {
         }
 
