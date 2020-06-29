@@ -19,10 +19,152 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="" />
-    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
+    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources/Landscape.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources/Landscape.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources/LandscapeMon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources/LandscapeMon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources/Portrait.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources/Portrait.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources/PortraitMon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources/PortraitMon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Resources/Purchase.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Resources/Purchase.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/UnityAds.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/UnityAds.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/UnityAdsAndroidPlugin.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/UnityAdsAndroidPlugin.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/NSString+UnityAdsError.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/NSString+UnityAdsError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/NSString+UnityAdsError.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/NSString+UnityAdsError.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBanner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBanner.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBanner.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerError.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerError.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerError.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerView.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerView.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerViewDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerViewDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerViewDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSBannerViewDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSInAppPurchaseMetaData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSInAppPurchaseMetaData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSInAppPurchaseMetaData.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSInAppPurchaseMetaData.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMediationMetaData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMediationMetaData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMediationMetaData.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMediationMetaData.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMetaData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMetaData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMetaData.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSMetaData.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPlayerMetaData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPlayerMetaData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPlayerMetaData.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPlayerMetaData.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPurchasing.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPurchasing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPurchasing.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UADSPurchasing.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UANAApiAnalytics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UANAApiAnalytics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UANAApiAnalytics.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UANAApiAnalytics.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONCustomEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONCustomEvent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONCustomEvent.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONCustomEvent.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONItem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONItem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONItem.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONItem.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONNativePromoAdapter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONNativePromoAdapter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONNativePromoAdapter.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONNativePromoAdapter.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPlacementContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPlacementContent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPlacementContent.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPlacementContent.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoAdPlacementContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoAdPlacementContent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoAdPlacementContent.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoAdPlacementContent.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoMetaData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoMetaData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoMetaData.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONPromoMetaData.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONRewardablePlacementContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONRewardablePlacementContent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONRewardablePlacementContent.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONRewardablePlacementContent.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONShowAdPlacementContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONShowAdPlacementContent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONShowAdPlacementContent.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UMONShowAdPlacementContent.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURProduct.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURProduct.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURProduct.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURProduct.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURStore.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURStore.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURStore.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionDetails.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionDetails.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionDetails.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionDetails.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionError.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionError.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionError.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionErrorDetails.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionErrorDetails.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionErrorDetails.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UPURTransactionErrorDetails.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVJsonStorage.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVJsonStorage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVJsonStorage.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVJsonStorage.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasing.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasing.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasing.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasingDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasingDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasingDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/USRVUnityPurchasingDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsBannerDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsBannerDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsBannerDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsBannerDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsError.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsError.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsError.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtended.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtended.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtended.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtended.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtendedDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtendedDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtendedDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsExtendedDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsFinishState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsFinishState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsFinishState.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsFinishState.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsPlacementState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsPlacementState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsPlacementState.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAdsPlacementState.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalytics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalytics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalytics.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalytics.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalyticsAcquisitionType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalyticsAcquisitionType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalyticsAcquisitionType.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAnalyticsAcquisitionType.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetization.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetization.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetization.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetization.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationPlacementContentState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationPlacementContentState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationPlacementContentState.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityMonetizationPlacementContentState.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityServices.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityServices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityServices.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityServices.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Info.plist.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Info.plist.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules/module.modulemap.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Modules/module.modulemap.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/UnityAds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/UnityAds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsPurchasingWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUtilities.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAnalyticsWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAnalyticsWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAnalyticsWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAnalyticsWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityBannerUnityWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityBannerUnityWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityBannerUnityWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityBannerUnityWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityJsonAdditions.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationDecisionWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationDecisionWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationDecisionWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationDecisionWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationNativePromoAdapterWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationNativePromoAdapterWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationNativePromoAdapterWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationNativePromoAdapterWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationPurchasingAdapter.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationPurchasingAdapter.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationPurchasingAdapter.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationPurchasingAdapter.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationUnityWrapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationUnityWrapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationUnityWrapper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityMonetizationUnityWrapper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityAdsApiReference.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityAdsApiReference.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Android.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Android.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Unsupported.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.Unsupported.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.iOS.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Advertisements.iOS.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Android.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Android.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Editor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Editor.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Unsupported.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.Unsupported.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.iOS.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/UnityEngine.Monetization.iOS.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/link.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/link.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityAds/link.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityAds/link.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
+    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,32 +172,35 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A8ED2508-5085-4B43-9CED-C18931A314FE/74/2867bdd3/SynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/a4/19ba213b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/89/cf212e8b/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/UI/HUD/A_Button.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Spider.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,27 +218,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGIantWaypoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
-      <ranges>
-        <range start1="22" end1="252" start2="22" end2="22" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="253" end1="254" start2="23" end2="26" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="267" end1="267" start2="39" end2="40" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="275" end1="275" start2="48" end2="53" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="279" end1="279" start2="57" end2="59" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="297" end1="297" start2="77" end2="80" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="303" end1="312" start2="86" end2="98" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="493" end1="507" start2="279" end2="279" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="518" end1="519" start2="290" end2="305" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="600" end1="601" start2="386" end2="387" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="603" end1="604" start2="389" end2="391" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="610" end1="611" start2="397" end2="402" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="613" end1="614" start2="404" end2="405" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1bj2yIjQEWsBX0M843cwNf3QJ9Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -140,6 +267,7 @@
       <workItem from="1589221149059" duration="3419000" />
       <workItem from="1589307165209" duration="3064000" />
       <workItem from="1589390777129" duration="5014000" />
+      <workItem from="1593413663051" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>

@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using Core;
+﻿using Core;
 using Shop;
 using UnityEngine;
 using UnityEngine.Advertisements;
