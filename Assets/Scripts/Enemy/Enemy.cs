@@ -5,6 +5,7 @@ using Core;
 using Interfaces;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 namespace Enemy
 {
@@ -183,11 +184,19 @@ namespace Enemy
         private void Die()
         {
             Animator.SetTrigger(Death);
-            
-            var diamond = Instantiate(DiamondPrefab, transform.position, Quaternion.identity);
-            diamond.GetComponent<Diamond>().DiamondValue = Diamonds;
-            
+
+            DiamondsSpawn();
+
             IsDead = true;
+        }
+
+        private void DiamondsSpawn()
+        {
+            for (int i = 0; i < Diamonds; i++)
+            {
+                var diamond = Instantiate(DiamondPrefab, transform.position, Quaternion.identity).GetComponent<Diamond>();
+                diamond.SpawnFromEnemy();
+            }
         }
     }
 }
