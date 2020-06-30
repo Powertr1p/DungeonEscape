@@ -116,15 +116,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceef42ecf35ad4783b5cfb0b63fbee7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 2
+  Health: 5
   Speed: 1
-  Diamonds: 1
+  Diamonds: 15
   WaypointA: {fileID: 0}
   WaypointB: {fileID: 0}
   Player: {fileID: 0}
   DiamondPrefab: {fileID: 6146783109561417383, guid: 4f198f0e1009d4b3e89b8fc8a4f152f6,
     type: 3}
   SpotingRayDistance: 0.8
+  HitEffectPrefab: {fileID: 1731030203839554152, guid: 200ae00d780a4db47a08014b419ce4d4,
+    type: 3}
+  HitEffectSpawnPivot: {fileID: 0}
 --- !u!61 &4383600294799642665
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ namespace Enemy
     public class Spider : Enemy
     {
         [SerializeField] private GameObject _acidPrefab;
-        [SerializeField] private GameObject _bloodPrefab;
 
         [SerializeField] private float _projectileSpeed = 0.15f;
         [SerializeField] private Transform _projectileSpawnPivot;
@@ -39,9 +38,12 @@ namespace Enemy
         {
             base.ApplyDamage(damage);
             StartCoroutine(ChangeColorOnHit());
+        }
 
-            var blood = Instantiate(_bloodPrefab, _bloodSpawnPivot.position, Quaternion.identity);
-            
+        protected override void InstantiateDamageEffect()
+        {
+            var blood = Instantiate(HitEffectPrefab, _bloodSpawnPivot.position, Quaternion.identity);
+            Destroy(blood, 0.5f);
         }
 
         private IEnumerator ChangeColorOnHit()

@@ -20,15 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MossGiantBlood.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MossGiantBlood.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Skeleton/Enemy_Skeleton.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Skeleton/Enemy_Skeleton.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_MossGiant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_MossGiant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Skeleton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Skeleton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Spider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Spider.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
     </list>
-    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,10 +64,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/UI/HUD/A_Button.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/SpiderAcid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
@@ -87,36 +92,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGIantWaypoints.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
-      <ranges>
-        <range start1="21" end1="22" start2="21" end2="28" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="34" end1="42" start2="40" end2="41" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="43" end1="43" start2="42" end2="43" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="44" end1="44" start2="44" end2="46" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="45" end1="47" start2="47" end2="47" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="48" end1="54" start2="48" end2="52" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="55" end1="56" start2="53" end2="57" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="57" end1="57" start2="58" end2="60" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="58" end1="58" start2="61" end2="74" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="72" end1="73" start2="88" end2="88" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="75" end1="75" start2="90" end2="93" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="81" end1="94" start2="99" end2="117" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="142" end1="142" start2="165" end2="167" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="255" end1="256" start2="280" end2="309" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="275" end1="279" start2="328" end2="328" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="300" end1="301" start2="349" end2="354" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="382" end1="384" start2="435" end2="437" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="389" end1="390" start2="442" end2="443" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1bj2yIjQEWsBX0M843cwNf3QJ9Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -164,7 +145,7 @@
       <workItem from="1589307165209" duration="3064000" />
       <workItem from="1589390777129" duration="5014000" />
       <workItem from="1593436811850" duration="1276000" />
-      <workItem from="1593497465183" duration="4589000" />
+      <workItem from="1593497465183" duration="6766000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>
@@ -278,7 +259,42 @@
       <option name="project" value="LOCAL" />
       <updated>1589397057398</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="spider now dont need to have a waypoints">
+      <created>1593436862782</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593436862782</updated>
+    </task>
+    <task id="LOCAL-00018" summary="using ReferenceEqual instead of null comparison with gameObjects on scene">
+      <created>1593438053022</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1593438053022</updated>
+    </task>
+    <task id="LOCAL-00019" summary="deleted unused material">
+      <created>1593498402587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1593498402587</updated>
+    </task>
+    <task id="LOCAL-00020" summary="changed params of monsters and prefabbed enemies">
+      <created>1593499667231</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1593499667231</updated>
+    </task>
+    <task id="LOCAL-00021" summary="created and added skeleton hit effect">
+      <created>1593504396527</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593504396528</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -298,11 +314,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="asord swing arc now flips to player direction" />
-    <MESSAGE value="refactored a bit animation handler" />
-    <MESSAGE value="refactored a bit movement script" />
-    <MESSAGE value="incapsulated instantiation of sword effect" />
-    <MESSAGE value="arc animation now called from animation event" />
     <MESSAGE value="arc animation now plays properly in bot sides (plus and negative)" />
     <MESSAGE value="imported cinemachine" />
     <MESSAGE value="camera now follows player" />
@@ -323,7 +334,12 @@
     <MESSAGE value="added spider logic" />
     <MESSAGE value="refactored a enemy logic" />
     <MESSAGE value="created a skeleton enemy and setup'd animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a skeleton enemy and setup'd animation" />
+    <MESSAGE value="spider now dont need to have a waypoints" />
+    <MESSAGE value="using ReferenceEqual instead of null comparison with gameObjects on scene" />
+    <MESSAGE value="deleted unused material" />
+    <MESSAGE value="changed params of monsters and prefabbed enemies" />
+    <MESSAGE value="created and added skeleton hit effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="created and added skeleton hit effect" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -405,14 +421,14 @@
     </state>
     <state x="635" y="408" key="VCS.EditChangelistDialog/0.23.1440.877@0.23.1440.877" timestamp="1589984457570" />
     <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="474" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590850014214">
-      <screen x="0" y="23" width="1650" height="1027" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593504400814">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589397060916" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593504400814" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

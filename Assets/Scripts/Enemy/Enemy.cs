@@ -19,7 +19,8 @@ namespace Enemy
         [SerializeField] protected Transform Player;
         [SerializeField] protected GameObject DiamondPrefab;
         [SerializeField] protected float SpotingRayDistance = 2f;
-        [SerializeField] protected GameObject BloodPrefabBase;
+        [SerializeField] protected GameObject HitEffectPrefab;
+        [SerializeField] protected Transform HitEffectSpawnPivot;
         
         protected Transform Target;
         protected Animator Animator;
@@ -44,7 +45,7 @@ namespace Enemy
             Sprite = GetComponentInChildren<SpriteRenderer>();
             Damage = GetComponent<DamageDealer>();
             
-           SetupWaypointsAndTarget();
+            SetupWaypointsAndTarget();
         }
 
         protected virtual void SetupWaypointsAndTarget()
@@ -160,10 +161,10 @@ namespace Enemy
                 Die();
         }
         
-        private void InstantiateDamageEffect()
+        protected virtual void InstantiateDamageEffect()
         {
             var direction = transform.localScale.x;
-            var effect = Instantiate(BloodPrefabBase, transform);
+            var effect = Instantiate(HitEffectPrefab, HitEffectSpawnPivot);
             effect.transform.localScale *= direction * -1;
             Destroy(effect, 0.5f);
         }

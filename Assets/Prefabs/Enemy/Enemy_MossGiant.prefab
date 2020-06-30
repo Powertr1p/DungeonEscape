@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2018911592914863258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3685013115834708449}
+  m_Layer: 11
+  m_Name: BloodSpawnPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3685013115834708449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018911592914863258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.19, y: 1.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4234787026410988280}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4234787026410988287
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,6 +61,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4234787027288363872}
+  - {fileID: 3685013115834708449}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46,15 +77,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3483ed01b52d640b39f2e9033a0ef52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 2
+  Health: 15
   Speed: 1
-  Diamonds: 1
+  Diamonds: 25
   WaypointA: {fileID: 0}
   WaypointB: {fileID: 0}
   Player: {fileID: 0}
   DiamondPrefab: {fileID: 6146783109561417383, guid: 4f198f0e1009d4b3e89b8fc8a4f152f6,
     type: 3}
   SpotingRayDistance: 2
+  HitEffectPrefab: {fileID: 1731030203839554152, guid: fddb3cb3375a8c34abf91f21d0583ebb,
+    type: 3}
+  HitEffectSpawnPivot: {fileID: 3685013115834708449}
 --- !u!61 &4234787026410988282
 BoxCollider2D:
   m_ObjectHideFlags: 0
