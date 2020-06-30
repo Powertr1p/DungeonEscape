@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="" />
+    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Skeleton/Enemy_Skeleton.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Skeleton/Enemy_Skeleton.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
+    </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -32,30 +38,40 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A8ED2508-5085-4B43-9CED-C18931A314FE/74/2867bdd3/SynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/a4/19ba213b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Game.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7B9DEAD9-ECA5-4A08-82B9-9C1E553FB9BE/89/cf212e8b/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Animations.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Android.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UnityAds/link.xml.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/UI/HUD/A_Button.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/SpiderAcid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/SpiderAnimationEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttackHitbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,28 +86,35 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGIantWaypoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       </list>
     </option>
   </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml">
       <ranges>
-        <range start1="22" end1="252" start2="22" end2="22" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="253" end1="254" start2="23" end2="26" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="267" end1="267" start2="39" end2="40" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="275" end1="275" start2="48" end2="53" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="279" end1="279" start2="57" end2="59" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="297" end1="297" start2="77" end2="80" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="303" end1="312" start2="86" end2="98" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="493" end1="507" start2="279" end2="279" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="518" end1="519" start2="290" end2="305" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="600" end1="601" start2="386" end2="387" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="603" end1="604" start2="389" end2="391" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
-        <range start1="610" end1="611" start2="397" end2="402" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
-        <range start1="613" end1="614" start2="404" end2="405" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="21" end1="22" start2="21" end2="28" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="34" end1="42" start2="40" end2="41" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="43" end1="43" start2="42" end2="43" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="44" end1="44" start2="44" end2="46" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="45" end1="47" start2="47" end2="47" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="48" end1="54" start2="48" end2="52" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="55" end1="56" start2="53" end2="57" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="57" end1="57" start2="58" end2="60" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="58" end1="58" start2="61" end2="74" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="72" end1="73" start2="88" end2="88" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="75" end1="75" start2="90" end2="93" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="81" end1="94" start2="99" end2="117" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="142" end1="142" start2="165" end2="167" changelist="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" />
+        <range start1="255" end1="256" start2="280" end2="309" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="275" end1="279" start2="328" end2="328" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="300" end1="301" start2="349" end2="354" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="382" end1="384" start2="435" end2="437" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
+        <range start1="389" end1="390" start2="442" end2="443" changelist="a2bb1608-0f54-499f-957d-7612b30c4a86" />
       </ranges>
     </file>
   </component>
@@ -140,6 +163,8 @@
       <workItem from="1589221149059" duration="3419000" />
       <workItem from="1589307165209" duration="3064000" />
       <workItem from="1589390777129" duration="5014000" />
+      <workItem from="1593436811850" duration="1276000" />
+      <workItem from="1593497465183" duration="4589000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>

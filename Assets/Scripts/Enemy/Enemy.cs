@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Collectables;
 using Core;
 using Interfaces;
@@ -18,6 +19,7 @@ namespace Enemy
         [SerializeField] protected Transform Player;
         [SerializeField] protected GameObject DiamondPrefab;
         [SerializeField] protected float SpotingRayDistance = 2f;
+        [SerializeField] protected GameObject BloodPrefabBase;
         
         protected Transform Target;
         protected Animator Animator;
@@ -147,11 +149,23 @@ namespace Enemy
             if (Health > 0)
                 Health -= damage;
             
-            Animator.SetTrigger(Hit);
+            InstantiateDamageEffect();
+            
+            if (!Animator.GetBool(InCombat))
+                Animator.SetTrigger(Hit);
+            
             ToggleCombatMode(true);
 
             if (Health <= 0)
                 Die();
+        }
+        
+        private void InstantiateDamageEffect()
+        {
+            var direction = transform.localScale.x;
+            var effect = Instantiate(BloodPrefabBase, transform);
+            effect.transform.localScale *= direction * -1;
+            Destroy(effect, 0.5f);
         }
 
         protected virtual bool IsPlayerSpotted()

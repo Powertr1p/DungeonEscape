@@ -1,6 +1,6 @@
 ﻿namespace Enemy
 {
-    public class Skeleton  : Enemy
+    public class Skeleton : Enemy
     {
     }
 }
