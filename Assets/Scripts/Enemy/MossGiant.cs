@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Collectables;
+using Core;
+using UnityEngine;
 
 namespace Enemy
 {
@@ -11,6 +13,28 @@ namespace Enemy
             
             else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) < 3f)
                 ToggleCombatMode(false);
+        }
+        
+        protected override bool IsPlayerSpotted()
+        {
+            if (!GameEventsHandler.Instance.IsPlayerAlive) return false;
+            
+            var offset = new Vector3(0, 0.8f);
+            
+            Debug.DrawRay(transform.position + offset, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
+            
+            var hit = Physics2D.Raycast(transform.position + offset, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
+
+            return !ReferenceEquals(hit.collider, null);
+        }
+        
+        protected override void SpawnDiamonds()
+        {
+            for (int i = 0; i < Diamonds; i++)
+            {
+                var diamond = Instantiate(DiamondPrefab, HitEffectSpawnPivot.position, Quaternion.identity).GetComponent<Diamond>();
+                diamond.SpawnFromEnemy();
+            }
         }
     }
 }

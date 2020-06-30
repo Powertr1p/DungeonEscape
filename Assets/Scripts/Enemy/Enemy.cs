@@ -185,12 +185,12 @@ namespace Enemy
         {
             Animator.SetTrigger(Death);
 
-            DiamondsSpawn();
+            SpawnDiamonds();
 
             IsDead = true;
         }
 
-        private void DiamondsSpawn()
+        protected virtual void SpawnDiamonds()
         {
             for (int i = 0; i < Diamonds; i++)
             {

@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collectables/DiamondCollision.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Collectables/DiamondCollision.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Diamond.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Diamond.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +38,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/PlayerArcAnimationCaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/SkeletonBlood.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Game.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/SkeletonBlood.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Diamond.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Diamond.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -64,12 +61,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/UI/HUD/A_Button.png.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animations/Enemies.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/SpiderAcid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
@@ -93,11 +88,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/SwordArcAnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGIantWaypoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Spider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Skeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/DiamondCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MossGiant.cs" />
       </list>
     </option>
   </component>
@@ -147,7 +142,8 @@
       <workItem from="1589307165209" duration="3064000" />
       <workItem from="1589390777129" duration="5014000" />
       <workItem from="1593436811850" duration="1276000" />
-      <workItem from="1593497465183" duration="11433000" />
+      <workItem from="1593497465183" duration="11750000" />
+      <workItem from="1593534361605" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="added elements on scene">
       <created>1589221321995</created>
@@ -303,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593506206510</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="enemies now instantiates splash of diamonds when died">
+      <created>1593512122647</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1593512122647</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -323,7 +326,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="imported cinemachine" />
     <MESSAGE value="camera now follows player" />
     <MESSAGE value="added floor 2d material" />
     <MESSAGE value="added mossGiant monster and set idle animation" />
@@ -348,7 +350,8 @@
     <MESSAGE value="changed params of monsters and prefabbed enemies" />
     <MESSAGE value="created and added skeleton hit effect" />
     <MESSAGE value="all enemies now instantiates blood when player attacks em" />
-    <option name="LAST_COMMIT_MESSAGE" value="all enemies now instantiates blood when player attacks em" />
+    <MESSAGE value="enemies now instantiates splash of diamonds when died" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemies now instantiates splash of diamonds when died" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -430,14 +433,14 @@
     </state>
     <state x="635" y="408" key="VCS.EditChangelistDialog/0.23.1440.877@0.23.1440.877" timestamp="1589984457570" />
     <state x="846" y="457" key="VCS.EditChangelistDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589390856683" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593506219947">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593512123979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593506219947" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593512123979" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
