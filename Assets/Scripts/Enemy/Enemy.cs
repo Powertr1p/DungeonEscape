@@ -79,14 +79,12 @@ namespace Enemy
         
         protected int GetDamageValue() => Damage.GetDamageValue;
 
-        protected virtual void TryToggleCombat(bool IsPlayerSpotted)
+        protected virtual void TryToggleCombat(bool isPlayerSpotted)
         {
-            if (IsPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
-                ToggleCombatMode(IsPlayerSpotted);
-            else if (!IsPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) < 2f)
-            {
-                ToggleCombatMode(IsPlayerSpotted);
-            }
+            if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
+                ToggleCombatMode(true);
+            else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) > 2f)
+                ToggleCombatMode(false);
         }
 
         private void FlipWhileWalking()

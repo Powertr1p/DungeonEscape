@@ -1,4 +1,5 @@
-﻿using Collectables;
+﻿using System;
+using Collectables;
 using Core;
 using UnityEngine;
 
@@ -6,15 +7,20 @@ namespace Enemy
 {
     public class MossGiant : Enemy
     {
+        private void FixedUpdate()
+        {
+            Debug.Log(Vector3.Distance(transform.localPosition, Player.localPosition));
+        }
+
         protected override void TryToggleCombat(bool isPlayerSpotted)
         {
             if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 1.5f)
                 ToggleCombatMode(true);
             
-            else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) < 3f)
+            else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) > 3f)
                 ToggleCombatMode(false);
         }
-        
+
         protected override bool IsPlayerSpotted()
         {
             if (!GameEventsHandler.Instance.IsPlayerAlive) return false;
