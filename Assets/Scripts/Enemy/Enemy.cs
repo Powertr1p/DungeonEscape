@@ -22,6 +22,8 @@ namespace Enemy
         [SerializeField] protected float SpotingRayDistance = 2f;
         [SerializeField] protected GameObject HitEffectPrefab;
         [SerializeField] protected Transform HitEffectSpawnPivot;
+
+        private bool _isPlayerAlive => GameEventsHandler.Instance.IsPlayerAlive;
         
         protected Transform Target;
         protected Animator Animator;
@@ -68,13 +70,10 @@ namespace Enemy
 
             if (Animator.GetBool(InCombat))
                 FaceToPlayerWhenAttack();
+            else
+                Move(Target.position);
             
             TryToggleCombat(IsPlayerSpotted());
-            
-            if (IsPlayerSpotted() && !Animator.GetBool(InCombat))
-                Move(Player.localPosition);
-            else if (!IsPlayerSpotted() && !Animator.GetBool(InCombat))
-                Move(Target.position);
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
@@ -83,7 +82,7 @@ namespace Enemy
         {
             if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
                 ToggleCombatMode(true);
-            else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) > 2f)
+            else if (Vector3.Distance(transform.localPosition, Player.localPosition) > 1.5f || !_isPlayerAlive)
                 ToggleCombatMode(false);
         }
 
@@ -133,6 +132,8 @@ namespace Enemy
 
         protected virtual void Move(Vector2 position)
         {
+           if (Animator.GetCurrentAnimatorStateInfo(0).IsName("Hit")) return;
+            
             var target = new Vector2(position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, target, Speed * Time.deltaTime);
         }
@@ -170,7 +171,7 @@ namespace Enemy
 
         protected virtual bool IsPlayerSpotted()
         {
-            if (!GameEventsHandler.Instance.IsPlayerAlive) return false;
+            if (!_isPlayerAlive) return false;
             
             Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
             
