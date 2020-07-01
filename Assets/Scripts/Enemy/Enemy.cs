@@ -24,6 +24,7 @@ namespace Enemy
         [SerializeField] protected Transform HitEffectSpawnPivot;
 
         private bool _isPlayerAlive => GameEventsHandler.Instance.IsPlayerAlive;
+        private Vector2 _position => transform.position;
         
         protected Transform Target;
         protected Animator Animator;
@@ -73,7 +74,7 @@ namespace Enemy
             else
                 Move(Target.position);
             
-            TryToggleCombat(IsPlayerSpotted());
+            TryToggleCombat(IsPlayerSpotted(_position));
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
@@ -169,13 +170,13 @@ namespace Enemy
             Destroy(effect, 0.5f);
         }
 
-        protected virtual bool IsPlayerSpotted()
+        protected virtual bool IsPlayerSpotted(Vector2 startSpottingPosition)
         {
             if (!_isPlayerAlive) return false;
             
-            Debug.DrawRay(transform.position, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
+            Debug.DrawRay(startSpottingPosition, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
             
-            var hit = Physics2D.Raycast(transform.position, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
+            var hit = Physics2D.Raycast(startSpottingPosition, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
 
             return !ReferenceEquals(hit.collider, null);
         }
@@ -184,16 +185,16 @@ namespace Enemy
         {
             Animator.SetTrigger(Death);
 
-            SpawnDiamonds();
+            SpawnDiamonds(_position);
 
             IsDead = true;
         }
 
-        protected virtual void SpawnDiamonds()
+        protected virtual void SpawnDiamonds(Vector2 spawnPosition)
         {
             for (int i = 0; i < Diamonds; i++)
             {
-                var diamond = Instantiate(DiamondPrefab, transform.position, Quaternion.identity).GetComponent<Diamond>();
+                var diamond = Instantiate(DiamondPrefab, spawnPosition, Quaternion.identity).GetComponent<Diamond>();
                 diamond.SpawnFromEnemy();
             }
         }

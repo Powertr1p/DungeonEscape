@@ -16,26 +16,15 @@ namespace Enemy
                 ToggleCombatMode(false);
         }
 
-        protected override bool IsPlayerSpotted()
+        protected override bool IsPlayerSpotted(Vector2 startSpottingPosition)
         {
-            if (!GameEventsHandler.Instance.IsPlayerAlive) return false;
-            
             var offset = new Vector3(0, 0.8f);
-            
-            Debug.DrawRay(transform.position + offset, new Vector3(transform.localScale.x * SpotingRayDistance, 0,0));
-            
-            var hit = Physics2D.Raycast(transform.position + offset, new Vector2(transform.localScale.x, 0), SpotingRayDistance, LayerMask.GetMask("PlayerHitbox"));
-
-            return !ReferenceEquals(hit.collider, null);
+            return base.IsPlayerSpotted(transform.position + offset);
         }
         
-        protected override void SpawnDiamonds()
+        protected override void SpawnDiamonds(Vector2 spawnPosition)
         {
-            for (int i = 0; i < Diamonds; i++)
-            {
-                var diamond = Instantiate(DiamondPrefab, HitEffectSpawnPivot.position, Quaternion.identity).GetComponent<Diamond>();
-                diamond.SpawnFromEnemy();
-            }
+            base.SpawnDiamonds(HitEffectSpawnPivot.position);
         }
     }
 }
