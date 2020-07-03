@@ -41,6 +41,7 @@ namespace Enemy
         protected override void InstantiateDamageEffect()
         {
             var blood = Instantiate(HitEffectPrefab, _bloodSpawnPivot.position, Quaternion.identity);
+            blood.transform.localScale = transform.localScale;
             Destroy(blood, 0.5f);
         }
 
@@ -54,7 +55,7 @@ namespace Enemy
         private void Attack()
         {
             var projectile = Instantiate(_acidPrefab, _projectileSpawnPivot.position, Quaternion.identity);
-            projectile.GetComponent<SpiderAcid>().Init(GetDamageValue(), _projectileSpeed);
+            projectile.GetComponent<SpiderAcid>().Init(GetDamageValue(), _projectileSpeed * transform.localScale.x);
         }
 
         protected override void Move(Vector2 position)

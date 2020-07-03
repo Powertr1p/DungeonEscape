@@ -16,6 +16,7 @@ namespace Player
         private Rigidbody2D _rigidbody2D;
         private InputHandler _input;
         private Collisions _collisions;
+        private Animator _animator;
 
         [SerializeField] private float _movementSpeed = 1f;
         [SerializeField] private float _jumpForce = 5f;
@@ -25,6 +26,7 @@ namespace Player
             _input = GetComponent<InputHandler>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _collisions = GetComponent<Collisions>();
+            _animator = GetComponentInChildren<Animator>();
         }
         
         private void OnEnable()
@@ -43,6 +45,9 @@ namespace Player
 
         private void MoveCharacter(float direction)
         {
+            if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !_animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+                direction = 0;
+            
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
         }
 
@@ -69,15 +74,7 @@ namespace Player
         {
             _rigidbody2D.velocity = Vector2.zero;
         }
-
-        private void OnDisable()
-        {
-            _input.OnMovementButtonPressed -= MoveCharacter;
-            _input.OnJumpButtonPressed -= TryJump;
-            
-            GameEventsHandler.Instance.OnBootsOfLightBought -= EnableBootsOfFlightParams;
-        }
-
+        
         private void EnableBootsOfFlightParams()
         {
             DoubledJumpForce();
@@ -86,6 +83,14 @@ namespace Player
         private void DoubledJumpForce()
         {
             _jumpForce *= 2;
+        }
+        
+        private void OnDisable()
+        {
+            _input.OnMovementButtonPressed -= MoveCharacter;
+            _input.OnJumpButtonPressed -= TryJump;
+            
+            GameEventsHandler.Instance.OnBootsOfLightBought -= EnableBootsOfFlightParams;
         }
     }
 }

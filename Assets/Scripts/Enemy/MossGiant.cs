@@ -1,25 +1,15 @@
-﻿using System;
-using Collectables;
-using Core;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Enemy
 {
     public class MossGiant : Enemy
     {
-        protected override void TryToggleCombat(bool isPlayerSpotted)
-        {
-            if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 1.5f)
-                ToggleCombatMode(true);
-            
-            else if (!isPlayerSpotted && Vector3.Distance(transform.localPosition, Player.localPosition) > 2.5f)
-                ToggleCombatMode(false);
-        }
-
+        [SerializeField] private Vector3 _spottingRayOffset = new Vector3(0f,0.8f); 
+        
         protected override bool IsPlayerSpotted(Vector2 startSpottingPosition)
         {
-            var offset = new Vector3(0, 0.8f);
-            return base.IsPlayerSpotted(transform.position + offset);
+            
+            return base.IsPlayerSpotted(transform.position + _spottingRayOffset);
         }
         
         protected override void SpawnDiamonds(Vector2 spawnPosition)

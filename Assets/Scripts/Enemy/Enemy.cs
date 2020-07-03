@@ -19,10 +19,13 @@ namespace Enemy
         [SerializeField] protected Transform WaypointB;
         [SerializeField] protected Transform Player;
         [SerializeField] protected GameObject DiamondPrefab;
-        [SerializeField] protected float SpotingRayDistance = 2f;
         [SerializeField] protected GameObject HitEffectPrefab;
         [SerializeField] protected Transform HitEffectSpawnPivot;
-
+        
+        [SerializeField] protected float SpotingRayDistance = 2f;
+        [SerializeField] protected float DistanceToToggleOnCombat = 0.5f;
+        [SerializeField] protected float DistanceToToggleOffCombat = 1.5f;
+        
         private bool _isPlayerAlive => GameEventsHandler.Instance.IsPlayerAlive;
         private Vector2 _position => transform.position;
         
@@ -74,16 +77,16 @@ namespace Enemy
             else
                 Move(Target.position);
             
-            TryToggleCombat(IsPlayerSpotted(_position));
+            TryToggleCombat(IsPlayerSpotted(_position), DistanceToToggleOnCombat, DistanceToToggleOffCombat);
         }
         
         protected int GetDamageValue() => Damage.GetDamageValue;
 
-        protected virtual void TryToggleCombat(bool isPlayerSpotted)
+        protected virtual void TryToggleCombat(bool isPlayerSpotted, float onDistance, float offDistance)
         {
-            if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(transform.localPosition, Player.localPosition) < 0.5f)
+            if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(_position, Player.localPosition) < onDistance)
                 ToggleCombatMode(true);
-            else if (Vector3.Distance(transform.localPosition, Player.localPosition) > 1.5f || !_isPlayerAlive)
+            else if (Vector3.Distance(_position, Player.localPosition) > offDistance || !_isPlayerAlive)
                 ToggleCombatMode(false);
         }
 
