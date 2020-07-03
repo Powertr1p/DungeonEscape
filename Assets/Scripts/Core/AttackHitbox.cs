@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using Interfaces;
-using Player;
 using UnityEngine;
 
 namespace Core
@@ -17,7 +16,7 @@ namespace Core
     }
 
     protected virtual void Init()
-    {
+    { 
       Damage = GetComponentInParent<DamageDealer>().GetDamageValue;
     }
 
