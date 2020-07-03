@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Core;
 using Shop;
 using UnityEngine;
@@ -11,6 +13,8 @@ namespace UnityAds
         private const string rewardedVideo = "rewardedVideo";
         private const string gameId = "3651032";
 
+        private bool isAdvOnCooldown;
+
         private void Start()
         {
             Advertisement.Initialize(gameId, true);
@@ -18,6 +22,8 @@ namespace UnityAds
         
         public void ShowRewardedAds()
         {
+            if (isAdvOnCooldown) return;
+
             Debug.Log("Showing ads");
 
             if (Advertisement.IsReady(rewardedVideo))
@@ -25,9 +31,10 @@ namespace UnityAds
                 var options = new ShowOptions
                 {
                     resultCallback = HandleShowResult
-                };
+                }; 
                 
                 Advertisement.Show(rewardedVideo, options);
+                StartCoroutine(Cooldown());
             }
         }
 
@@ -47,6 +54,13 @@ namespace UnityAds
                     Debug.Log("Ad failed");
                     break;
             }
+        }
+
+        private IEnumerator Cooldown()
+        {
+            isAdvOnCooldown = true;
+            yield return new WaitForSeconds(120);
+            isAdvOnCooldown = false;
         }
     }
 }

@@ -15,6 +15,8 @@ namespace Shop
         [SerializeField] private Text[] _itemNamesToDisplay;
         [SerializeField] private Text[] _itemPricesToDisplay;
 
+        [SerializeField] private GameObject _successBoughtMessage;
+        
         [SerializeField] private float _selectingLineMidPos = 54;
         [SerializeField] private float _selectingLineStep = 108;
         
@@ -68,6 +70,11 @@ namespace Shop
             }
             
             _selectingLine.SetActive(true);
+        }
+
+        public void HideSuccessItemBoughtItemMessage()
+        {
+            _successBoughtMessage.SetActive(false);
         }
     }
 }
