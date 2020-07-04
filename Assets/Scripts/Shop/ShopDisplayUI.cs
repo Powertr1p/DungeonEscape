@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Net.Mime;
 using Core;
 using TMPro;
 using UnityEngine;
@@ -103,6 +104,13 @@ namespace Shop
         public void HideShopMessage()
         {
             _shopMessage.SetActive(false);
+        }
+
+        public void TurnOffBoughtItem(int id)
+        {
+            _itemNamesToDisplay[id].GetComponentInParent<Button>().interactable = false;
+            _itemNamesToDisplay[id].color = new Color(1,1,1,0.2f);
+            _itemPricesToDisplay[id].color = new Color(1, 1, 1, 0.2f);
         }
     }
 }

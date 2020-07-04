@@ -31,6 +31,7 @@ namespace Shop
                 GameEventsHandler.Instance.RemoveDiamonds(item.ItemPrice);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
+                ShopDisplayUI.Instance.TurnOffBoughtItem(item.GetId);
             };
 
             OnItemBuyFailed = () =>
@@ -55,11 +56,11 @@ namespace Shop
         {
             switch (_currentSelectedItemId)
             {
-                case 1:
-                    GameEventsHandler.Instance.BootsOfFlightBought();
-                    break;
                 case 0:
                     GameEventsHandler.Instance.FlameSwordBought();
+                    break;
+                case 1:
+                    GameEventsHandler.Instance.BootsOfFlightBought();
                     break;
                 case 2:
                     GameEventsHandler.Instance.KeyBought();
