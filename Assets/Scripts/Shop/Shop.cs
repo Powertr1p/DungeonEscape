@@ -8,7 +8,7 @@ namespace Shop
     [RequireComponent(typeof(ShopItems))]
     public class Shop : MonoBehaviour
     {
-        public event Action<int, string> OnItemBought;
+        public event Action<Item> OnItemBought;
         public event Action OnItemBuyFailed;
 
         private ShopItems _itemsInStock;
@@ -26,11 +26,11 @@ namespace Shop
 
         private void Start()
         {
-            OnItemBought = (price, name) =>
+            OnItemBought = (item) =>
             {
-                GameEventsHandler.Instance.RemoveDiamonds(price);
+                GameEventsHandler.Instance.RemoveDiamonds(item.ItemPrice);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
-                ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(name);
+                ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
             };
 
             OnItemBuyFailed = () =>
@@ -66,7 +66,7 @@ namespace Shop
                     break;
             }
             
-            OnItemBought?.Invoke(item.ItemPrice, item.ItemName);
+            OnItemBought?.Invoke(item);
         }
 
         private void TryConsumePlayerDiamonds(Item item)
