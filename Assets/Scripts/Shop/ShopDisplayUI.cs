@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Core;
+﻿using Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +12,7 @@ namespace Shop
         [SerializeField] private GameObject _selectingLine;
         [SerializeField] private ShopItems _itemsInStock;
 
-        [SerializeField] private Text _diamondsCount;
+        [SerializeField] private TextMeshProUGUI _diamondsCount;
         
         [SerializeField] private Text[] _itemNamesToDisplay;
         [SerializeField] private Text[] _itemPricesToDisplay;
