@@ -9,9 +9,10 @@ namespace Shop
     public class Shop : MonoBehaviour
     {
         public event Action<bool> ToggleShop;
+        public event Action<int> lox;
 
         private ShopItems _itemsInStock;
-        
+
         private int _upperItemYLinePosition = 164;
         private int _middleItemYLinePosition = 54;
         private int _downItemYLinePosition = -54;
@@ -21,6 +22,16 @@ namespace Shop
         private void Awake()
         {
             _itemsInStock = GetComponent<ShopItems>();
+        }
+
+        private void Start()
+        {
+            lox = (price) =>
+            {
+                GameEventsHandler.Instance.RemoveDiamonds(price);
+                ShopDisplayUI.Instance.UpdatePlayerDiamonds();
+                ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage();
+            };
         }
 
         public void SelectItem(int itemId)
@@ -39,12 +50,9 @@ namespace Shop
         {
             if (GameEventsHandler.Instance.PlayerDiamondsCount >= itemPrice)
             {
-                GameEventsHandler.Instance.RemoveDiamonds(itemPrice);
+                lox?.Invoke(itemPrice);
 
-                if (_currentSelectedItemId == GameEventsHandler.Instance.GetWinConditionItemId)
-                    GameEventsHandler.Instance.HasWinCondition = true;
-                
-                else switch (_currentSelectedItemId)
+                switch (_currentSelectedItemId)
                 {
                     case 1:
                         GameEventsHandler.Instance.BootsOfFlightBought();
@@ -52,14 +60,15 @@ namespace Shop
                     case 0:
                         GameEventsHandler.Instance.FlameSwordBought();
                         break;
+                    case 2:
+                        GameEventsHandler.Instance.KeyBought();
+                        break;
                 }
             }
             else
             {
                 Debug.Log("Not enough diamonds!");
             }
-
-            ToggleShop?.Invoke(false);
         }
     }
 }

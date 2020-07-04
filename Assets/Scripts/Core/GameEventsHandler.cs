@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Shop;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace Core
         public event Action DiamondsCountUpdated;
         public event Action OnBootsOfLightBought;
         public event Action OnFlameSwordBought;
+        public event Action OnKeyBought;
         
         [SerializeField] private Player.Player _player;
         [SerializeField] private Item _winCondotionItem;
@@ -19,7 +21,6 @@ namespace Core
         public int GetWinConditionItemId => _winCondotionItem.GetId;
         public int PlayerDiamondsCount => _player.DiamondsCount;
         public bool IsPlayerAlive => _player.IsAlive;
-        
         public bool HasWinCondition { get; set; }
 
         private void Awake()
@@ -40,8 +41,7 @@ namespace Core
         
         public void RemoveDiamonds(int amount)
         {
-            _player.DiamondsCount -= amount;
-            DiamondsCountUpdated?.Invoke();
+            StartCoroutine(StartRemovingDiamond(amount));
         }
 
         public void BootsOfFlightBought()
@@ -53,6 +53,26 @@ namespace Core
         {
             OnFlameSwordBought?.Invoke();
         }
-        
+
+        public void KeyBought()
+        {
+            HasWinCondition = true;
+            OnKeyBought?.Invoke();
+        }
+
+        private IEnumerator StartRemovingDiamond(int amount)
+        {
+            var startedTime = 0.5f;
+            var decreaseRate = 0.2f;
+            do
+            {
+                yield return new WaitForSeconds(startedTime *= decreaseRate);
+
+                _player.DiamondsCount -= 1;
+                amount -= 1;
+                DiamondsCountUpdated?.Invoke();
+
+            } while (amount != 0);
+        }
     }
 }

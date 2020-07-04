@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using Core;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Shop
@@ -19,9 +22,11 @@ namespace Shop
         
         [SerializeField] private float _selectingLineMidPos = 54;
         [SerializeField] private float _selectingLineStep = 108;
-        
+
         public bool IsShopEnabled;
-        
+
+        private TextMeshProUGUI _messageText;
+
         public static ShopDisplayUI Instance
         {
             get
@@ -36,6 +41,15 @@ namespace Shop
         private void Awake()
         {
             _instance = this;
+            _messageText = _successBoughtMessage.GetComponentInChildren<TextMeshProUGUI>();
+        }
+
+        private void Start()
+        {
+            GameEventsHandler.Instance.OnFlameSwordBought += ShowSuccessItemBoughtItemMessage;
+            GameEventsHandler.Instance.OnBootsOfLightBought += ShowSuccessItemBoughtItemMessage;
+            GameEventsHandler.Instance.OnKeyBought += ShowSuccessItemBoughtItemMessage;
+            GameEventsHandler.Instance.DiamondsCountUpdated += UpdatePlayerDiamonds;
         }
 
         public void PrintItemsNameAndPrice()
@@ -47,8 +61,9 @@ namespace Shop
             }
         }
         
-        public void DisplayPlayerDiamonds(int diamondsCount)
+        public void UpdatePlayerDiamonds()
         {
+            var diamondsCount = GameEventsHandler.Instance.PlayerDiamondsCount;
             _diamondsCount.text = $"{diamondsCount}G";
         }
 
@@ -72,6 +87,12 @@ namespace Shop
             _selectingLine.SetActive(true);
         }
 
+        public void ShowSuccessItemBoughtItemMessage()
+        {
+            _successBoughtMessage.SetActive(true);
+            _messageText.text = "ment lox";
+        }
+        
         public void HideSuccessItemBoughtItemMessage()
         {
             _successBoughtMessage.SetActive(false);
