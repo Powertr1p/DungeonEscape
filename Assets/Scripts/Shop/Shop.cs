@@ -47,34 +47,36 @@ namespace Shop
 
         public void TryBuyItem()
         {
-            var itemPrice = _itemsInStock.GetItemById(_currentSelectedItemId).ItemPrice;
-            var itemName = _itemsInStock.GetItemById(_currentSelectedItemId).ItemName;
-            TryConsumePlayerDiamonds(itemPrice, itemName);
+            var selectedItem = _itemsInStock.GetItemById(_currentSelectedItemId);
+            TryConsumePlayerDiamonds(selectedItem);
         }
 
-        private void TryConsumePlayerDiamonds(int itemPrice, string itemName)
+        private void BuyItem(Item item)
         {
-            if (GameEventsHandler.Instance.PlayerDiamondsCount >= itemPrice)
+            switch (_currentSelectedItemId)
             {
-                OnItemBought?.Invoke(itemPrice, itemName);
+                case 1:
+                    GameEventsHandler.Instance.BootsOfFlightBought();
+                    break;
+                case 0:
+                    GameEventsHandler.Instance.FlameSwordBought();
+                    break;
+                case 2:
+                    GameEventsHandler.Instance.KeyBought();
+                    break;
+            }
+            
+            OnItemBought?.Invoke(item.ItemPrice, item.ItemName);
+        }
 
-                switch (_currentSelectedItemId)
-                {
-                    case 1:
-                        GameEventsHandler.Instance.BootsOfFlightBought();
-                        break;
-                    case 0:
-                        GameEventsHandler.Instance.FlameSwordBought();
-                        break;
-                    case 2:
-                        GameEventsHandler.Instance.KeyBought();
-                        break;
-                }
-            }
+        private void TryConsumePlayerDiamonds(Item item)
+        {
+            var diamondsAmount = GameEventsHandler.Instance.PlayerDiamondsCount;
+            
+            if (diamondsAmount >= item.ItemPrice)
+               BuyItem(item);
             else
-            {
                 OnItemBuyFailed?.Invoke();
-            }
         }
     }
 }
