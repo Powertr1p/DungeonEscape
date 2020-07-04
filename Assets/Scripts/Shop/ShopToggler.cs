@@ -11,11 +11,6 @@ namespace Shop
 
         private Player.Player _player;
 
-        private void OnEnable()
-        {
-            GetComponentInParent<Shop>().ToggleShop += ToggleShop;
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent(out Player.Player player))
@@ -30,8 +25,9 @@ namespace Shop
             ToggleShop(false);
             _player = null;
         }
+        
 
-        private void ToggleShop(bool isOpen)
+        public void ToggleShop(bool isOpen)
         {
             _shopMenu.SetActive(isOpen);
             ShopDisplayUI.Instance.IsShopEnabled = isOpen;

@@ -8,7 +8,6 @@ namespace Shop
     [RequireComponent(typeof(ShopItems))]
     public class Shop : MonoBehaviour
     {
-        public event Action<bool> ToggleShop;
         public event Action<int, string> OnItemBought;
 
         private ShopItems _itemsInStock;
