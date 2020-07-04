@@ -9,6 +9,7 @@ namespace Shop
     public class Shop : MonoBehaviour
     {
         public event Action<int, string> OnItemBought;
+        public event Action OnItemBuyFailed;
 
         private ShopItems _itemsInStock;
 
@@ -30,6 +31,11 @@ namespace Shop
                 GameEventsHandler.Instance.RemoveDiamonds(price);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(name);
+            };
+
+            OnItemBuyFailed = () =>
+            {
+                ShopDisplayUI.Instance.ShowNotEnoughDiamodsMessage();
             };
         }
 
@@ -67,7 +73,7 @@ namespace Shop
             }
             else
             {
-                Debug.Log("Not enough diamonds!");
+                OnItemBuyFailed?.Invoke();
             }
         }
     }

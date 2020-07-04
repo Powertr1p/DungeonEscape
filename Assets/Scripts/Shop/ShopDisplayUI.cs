@@ -17,7 +17,7 @@ namespace Shop
         [SerializeField] private Text[] _itemNamesToDisplay;
         [SerializeField] private Text[] _itemPricesToDisplay;
 
-        [SerializeField] private GameObject _successBoughtMessage;
+        [SerializeField] private GameObject _shopMessage;
         
         [SerializeField] private float _selectingLineMidPos = 54;
         [SerializeField] private float _selectingLineStep = 108;
@@ -40,7 +40,7 @@ namespace Shop
         private void Awake()
         {
             _instance = this;
-            _messageText = _successBoughtMessage.GetComponentInChildren<TextMeshProUGUI>();
+            _messageText = _shopMessage.GetComponentInChildren<TextMeshProUGUI>();
         }
 
         private void Start()
@@ -85,13 +85,23 @@ namespace Shop
 
         public void ShowSuccessItemBoughtItemMessage(string name)
         {
-            _successBoughtMessage.SetActive(true);
-            _messageText.text = $"You successfully bought {name}";
+            ShowMessage("You successfully bought " + name);
         }
-        
-        public void HideSuccessItemBoughtItemMessage()
+
+        public void ShowNotEnoughDiamodsMessage()
         {
-            _successBoughtMessage.SetActive(false);
+            ShowMessage("You don't have enough diamonds!");
+        }
+
+        private void ShowMessage(string message)
+        {
+            _shopMessage.SetActive(true);
+            _messageText.text = $"{message}";
+        }
+
+        public void HideShopMessage()
+        {
+            _shopMessage.SetActive(false);
         }
     }
 }
