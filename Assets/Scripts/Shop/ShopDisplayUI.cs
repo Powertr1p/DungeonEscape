@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 using Core;
 using TMPro;
 using UnityEngine;
@@ -46,9 +46,6 @@ namespace Shop
 
         private void Start()
         {
-            GameEventsHandler.Instance.OnFlameSwordBought += ShowSuccessItemBoughtItemMessage;
-            GameEventsHandler.Instance.OnBootsOfLightBought += ShowSuccessItemBoughtItemMessage;
-            GameEventsHandler.Instance.OnKeyBought += ShowSuccessItemBoughtItemMessage;
             GameEventsHandler.Instance.DiamondsCountUpdated += UpdatePlayerDiamonds;
         }
 
@@ -87,10 +84,10 @@ namespace Shop
             _selectingLine.SetActive(true);
         }
 
-        public void ShowSuccessItemBoughtItemMessage()
+        public void ShowSuccessItemBoughtItemMessage(string name)
         {
             _successBoughtMessage.SetActive(true);
-            _messageText.text = "ment lox";
+            _messageText.text = $"You successfully bought {name}";
         }
         
         public void HideSuccessItemBoughtItemMessage()

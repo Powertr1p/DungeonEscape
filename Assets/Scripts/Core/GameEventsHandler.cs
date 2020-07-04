@@ -41,7 +41,7 @@ namespace Core
         
         public void RemoveDiamonds(int amount)
         {
-            StartCoroutine(StartRemovingDiamond(amount));
+            StartCoroutine(StartRemovingDiamonds(amount));
         }
 
         public void BootsOfFlightBought()
@@ -60,7 +60,7 @@ namespace Core
             OnKeyBought?.Invoke();
         }
 
-        private IEnumerator StartRemovingDiamond(int amount)
+        private IEnumerator StartRemovingDiamonds(int amount)
         {
             var startedTime = 0.5f;
             var decreaseRate = 0.2f;

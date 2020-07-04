@@ -9,7 +9,7 @@ namespace Shop
     public class Shop : MonoBehaviour
     {
         public event Action<bool> ToggleShop;
-        public event Action<int> lox;
+        public event Action<int, string> OnItemBought;
 
         private ShopItems _itemsInStock;
 
@@ -26,11 +26,11 @@ namespace Shop
 
         private void Start()
         {
-            lox = (price) =>
+            OnItemBought = (price, name) =>
             {
                 GameEventsHandler.Instance.RemoveDiamonds(price);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
-                ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage();
+                ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(name);
             };
         }
 
@@ -43,14 +43,15 @@ namespace Shop
         public void TryBuyItem()
         {
             var itemPrice = _itemsInStock.GetItemById(_currentSelectedItemId).ItemPrice;
-            TryConsumePlayerDiamonds(itemPrice);
+            var itemName = _itemsInStock.GetItemById(_currentSelectedItemId).ItemName;
+            TryConsumePlayerDiamonds(itemPrice, itemName);
         }
 
-        private void TryConsumePlayerDiamonds(int itemPrice)
+        private void TryConsumePlayerDiamonds(int itemPrice, string itemName)
         {
             if (GameEventsHandler.Instance.PlayerDiamondsCount >= itemPrice)
             {
-                lox?.Invoke(itemPrice);
+                OnItemBought?.Invoke(itemPrice, itemName);
 
                 switch (_currentSelectedItemId)
                 {
