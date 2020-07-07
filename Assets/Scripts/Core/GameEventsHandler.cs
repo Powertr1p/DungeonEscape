@@ -18,6 +18,7 @@ namespace Core
         private static GameEventsHandler _instance;
         public static GameEventsHandler Instance => _instance;
 
+        public bool IsBuyingBlocked = false;
         public int GetWinConditionItemId => _winCondotionItem.GetId;
         public int PlayerDiamondsCount => _player.DiamondsCount;
         public bool IsPlayerAlive => _player.IsAlive;
@@ -51,6 +52,7 @@ namespace Core
 
         public void FlameSwordBought()
         {
+
             OnFlameSwordBought?.Invoke();
         }
 
@@ -64,8 +66,11 @@ namespace Core
         {
             var startedTime = 0.5f;
             var decreaseRate = 0.2f;
+            IsBuyingBlocked = true; 
+            
             do
             {
+                
                 yield return new WaitForSeconds(startedTime *= decreaseRate);
 
                 _player.DiamondsCount -= 1;
@@ -73,6 +78,8 @@ namespace Core
                 DiamondsCountUpdated?.Invoke();
 
             } while (amount != 0);
+
+            IsBuyingBlocked = false;
         }
     }
 }

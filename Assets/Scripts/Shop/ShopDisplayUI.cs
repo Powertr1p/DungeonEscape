@@ -111,7 +111,7 @@ namespace Shop
             _shopMessage.SetActive(false);
         }
 
-        public void TurnOffBoughtItem(int id)
+        public void ToggleOffBoughtItem(int id)
         {
             _itemNamesToDisplay[id].GetComponentInParent<Button>().interactable = false;
             _itemNamesToDisplay[id].color = new Color(1,1,1,0.2f);

@@ -31,7 +31,7 @@ namespace Shop
                 GameEventsHandler.Instance.RemoveDiamonds(item.ItemPrice);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
-                ShopDisplayUI.Instance.TurnOffBoughtItem(item.GetId);
+                ShopDisplayUI.Instance.ToggleOffBoughtItem(item.GetId);
             };
 
             OnItemBuyFailed = () =>
@@ -52,8 +52,10 @@ namespace Shop
             TryConsumePlayerDiamonds(selectedItem);
         }
 
-        private void BuyItem(Item item)
+        private void BuyItem(Item item) //TODO: REFACTOR THIS SHIT
         {
+            if (GameEventsHandler.Instance.IsBuyingBlocked) return;
+            
             switch (_currentSelectedItemId)
             {
                 case 0:

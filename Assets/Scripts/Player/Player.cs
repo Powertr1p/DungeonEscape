@@ -12,7 +12,7 @@ namespace Player
         private int _livesRemaining = 4;
 
         public bool IsAlive => _livesRemaining > 0;
-        public int DiamondsCount { get; set; }
+        public int DiamondsCount { get; set; } = 500;
 
         public void ApplyDamage(int damage)
         {
