@@ -170,10 +170,26 @@ namespace Enemy
 
         protected void InstantiateDamageText(int damage)
         {
-            var damageText = Instantiate(DamageText, HitEffectSpawnPivot.position, Quaternion.identity);
+            var spawnOffset = new Vector3(-0.2f, 0, 0);
+            var damageText = Instantiate(DamageText, HitEffectSpawnPivot.position + spawnOffset, Quaternion.identity);
             var text = damageText.GetComponent<TextMeshPro>();
+            
             text.text = $"-{damage}";
-            Destroy(damageText, 0.3f);
+            StartCoroutine(AnimateText(damageText, text));
+            
+            Destroy(damageText, 0.9f);
+        }
+
+        protected IEnumerator AnimateText(GameObject textObj, TextMeshPro text)
+        {
+            while (true)
+            {
+                if (textObj == null || text == null) yield break;
+                
+                textObj.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
+                text.color -= new Color(0,0,0,0.01f); 
+                yield return new WaitForSeconds(0.01f);
+            }
         }
         
         protected virtual void InstantiateDamageEffect()
