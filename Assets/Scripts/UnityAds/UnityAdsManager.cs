@@ -10,6 +10,8 @@ namespace UnityAds
 {
     public class UnityAdsManager : MonoBehaviour
     {
+        public Action OnAdsSuccess;
+        
         private const string rewardedVideo = "rewardedVideo";
         private const string gameId = "3651032";
 
@@ -18,6 +20,14 @@ namespace UnityAds
         private void Start()
         {
             Advertisement.Initialize(gameId, true);
+
+            OnAdsSuccess = () =>
+            {
+                Debug.Log("Ad finished");
+                GameEventsHandler.Instance.AddDiamonds(100);
+                ShopDisplayUI.Instance.UpdatePlayerDiamonds();
+                ShopDisplayUI.Instance.ShowSuccessAdShownMessage();
+            };
         }
         
         public void ShowRewardedAds()
@@ -43,9 +53,7 @@ namespace UnityAds
             switch (result)
             {
                 case ShowResult.Finished:
-                    Debug.Log("Ad finished");
-                    GameEventsHandler.Instance.AddDiamonds(100);
-                    ShopDisplayUI.Instance.UpdatePlayerDiamonds();
+                    OnAdsSuccess?.Invoke();
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("Ad skipped");

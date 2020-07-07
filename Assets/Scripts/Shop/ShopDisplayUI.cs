@@ -95,6 +95,11 @@ namespace Shop
             ShowMessage("You don't have enough diamonds!");
         }
 
+        public void ShowSuccessAdShownMessage()
+        {
+            ShowMessage("You successfully earned 100G. Come back after 2 minutes.");
+        }
+
         private void ShowMessage(string message)
         {
             _shopMessage.SetActive(true);
