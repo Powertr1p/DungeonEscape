@@ -3,6 +3,7 @@ using System.Collections;
 using Collectables;
 using Core;
 using Interfaces;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = System.Random;
@@ -20,6 +21,7 @@ namespace Enemy
         [SerializeField] protected Transform Player;
         [SerializeField] protected GameObject DiamondPrefab;
         [SerializeField] protected GameObject HitEffectPrefab;
+        [SerializeField] protected GameObject DamageText;
         [SerializeField] protected Transform HitEffectSpawnPivot;
         
         [SerializeField] protected float SpotingRayDistance = 2f;
@@ -155,6 +157,7 @@ namespace Enemy
                 Health -= damage;
             
             InstantiateDamageEffect();
+            InstantiateDamageText(damage);
             
             if (!Animator.GetBool(InCombat))
                 Animator.SetTrigger(Hit);
@@ -163,6 +166,14 @@ namespace Enemy
 
             if (Health <= 0)
                 Die();
+        }
+
+        protected void InstantiateDamageText(int damage)
+        {
+            var damageText = Instantiate(DamageText, HitEffectSpawnPivot.position, Quaternion.identity);
+            var text = damageText.GetComponent<TextMeshPro>();
+            text.text = $"-{damage}";
+            Destroy(damageText, 0.3f);
         }
         
         protected virtual void InstantiateDamageEffect()
