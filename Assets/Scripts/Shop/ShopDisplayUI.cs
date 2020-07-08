@@ -28,6 +28,8 @@ namespace Shop
 
         private TextMeshProUGUI _messageText;
         private Image _selectingLineImage;
+        
+        private const float _disabledButtonAlpha = 0.2f;
 
         public static ShopDisplayUI Instance
         {
@@ -56,6 +58,8 @@ namespace Shop
         {
             for (int i = 0; i < _itemNamesToDisplay.Length; i++)
             {
+                if (_itemsInStock.GetItemById(i) == null) continue;
+
                 _itemNamesToDisplay[i].text = _itemsInStock.GetItemById(i).ItemName;
                 _itemPricesToDisplay[i].text = $"{_itemsInStock.GetItemById(i).ItemPrice}G";
             }
@@ -117,8 +121,8 @@ namespace Shop
         public void ToggleOffBoughtItem(int id)
         {
             _itemNamesToDisplay[id].GetComponentInParent<Button>().interactable = false;
-            _itemNamesToDisplay[id].color = new Color(1,1,1,0.2f);
-            _itemPricesToDisplay[id].color = new Color(1, 1, 1, 0.2f);
+            _itemNamesToDisplay[id].color = new Color(1,1,1,_disabledButtonAlpha);
+            _itemPricesToDisplay[id].color = new Color(1, 1, 1, _disabledButtonAlpha);
             _selectingLineImage.color = new Color(1,1,1,0);
         }
     }
