@@ -48,7 +48,7 @@ namespace Shop
 
         public void TryBuyItem()
         {
-            if (_currentSelectedItemId == null) return;
+            if (_currentSelectedItemId == null || GameEventsHandler.Instance.IsBuyingBlocked) return;
             
             var selectedItem = _itemsInStock.GetItemById(_currentSelectedItemId);
             TryConsumePlayerDiamonds(selectedItem);
@@ -56,11 +56,11 @@ namespace Shop
 
         private void BuyItem(Item item)
         {
-            if (GameEventsHandler.Instance.IsBuyingBlocked || _currentSelectedItemId == null) return;
-            
             item.Buy();
+            
             _itemsInStock.RemoveItem(item);
             _currentSelectedItemId = null;
+            
             OnItemBought?.Invoke(item);
         }
 

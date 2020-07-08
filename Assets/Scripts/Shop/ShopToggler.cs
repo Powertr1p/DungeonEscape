@@ -13,17 +13,13 @@ namespace Shop
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.TryGetComponent(out Player.Player player))
-            {
-                _player = player;
+            if (!ReferenceEquals(other.GetComponent<Player.Player>(), null))
                 ToggleShop(true);
-            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             ToggleShop(false);
-            _player = null;
         }
         
         public void ToggleShop(bool isOpen)
