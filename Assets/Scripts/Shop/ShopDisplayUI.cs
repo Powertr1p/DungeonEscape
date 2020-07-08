@@ -20,16 +20,13 @@ namespace Shop
         [SerializeField] private Text[] _itemPricesToDisplay;
 
         [SerializeField] private GameObject _shopMessage;
-        
-        [SerializeField] private float _selectingLineMidPos = 54;
-        [SerializeField] private float _selectingLineStep = 108;
 
         public bool IsShopEnabled;
 
         private TextMeshProUGUI _messageText;
         private Image _selectingLineImage;
         
-        private const float _disabledButtonAlpha = 0.2f;
+        private const float DisabledButtonAlpha = 0.2f;
 
         public static ShopDisplayUI Instance
         {
@@ -110,8 +107,8 @@ namespace Shop
         public void ToggleOffBoughtItem(int id)
         {
             _itemNamesToDisplay[id].GetComponentInParent<Button>().interactable = false;
-            _itemNamesToDisplay[id].color = new Color(1,1,1,_disabledButtonAlpha);
-            _itemPricesToDisplay[id].color = new Color(1, 1, 1, _disabledButtonAlpha);
+            _itemNamesToDisplay[id].color = new Color(1,1,1,DisabledButtonAlpha);
+            _itemPricesToDisplay[id].color = new Color(1, 1, 1, DisabledButtonAlpha);
             _selectingLineImage.color = new Color(1,1,1,0);
         }
     }
