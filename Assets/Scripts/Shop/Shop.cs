@@ -32,7 +32,6 @@ namespace Shop
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
                 ShopDisplayUI.Instance.ToggleOffBoughtItem(item.GetId);
-                _currentSelectedItemId = null;
             };
 
             OnItemBuyFailed = () =>
@@ -55,23 +54,13 @@ namespace Shop
             TryConsumePlayerDiamonds(selectedItem);
         }
 
-        private void BuyItem(Item item) //TODO: REFACTOR THIS SHIT
+        private void BuyItem(Item item)
         {
             if (GameEventsHandler.Instance.IsBuyingBlocked || _currentSelectedItemId == null) return;
             
-            switch (_currentSelectedItemId)
-            {
-                case 0:
-                    GameEventsHandler.Instance.FlameSwordBought();
-                    break;
-                case 1:
-                    GameEventsHandler.Instance.BootsOfFlightBought();
-                    break;
-                case 2:
-                    GameEventsHandler.Instance.KeyBought();
-                    break;
-            }
-            
+            item.Buy();
+            _itemsInStock.RemoveItem(item);
+            _currentSelectedItemId = null;
             OnItemBought?.Invoke(item);
         }
 

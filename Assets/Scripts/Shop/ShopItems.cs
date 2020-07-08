@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Interfaces;
 using UnityEngine;
 
 namespace Shop
@@ -7,8 +8,8 @@ namespace Shop
     public class ShopItems : MonoBehaviour
     {
         [SerializeField] private Item[] _shopItems;
-        
-        private readonly List<Item> _itemsInStock = new List<Item>();
+
+        private List<Item> _itemsInStock = new List<Item>();
 
         private void Start()
         {
@@ -26,6 +27,11 @@ namespace Shop
         public Item GetItemById(int? id)
         {
             return _itemsInStock.Find(x => x.GetId == id);
+        }
+
+        public void RemoveItem(Item item)
+        {
+            _itemsInStock.Remove(item);
         }
     }
 }

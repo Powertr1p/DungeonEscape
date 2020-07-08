@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: CastleKey
   m_EditorClassIdentifier: 
   _id: 2
+  _itemType: 2
   ItemName: A Key To The Castle
   ItemPrice: 500

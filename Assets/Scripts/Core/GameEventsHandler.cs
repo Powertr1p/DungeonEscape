@@ -52,7 +52,6 @@ namespace Core
 
         public void FlameSwordBought()
         {
-
             OnFlameSwordBought?.Invoke();
         }
 

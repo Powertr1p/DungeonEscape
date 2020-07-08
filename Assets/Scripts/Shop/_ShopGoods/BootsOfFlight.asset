@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: BootsOfFlight
   m_EditorClassIdentifier: 
   _id: 1
+  _itemType: 1
   ItemName: The Boots of Flight
   ItemPrice: 100

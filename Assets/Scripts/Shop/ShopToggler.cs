@@ -26,7 +26,6 @@ namespace Shop
             _player = null;
         }
         
-
         public void ToggleShop(bool isOpen)
         {
             _shopMenu.SetActive(isOpen);
