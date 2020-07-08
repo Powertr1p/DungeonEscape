@@ -27,13 +27,12 @@ namespace Player
                 _collisionRayOffset = new Vector3(_collisionRayOffset.x * -1, _collisionRayOffset.y, _collisionRayOffset.z);
         }
         
-        
         public bool IsGrounded()
         {
             TryFlipRay();
             
             var hit = Physics2D.Raycast(transform.position + _collisionRayOffset, Vector2.down, _rayDistance, _groundLayer.value);
-            return hit.collider != null;
+            return !ReferenceEquals(hit.collider, null);
         }
     }
 }

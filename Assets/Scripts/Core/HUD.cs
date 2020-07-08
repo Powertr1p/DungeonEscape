@@ -9,6 +9,7 @@ namespace Core
         [SerializeField] private TextMeshProUGUI _diamondsCount;
         [SerializeField] private Image[] _livesUI;
         [SerializeField] private Player.Player _player;
+        [SerializeField] private Image _key;
 
         private void OnEnable()
         {
@@ -19,6 +20,7 @@ namespace Core
         private void Start()
         {
             GameEventsHandler.Instance.DiamondsCountUpdated += UpdateDiamondsCount;
+            GameEventsHandler.Instance.OnKeyBought += ChangeKeyImage;
         }
 
         private void UpdateDiamondsCount()
@@ -31,6 +33,11 @@ namespace Core
             if (livesRemaining < 0) return;
             
             _livesUI[livesRemaining].color = new Color32(255,255,255,50);
+        }
+
+        private void ChangeKeyImage()
+        {
+            _key.color = Color.white;
         }
 
         private void OnDied()
