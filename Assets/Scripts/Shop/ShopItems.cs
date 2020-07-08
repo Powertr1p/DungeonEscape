@@ -23,7 +23,7 @@ namespace Shop
             _itemsInStock.Add(item);
         }
 
-        public Item GetItemById(int id)
+        public Item GetItemById(int? id)
         {
             return _itemsInStock.Find(x => x.GetId == id);
         }

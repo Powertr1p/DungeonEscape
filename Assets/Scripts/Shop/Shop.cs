@@ -17,7 +17,7 @@ namespace Shop
         private int _middleItemYLinePosition = 54;
         private int _downItemYLinePosition = -54;
         
-        private int _currentSelectedItemId;
+        private int? _currentSelectedItemId;
 
         private void Awake()
         {
@@ -32,6 +32,7 @@ namespace Shop
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
                 ShopDisplayUI.Instance.ToggleOffBoughtItem(item.GetId);
+                _currentSelectedItemId = null;
             };
 
             OnItemBuyFailed = () =>
@@ -48,13 +49,15 @@ namespace Shop
 
         public void TryBuyItem()
         {
+            if (_currentSelectedItemId == null) return;
+            
             var selectedItem = _itemsInStock.GetItemById(_currentSelectedItemId);
             TryConsumePlayerDiamonds(selectedItem);
         }
 
         private void BuyItem(Item item) //TODO: REFACTOR THIS SHIT
         {
-            if (GameEventsHandler.Instance.IsBuyingBlocked) return;
+            if (GameEventsHandler.Instance.IsBuyingBlocked || _currentSelectedItemId == null) return;
             
             switch (_currentSelectedItemId)
             {

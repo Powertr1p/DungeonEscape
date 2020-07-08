@@ -27,6 +27,7 @@ namespace Shop
         public bool IsShopEnabled;
 
         private TextMeshProUGUI _messageText;
+        private Image _selectingLineImage;
 
         public static ShopDisplayUI Instance
         {
@@ -43,6 +44,7 @@ namespace Shop
         {
             _instance = this;
             _messageText = _shopMessage.GetComponentInChildren<TextMeshProUGUI>();
+            _selectingLineImage = _selectingLine.GetComponent<Image>();
         }
 
         private void Start()
@@ -68,6 +70,7 @@ namespace Shop
         public void UpdateSelectionLinePosition(int itemId)
         {
             var position = _selectingLine.transform.localPosition;
+            _selectingLineImage.color = new Color(1,1,1,1);
 
             switch (itemId)
             {
@@ -116,6 +119,7 @@ namespace Shop
             _itemNamesToDisplay[id].GetComponentInParent<Button>().interactable = false;
             _itemNamesToDisplay[id].color = new Color(1,1,1,0.2f);
             _itemPricesToDisplay[id].color = new Color(1, 1, 1, 0.2f);
+            _selectingLineImage.color = new Color(1,1,1,0);
         }
     }
 }
