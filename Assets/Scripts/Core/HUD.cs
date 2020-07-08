@@ -1,4 +1,4 @@
-using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +6,7 @@ namespace Core
 {
     public class HUD : MonoBehaviour
     {
-        [SerializeField] private Text _diamondsCount;
+        [SerializeField] private TextMeshProUGUI _diamondsCount;
         [SerializeField] private Image[] _livesUI;
         [SerializeField] private Player.Player _player;
 

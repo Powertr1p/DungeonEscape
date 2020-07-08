@@ -63,17 +63,19 @@ namespace Core
 
         private IEnumerator StartRemovingDiamonds(int amount)
         {
-            var startedTime = 0.5f;
-            var decreaseRate = 0.2f;
+            var time = 0.5f;
+            var decreaseRate = 0.1f;
+            var diamondsToMinus = 1;
+           
             IsBuyingBlocked = true; 
             
             do
             {
-                
-                yield return new WaitForSeconds(startedTime *= decreaseRate);
+                yield return new WaitForSeconds(time *= decreaseRate);
 
-                _player.DiamondsCount -= 1;
-                amount -= 1;
+                _player.DiamondsCount -= diamondsToMinus;
+                amount -= diamondsToMinus;
+                
                 DiamondsCountUpdated?.Invoke();
 
             } while (amount != 0);
