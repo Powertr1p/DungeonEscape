@@ -20,6 +20,7 @@ namespace Shop
         private void OnTriggerExit2D(Collider2D other)
         {
             ToggleShop(false);
+            ShopDisplayUI.Instance.HideShopMessage();
         }
         
         public void ToggleShop(bool isOpen)
