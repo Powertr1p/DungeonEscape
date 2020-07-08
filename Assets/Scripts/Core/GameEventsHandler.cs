@@ -77,7 +77,6 @@ namespace Core
                 amount -= diamondsToMinus;
                 
                 DiamondsCountUpdated?.Invoke();
-
             } while (amount != 0);
 
             IsBuyingBlocked = false;
