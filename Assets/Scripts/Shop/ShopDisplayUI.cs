@@ -73,22 +73,11 @@ namespace Shop
 
         public void UpdateSelectionLinePosition(int itemId)
         {
-            var position = _selectingLine.transform.localPosition;
-            _selectingLineImage.color = new Color(1,1,1,1);
-
-            switch (itemId)
-            {
-                case 0:
-                    _selectingLine.transform.localPosition = new Vector3(position.x, _selectingLineMidPos + _selectingLineStep);
-                    break;
-                case 1:
-                    _selectingLine.transform.localPosition = new Vector3(position.x, _selectingLineMidPos);
-                    break;
-                case 2:
-                    _selectingLine.transform.localPosition = new Vector3(position.x, _selectingLineMidPos - _selectingLineStep);
-                    break;
-            }
+            var titlePosition = _itemNamesToDisplay[itemId].transform.position;
+            var offsetFromCenter = new Vector3(20f, 20f);
             
+            _selectingLineImage.color = new Color(1,1,1,1);
+            _selectingLine.transform.position = titlePosition - offsetFromCenter;
             _selectingLine.SetActive(true);
         }
 
