@@ -13,16 +13,14 @@ namespace Core
         public event Action OnKeyBought;
         
         [SerializeField] private Player.Player _player;
-        [SerializeField] private Item _winCondotionItem;
 
         private static GameEventsHandler _instance;
         public static GameEventsHandler Instance => _instance;
 
-        public bool IsBuyingBlocked = false;
-        public int GetWinConditionItemId => _winCondotionItem.GetId;
-        public int PlayerDiamondsCount => _player.DiamondsCount;
         public bool IsPlayerAlive => _player.IsAlive;
+        public bool IsBuyingBlocked { get; private set; }
         public bool HasWinCondition { get; set; }
+        public int PlayerDiamondsCount => _player.DiamondsCount;
 
         private void Awake()
         {

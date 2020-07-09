@@ -32,9 +32,6 @@ namespace Shop
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessItemBoughtItemMessage(item.ItemName);
                 ShopDisplayUI.Instance.ToggleOffBoughtItem(item.GetId);
-               
-                if (item.GetId == GameEventsHandler.Instance.GetWinConditionItemId)
-                    GameEventsHandler.Instance.HasWinCondition = true;
             };
 
             OnItemBuyFailed = () =>
