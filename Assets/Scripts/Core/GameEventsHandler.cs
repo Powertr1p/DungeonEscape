@@ -19,7 +19,7 @@ namespace Core
 
         public bool IsPlayerAlive => _player.IsAlive;
         public bool IsBuyingBlocked { get; private set; }
-        public bool HasWinCondition { get; set; }
+        public bool HasWinCondition { get; private set; }
         public int PlayerDiamondsCount => _player.DiamondsCount;
 
         private void Awake()
