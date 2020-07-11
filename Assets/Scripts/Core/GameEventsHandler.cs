@@ -69,11 +69,9 @@ namespace Core
             
             do
             {
-                yield return new WaitForSeconds(time *= decreaseRate);
-
+                yield return new WaitForSecondsRealtime(0);
                 _player.DiamondsCount -= diamondsToMinus;
                 amount -= diamondsToMinus;
-                
                 DiamondsCountUpdated?.Invoke();
             } while (amount != 0);
 

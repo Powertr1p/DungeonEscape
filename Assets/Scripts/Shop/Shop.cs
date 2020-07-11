@@ -13,10 +13,6 @@ namespace Shop
 
         private ShopItems _itemsInStock;
 
-        private int _upperItemYLinePosition = 164;
-        private int _middleItemYLinePosition = 54;
-        private int _downItemYLinePosition = -54;
-        
         private int? _currentSelectedItemId;
 
         private void Awake()
