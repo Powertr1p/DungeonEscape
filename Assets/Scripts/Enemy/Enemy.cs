@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security;
 using Collectables;
 using Core;
 using Interfaces;
@@ -12,7 +13,9 @@ namespace Enemy
     {
         [SerializeField] protected int Health;
         [SerializeField] protected float Speed;
+        [SerializeField] protected float FollowPlayertSpeedMultiplier = 1.5f;
         [SerializeField] protected int Diamonds = 1;
+        
         [SerializeField] protected Transform WaypointA;
         [SerializeField] protected Transform WaypointB;
         [SerializeField] protected Transform Player;
@@ -153,7 +156,7 @@ namespace Enemy
             else
             {
                 var player = new Vector2(Player.transform.localPosition.x, transform.position.y);
-                transform.position = Vector2.MoveTowards(transform.position, player, Speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, player, Speed * FollowPlayertSpeedMultiplier * Time.deltaTime);
                 FaceToPlayer();
             }
         }
