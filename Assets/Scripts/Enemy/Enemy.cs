@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Collectables;
 using Core;
 using Interfaces;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Random = System.Random;
 
 namespace Enemy
 {
@@ -37,7 +34,8 @@ namespace Enemy
         protected DamageDealer Damage;
         
         protected bool IsDead = false;
-        
+        private bool _followPlayer;
+
         protected const string Idle = "Idle";
         protected const string Hit = "Hit";
         protected const string InCombat = "InCombat";
@@ -75,7 +73,7 @@ namespace Enemy
             TryChangeMoveDirection();
 
             if (Animator.GetBool(InCombat))
-                FaceToPlayerWhenAttack();
+                FaceToPlayer();
             else
                 Move(Target.position);
             
@@ -84,12 +82,17 @@ namespace Enemy
         
         protected int GetDamageValue() => Damage.GetDamageValue;
 
-        protected virtual void TryToggleCombat(bool isPlayerSpotted, float onDistance, float offDistance)
+        protected void TryToggleCombat(bool isPlayerSpotted, float onDistance, float offDistance)
         {
             if (isPlayerSpotted && !Animator.GetBool(InCombat) && Vector3.Distance(_position, Player.localPosition) < onDistance)
+            {
                 ToggleCombatMode(true);
+                _followPlayer = true;
+            }
             else if (Vector3.Distance(_position, Player.localPosition) > offDistance || !_isPlayerAlive)
+            {
                 ToggleCombatMode(false);
+            }
         }
 
         private void FlipWhileWalking()
@@ -110,7 +113,7 @@ namespace Enemy
             transform.localScale = flipped;
         }
 
-        private void FaceToPlayerWhenAttack()
+        private void FaceToPlayer()
         {
             var direction = Player.localPosition - transform.position;
 
@@ -119,14 +122,16 @@ namespace Enemy
 
         private void TryChangeMoveDirection()
         {
-            if (transform.position == WaypointA.position)
+            if (Vector2.Distance(transform.position, WaypointA.position) < 0.2f)
             {
                 Target = WaypointB.transform;
+                _followPlayer = false;
                 ToggleIdleAnimation();
             }
-            else if (transform.position == WaypointB.position)
+            else if (Vector2.Distance(transform.position, WaypointB.position) < 0.2f)
             {
                 Target = WaypointA.transform;
+                _followPlayer = false;
                 ToggleIdleAnimation();
             }
         }
@@ -139,12 +144,21 @@ namespace Enemy
         protected virtual void Move(Vector2 position)
         {
            if (Animator.GetCurrentAnimatorStateInfo(0).IsName("Hit")) return;
-            
-            var target = new Vector2(position.x, transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, target, Speed * Time.deltaTime);
+           
+            if (!_followPlayer || !_isPlayerAlive)
+            {
+                var target = new Vector2(position.x, transform.position.y);
+                transform.position = Vector2.MoveTowards(transform.position, target, Speed * Time.deltaTime);
+            }
+            else
+            {
+                var player = new Vector2(Player.transform.localPosition.x, transform.position.y);
+                transform.position = Vector2.MoveTowards(transform.position, player, Speed * Time.deltaTime);
+                FaceToPlayer();
+            }
         }
-        
-        protected virtual void ToggleCombatMode(bool isCombat)
+
+        private void ToggleCombatMode(bool isCombat)
         {
             Animator.SetBool(InCombat, isCombat);
         }
@@ -163,12 +177,13 @@ namespace Enemy
                 Animator.SetTrigger(Hit);
             
             ToggleCombatMode(true);
+            _followPlayer = true;
 
             if (Health <= 0)
                 Die();
         }
 
-        protected void InstantiateDamageText(int damage)
+        private void InstantiateDamageText(int damage)
         {
             var spawnOffset = new Vector3(-0.2f, 0, 0);
             var damageText = Instantiate(DamageText, HitEffectSpawnPivot.position + spawnOffset, Quaternion.identity);
@@ -180,7 +195,7 @@ namespace Enemy
             Destroy(damageText, 0.9f);
         }
 
-        protected IEnumerator AnimateText(GameObject textObj, TextMeshPro text)
+        private IEnumerator AnimateText(GameObject textObj, TextMeshPro text)
         {
             while (true)
             {

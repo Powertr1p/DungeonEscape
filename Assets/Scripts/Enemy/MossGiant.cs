@@ -8,7 +8,6 @@ namespace Enemy
         
         protected override bool IsPlayerSpotted(Vector2 startSpottingPosition)
         {
-            
             return base.IsPlayerSpotted(transform.position + _spottingRayOffset);
         }
         
