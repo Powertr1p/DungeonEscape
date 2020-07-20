@@ -82,7 +82,7 @@ namespace Player
 
         private void DoubledJumpForce()
         {
-            _jumpForce *= 2;
+            _jumpForce *= 2f;
         }
         
         private void OnDisable()

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Core;
 using Shop;
 using UnityEngine;
@@ -13,6 +12,7 @@ namespace UnityAds
         public Action OnAdsSuccess;
         
         private const string rewardedVideo = "rewardedVideo";
+        private const string video = "video";
         private const string gameId = "3651032";
 
         private bool isAdvOnCooldown;
@@ -45,6 +45,19 @@ namespace UnityAds
                 
                 Advertisement.Show(rewardedVideo, options);
                 StartCoroutine(Cooldown());
+            }
+        }
+
+        public void ShowVideo()
+        {
+            if (Advertisement.IsReady(video))
+            {
+                var options = new ShowOptions
+                {
+                    resultCallback = HandleShowResult
+                };
+                
+                Advertisement.Show(video, options);
             }
         }
 

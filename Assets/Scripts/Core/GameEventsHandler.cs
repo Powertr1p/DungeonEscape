@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using Shop;
 using UnityEngine;
 
 namespace Core
@@ -22,10 +21,7 @@ namespace Core
         public bool HasWinCondition { get; private set; }
         public int PlayerDiamondsCount => _player.DiamondsCount;
 
-        private void Awake()
-        {
-            _instance = this;
-        }
+        private void Awake() => _instance = this;
 
         private void Start()
         {
