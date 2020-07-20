@@ -1,6 +1,5 @@
 using System;
 using Interfaces;
-using UnityAds;
 using UnityEngine;
 
 namespace Player

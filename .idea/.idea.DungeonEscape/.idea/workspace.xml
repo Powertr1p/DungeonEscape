@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/EndGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EndGame.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="" />
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,8 +372,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="setup animator for a spider" />
-    <MESSAGE value="refactored a bit enemy classes" />
     <MESSAGE value="added spider logic" />
     <MESSAGE value="refactored a enemy logic" />
     <MESSAGE value="created a skeleton enemy and setup'd animation" />
@@ -399,7 +395,9 @@
     <MESSAGE value="added workspace" />
     <MESSAGE value="ads showing on player death" />
     <MESSAGE value="added game over scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="added game over scene" />
+    <MESSAGE value="player now can complete the game" />
+    <MESSAGE value="changed a bit scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed a bit scene" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -490,12 +488,12 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="VCS.FileHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1593591979571" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595267041499">
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595268721915">
       <screen x="1440" y="-67" width="1920" height="1057" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595267041499" />
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595268721915" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
     <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1595189728816" />

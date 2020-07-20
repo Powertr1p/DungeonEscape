@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using Core;
-using UnityEditor;
 using UnityEngine;
 
 namespace Player

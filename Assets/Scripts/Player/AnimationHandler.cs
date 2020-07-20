@@ -1,5 +1,4 @@
-﻿using System;
-using Animations;
+﻿using Animations;
 using Core;
 using Shop;
 using UnityEngine;

@@ -1,6 +1,4 @@
-﻿using System;
-using Animations;
-using Core;
+﻿using Core;
 using Interfaces;
 using UnityEngine;
 

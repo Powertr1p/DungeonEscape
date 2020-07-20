@@ -1,5 +1,4 @@
-﻿using Interfaces;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Core

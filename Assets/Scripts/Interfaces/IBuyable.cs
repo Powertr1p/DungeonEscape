@@ -1,4 +1,3 @@
-using Shop;
 
 namespace Interfaces
 {
