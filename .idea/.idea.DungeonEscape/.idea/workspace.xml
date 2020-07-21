@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/GameOver.unity" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -385,7 +386,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="refactored a enemy logic" />
     <MESSAGE value="created a skeleton enemy and setup'd animation" />
     <MESSAGE value="spider now dont need to have a waypoints" />
     <MESSAGE value="using ReferenceEqual instead of null comparison with gameObjects on scene" />
@@ -410,7 +410,8 @@
     <MESSAGE value="player now can complete the game" />
     <MESSAGE value="changed a bit scene" />
     <MESSAGE value="deleted unused usings" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted unused usings" />
+    <MESSAGE value="changed text and button position" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed text and button position" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
