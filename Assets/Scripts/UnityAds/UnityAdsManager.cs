@@ -40,7 +40,7 @@ namespace UnityAds
             {
                 var options = new ShowOptions
                 {
-                    resultCallback = HandleShowResult
+                    resultCallback = HandleShowRewardedResult
                 }; 
                 
                 Advertisement.Show(rewardedVideo, options);
@@ -51,17 +51,10 @@ namespace UnityAds
         public void ShowVideo()
         {
             if (Advertisement.IsReady(video))
-            {
-                var options = new ShowOptions
-                {
-                    resultCallback = HandleShowResult
-                };
-                
-                Advertisement.Show(video, options);
-            }
+                Advertisement.Show(video);
         }
-
-        private void HandleShowResult(ShowResult result)
+        
+        private void HandleShowRewardedResult(ShowResult result)
         {
             switch (result)
             {
