@@ -21,6 +21,9 @@ namespace Core
         public bool HasWinCondition { get; private set; }
         public int PlayerDiamondsCount => _player.DiamondsCount;
 
+        private static int _playerDeathCount = 0;
+        public int PlayerDeathCount => _playerDeathCount;
+
         private void Awake() => _instance = this;
 
         private void Start()
@@ -72,6 +75,11 @@ namespace Core
             } while (amount != 0);
 
             IsBuyingBlocked = false;
+        }
+
+        public void CountPlayerDeath()
+        {
+            _playerDeathCount++;
         }
     }
 }

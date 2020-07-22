@@ -50,8 +50,13 @@ namespace UnityAds
 
         public void ShowVideo()
         {
-            if (Advertisement.IsReady(video))
-                Advertisement.Show(video);
+            var deathCount = GameEventsHandler.Instance.PlayerDeathCount;
+            Debug.Log(deathCount);
+            if (deathCount % 3 == 0)
+            {
+                if (Advertisement.IsReady(video))
+                    Advertisement.Show(video);
+            }
         }
         
         private void HandleShowRewardedResult(ShowResult result)

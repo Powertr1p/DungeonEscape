@@ -1,4 +1,5 @@
 using System;
+using Core;
 using Interfaces;
 using UnityEngine;
 
@@ -22,7 +23,10 @@ namespace Player
             DamageTaken?.Invoke(_livesRemaining);
 
             if (_livesRemaining <= 0)
+            {
+                GameEventsHandler.Instance.CountPlayerDeath();
                 Died?.Invoke();
+            }
         }
     }
 }
