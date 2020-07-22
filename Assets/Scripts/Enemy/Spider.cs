@@ -12,17 +12,7 @@ namespace Enemy
         [SerializeField] private Transform _bloodSpawnPivot;
 
         private SpiderAnimationEvent _spiderEvent;
-
-        protected override void PlayDamageSound()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        protected override void PlayDeathSound()
-        {
-            throw new System.NotImplementedException();
-        }
-
+        
         protected override void Init()
         {
             base.Init();

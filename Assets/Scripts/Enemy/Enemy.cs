@@ -22,11 +22,14 @@ namespace Enemy
         [SerializeField] protected GameObject HitEffectPrefab;
         [SerializeField] protected GameObject DamageText;
         [SerializeField] protected Transform HitEffectSpawnPivot;
-        [SerializeField] protected AudioSource Audio;
-        
+        [SerializeField] protected AudioClip DamageSound;
+        [SerializeField] protected AudioClip DeathSound;
+
         [SerializeField] protected float SpotingRayDistance = 2f;
         [SerializeField] protected float DistanceToToggleOnCombat = 0.5f;
         [SerializeField] protected float DistanceToToggleOffCombat = 1.5f;
+        
+        private AudioSource _audio;
         
         private bool _isPlayerAlive => GameEventsHandler.Instance.IsPlayerAlive;
         private Vector2 _position => transform.position;
@@ -36,7 +39,7 @@ namespace Enemy
         protected SpriteRenderer Sprite;
         protected DamageDealer Damage;
         
-        protected bool IsDead = false;
+        protected bool IsDead;
         private bool _followPlayer;
 
         protected const string Idle = "Idle";
@@ -44,9 +47,6 @@ namespace Enemy
         protected const string InCombat = "InCombat";
         protected const string Death = "Death";
 
-        protected abstract void PlayDamageSound();
-        protected abstract void PlayDeathSound();
-        
         private void Start()
         {
             Init();
@@ -57,7 +57,7 @@ namespace Enemy
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();
             Damage = GetComponent<DamageDealer>();
-            Audio = GetComponent<AudioSource>();
+            _audio = GetComponent<AudioSource>();
             
             SetupWaypointsAndTarget();
         }
@@ -193,6 +193,11 @@ namespace Enemy
                 Die();
         }
 
+        private void PlayDamageSound()
+        {
+            _audio.PlayOneShot(DamageSound);
+        }
+
         private void InstantiateDamageText(int damage)
         {
             var spawnOffset = new Vector3(-0.2f, 0, 0);
@@ -244,6 +249,11 @@ namespace Enemy
             SpawnDiamonds(_position);
 
             IsDead = true;
+        }
+
+        private void PlayDeathSound()
+        {
+            
         }
 
         protected virtual void SpawnDiamonds(Vector2 spawnPosition)
