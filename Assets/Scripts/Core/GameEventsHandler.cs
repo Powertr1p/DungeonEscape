@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Core
@@ -60,17 +61,15 @@ namespace Core
 
         private IEnumerator StartRemovingDiamonds(int amount)
         {
-            var time = 0.5f;
-            var decreaseRate = 0.1f;
             var diamondsToMinus = 1;
-           
             IsBuyingBlocked = true; 
             
             do
             {
-                yield return new WaitForSecondsRealtime(0);
+                yield return new WaitForSeconds(0.001f);
                 _player.DiamondsCount -= diamondsToMinus;
                 amount -= diamondsToMinus;
+                
                 DiamondsCountUpdated?.Invoke();
             } while (amount != 0);
 
