@@ -394,7 +394,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="enemies now instantiates splash of diamonds when died" />
     <MESSAGE value="fixed a bug where player can jump to evade monsters hit" />
     <MESSAGE value="refactored enemy base" />
     <MESSAGE value="fixed mossgiant attack colider" />
@@ -419,7 +418,8 @@
     <MESSAGE value="added logic to pass args between scenes" />
     <MESSAGE value="deleted commented parts of code" />
     <MESSAGE value="created and added splash screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="created and added splash screen" />
+    <MESSAGE value="deleted custom iphone splash" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted custom iphone splash" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -510,12 +510,12 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="VCS.FileHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1593591979571" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595408332515">
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595410736591">
       <screen x="1440" y="-67" width="1920" height="1057" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595408332515" />
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595410736591" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
     <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1595189728816" />
