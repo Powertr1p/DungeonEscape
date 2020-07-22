@@ -22,6 +22,7 @@ namespace Enemy
         [SerializeField] protected GameObject HitEffectPrefab;
         [SerializeField] protected GameObject DamageText;
         [SerializeField] protected Transform HitEffectSpawnPivot;
+        [SerializeField] protected AudioSource Audio;
         
         [SerializeField] protected float SpotingRayDistance = 2f;
         [SerializeField] protected float DistanceToToggleOnCombat = 0.5f;
@@ -43,6 +44,9 @@ namespace Enemy
         protected const string InCombat = "InCombat";
         protected const string Death = "Death";
 
+        protected abstract void PlayDamageSound();
+        protected abstract void PlayDeathSound();
+        
         private void Start()
         {
             Init();
@@ -53,6 +57,7 @@ namespace Enemy
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();
             Damage = GetComponent<DamageDealer>();
+            Audio = GetComponent<AudioSource>();
             
             SetupWaypointsAndTarget();
         }
@@ -170,8 +175,11 @@ namespace Enemy
             if (IsDead) return;
 
             if (Health > 0)
+            {
                 Health -= damage;
-            
+                PlayDamageSound();
+            }
+
             InstantiateDamageEffect();
             InstantiateDamageText(damage);
             
@@ -231,6 +239,7 @@ namespace Enemy
         private void Die()
         {
             Animator.SetTrigger(Death);
+            PlayDeathSound();
 
             SpawnDiamonds(_position);
 
