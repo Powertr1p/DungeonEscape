@@ -8,13 +8,16 @@ namespace Collectables
     [RequireComponent(typeof(Collider2D))]
     public class Diamond : MonoBehaviour, ICollectible
     {
-        public int DiamondValue = 1;
+        [SerializeField] private int DiamondValue = 1;
+        [SerializeField] private AudioClip _collectSound;
 
+        private AudioSource _audio;
         private Rigidbody2D _rb2d;
 
         private void Awake()
         {
             _rb2d = GetComponent<Rigidbody2D>();
+            _audio = GetComponent<AudioSource>();
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -25,6 +28,7 @@ namespace Collectables
         
         public void Collect(int value)
         {
+            AudioSource.PlayClipAtPoint(_collectSound, transform.position);
             GameEventsHandler.Instance.AddDiamonds(value);
             Destroy(gameObject);
         }

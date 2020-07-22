@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DiamondValue: 1
+  _collectSound: {fileID: 8300000, guid: 51af604d434a548c991c95dbfc15d542, type: 3}
 --- !u!50 &-708936490198214103
 Rigidbody2D:
   serializedVersion: 4
