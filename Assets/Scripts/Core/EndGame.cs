@@ -10,7 +10,6 @@ namespace Core
             if (!GameEventsHandler.Instance.HasWinCondition) return;
 
             LevelLoaderArgs.Load("GameOver", GameEventsHandler.Instance.PlayerDeathCount);
-            //SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
         }
     }
 }
