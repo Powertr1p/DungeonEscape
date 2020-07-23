@@ -130,7 +130,10 @@ MonoBehaviour:
     type: 3}
   DamageText: {fileID: 0}
   HitEffectSpawnPivot: {fileID: 0}
-  Audio: {fileID: 0}
+  DamageSound: {fileID: 8300000, guid: 10abde2a2af7a46b6bdf11550c7c20da, type: 3}
+  DeathSound: {fileID: 8300000, guid: 2c47283b1d65e4ce493c16740b1163a9, type: 3}
+  AttackSound: {fileID: 8300000, guid: 9e0d4624b85b6489785fd80db2a6172d, type: 3}
+  FootstepsSound: {fileID: 8300000, guid: faeb499c3fd1b4fcbb067d354514b2d9, type: 3}
   SpotingRayDistance: 0.8
   DistanceToToggleOnCombat: 0.5
   DistanceToToggleOffCombat: 1.5
@@ -184,8 +187,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -280,6 +283,7 @@ GameObject:
   - component: {fileID: 4383600295581844746}
   - component: {fileID: 4383600295581844740}
   - component: {fileID: 4383600295581844741}
+  - component: {fileID: 717988547044955226}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -370,3 +374,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &717988547044955226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383600295581844747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e0b339f64647b7aca710c74785f401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

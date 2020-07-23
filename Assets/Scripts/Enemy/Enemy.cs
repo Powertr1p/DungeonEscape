@@ -14,7 +14,7 @@ namespace Enemy
         [SerializeField] protected float Speed;
         [SerializeField] protected float FollowPlayertSpeedMultiplier = 1.5f;
         [SerializeField] protected int Diamonds = 1;
-        
+
         [SerializeField] protected Transform WaypointA;
         [SerializeField] protected Transform WaypointB;
         [SerializeField] protected Transform Player;
@@ -22,23 +22,27 @@ namespace Enemy
         [SerializeField] protected GameObject HitEffectPrefab;
         [SerializeField] protected GameObject DamageText;
         [SerializeField] protected Transform HitEffectSpawnPivot;
+
+        [Header("SFX")] 
         [SerializeField] protected AudioClip DamageSound;
         [SerializeField] protected AudioClip DeathSound;
+        [SerializeField] protected AudioClip AttackSound;
+        [SerializeField] protected AudioClip FootstepsSound;
 
         [SerializeField] protected float SpotingRayDistance = 2f;
         [SerializeField] protected float DistanceToToggleOnCombat = 0.5f;
         [SerializeField] protected float DistanceToToggleOffCombat = 1.5f;
-        
+
         private AudioSource _audio;
-        
+
         private bool _isPlayerAlive => GameEventsHandler.Instance.IsPlayerAlive;
         private Vector2 _position => transform.position;
-        
+
         protected Transform Target;
         protected Animator Animator;
         protected SpriteRenderer Sprite;
         protected DamageDealer Damage;
-        
+
         protected bool IsDead;
         private bool _followPlayer;
 
@@ -52,7 +56,21 @@ namespace Enemy
             Init();
         }
 
-        protected virtual void Init()
+        public void PlayFootstepsSound()
+        {
+            if (Vector3.Distance(_position, Player.localPosition) > 8f) return;
+            
+            var volume = _position.x / Player.transform.localPosition.x / 1.5f;
+            AudioSource.PlayClipAtPoint(FootstepsSound, transform.position, volume);
+        }
+
+        public void PlayAttackSound()
+        {
+            var volume = _position.x / Player.transform.localPosition.x;
+            AudioSource.PlayClipAtPoint(AttackSound, transform.position, volume);
+        }
+
+    protected virtual void Init()
         {
             Animator = GetComponentInChildren<Animator>();
             Sprite = GetComponentInChildren<SpriteRenderer>();
@@ -169,7 +187,7 @@ namespace Enemy
         {
             Animator.SetBool(InCombat, isCombat);
         }
-        
+
         public virtual void ApplyDamage(int damage)
         {
             if (IsDead) return;

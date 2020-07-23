@@ -6,9 +6,8 @@ namespace Enemy
     public class SpiderAnimationEvent : MonoBehaviour
     {
         public event Action OnFire;
-    
-        //using through event animation
-        public void Fire()
+        
+        public void Fire() //using from animation event
         {
             OnFire?.Invoke();
         }

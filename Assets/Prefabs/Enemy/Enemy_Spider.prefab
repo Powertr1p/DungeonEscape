@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 1241780120812870327}
   - component: {fileID: 1241780120812870326}
   - component: {fileID: 1241780120812870321}
+  - component: {fileID: 7013705916411640189}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -174,6 +175,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5644be254a514ddfaff9255c02336a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7013705916411640189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241780120812870323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e0b339f64647b7aca710c74785f401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1241780121578359283
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +248,10 @@ MonoBehaviour:
     type: 3}
   DamageText: {fileID: 0}
   HitEffectSpawnPivot: {fileID: 0}
-  Audio: {fileID: 0}
+  DamageSound: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: 38610b0e6ff5d40c0925a6dd8ea589c1, type: 3}
+  AttackSound: {fileID: 8300000, guid: b17e6d71f8e8449eea617605283797c8, type: 3}
+  FootstepsSound: {fileID: 8300000, guid: db8dbef310d494b4d9946ef5f9d08067, type: 3}
   SpotingRayDistance: 7
   DistanceToToggleOnCombat: 0.5
   DistanceToToggleOffCombat: 1.5
