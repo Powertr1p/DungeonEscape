@@ -253,7 +253,7 @@ namespace Enemy
 
         private void PlayDeathSound()
         {
-            
+            _audio.PlayOneShot(DeathSound);
         }
 
         protected virtual void SpawnDiamonds(Vector2 spawnPosition)

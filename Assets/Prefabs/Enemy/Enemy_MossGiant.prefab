@@ -92,7 +92,7 @@ MonoBehaviour:
   DamageText: {fileID: 0}
   HitEffectSpawnPivot: {fileID: 3685013115834708449}
   DamageSound: {fileID: 8300000, guid: 5e82242ff00444b0daed58e2611edf2b, type: 3}
-  DeathSound: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: 402bfcc88cc76464ab7b15dbca1eeda4, type: 3}
   SpotingRayDistance: 2
   DistanceToToggleOnCombat: 0.5
   DistanceToToggleOffCombat: 1.5
