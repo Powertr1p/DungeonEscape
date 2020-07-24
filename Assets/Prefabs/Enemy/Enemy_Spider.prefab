@@ -248,7 +248,7 @@ MonoBehaviour:
     type: 3}
   DamageText: {fileID: 0}
   HitEffectSpawnPivot: {fileID: 0}
-  DamageSound: {fileID: 0}
+  DamageSound: {fileID: 8300000, guid: d4e01c3d6fe70488ab7532da2b876629, type: 3}
   DeathSound: {fileID: 8300000, guid: 38610b0e6ff5d40c0925a6dd8ea589c1, type: 3}
   AttackSound: {fileID: 8300000, guid: b17e6d71f8e8449eea617605283797c8, type: 3}
   FootstepsSound: {fileID: 8300000, guid: db8dbef310d494b4d9946ef5f9d08067, type: 3}
@@ -311,7 +311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
