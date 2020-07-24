@@ -1,5 +1,4 @@
-﻿using Animations;
-using Core;
+﻿using Core;
 using Shop;
 using UnityEngine;
 
@@ -69,17 +68,6 @@ namespace Player
       {
          var jumpEffect = Instantiate(_JumpEffectPrefab, transform);
          Destroy(jumpEffect, 1f);
-      }
-
-      public void CreateSwordArcEffect(float direction)
-      {
-         if (_currentAttack == FireAttack) return;
-
-         var swordArc = Instantiate(_swordArcPrefab, transform);
-         swordArc.transform.localScale = new Vector3(direction, direction);
-         
-         if (swordArc.TryGetComponent(out SwordArcAnimationHandler handler))
-            handler.Init(GetComponentInChildren<SpriteRenderer>());
       }
 
       private void SetJumpAnimationParam(bool isJumping)
