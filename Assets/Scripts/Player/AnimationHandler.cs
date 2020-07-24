@@ -54,7 +54,11 @@ namespace Player
 
       private void SetAttackAnimationParam()
       {
-         if (ShopDisplayUI.Instance.IsShopEnabled || _animator.GetBool(Jumping)) return;
+         var attackInProgress = _animator.GetCurrentAnimatorStateInfo(0).IsName(_currentAttack);
+         var shopEnabled = ShopDisplayUI.Instance.IsShopEnabled;
+         var jumpInProgress = _animator.GetBool(Jumping);
+         
+         if (shopEnabled || jumpInProgress || attackInProgress) return;
 
          _animator.SetTrigger(_currentAttack);
       }
