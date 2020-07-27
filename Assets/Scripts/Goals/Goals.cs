@@ -6,7 +6,8 @@ public class Goals : MonoBehaviour
    private Vector3 _startPosition = new Vector3(0, -90, 0);
    private float _speed = 15f;
    
-   private bool isMoving;
+   private bool _isMoving;
+   private bool _isPanelOpened;
    private Vector3 _target;
 
    private void Start()
@@ -16,23 +17,29 @@ public class Goals : MonoBehaviour
 
    private void FixedUpdate()
    {
-      if (!isMoving) return;
+      if (!_isMoving) return;
 
       transform.localPosition = Vector3.MoveTowards(transform.localPosition, _target, _speed);
 
       if (transform.localPosition == _target)
-         isMoving = false;
+         _isMoving = false;
    }
 
-   public void HideGoalsPanel()
+   public void ToggleGoalsPanel()
    {
-      _target = _endPosition;
-      isMoving = true;
-   }
-   
-   public void ShowGoalPanel()
-   {
-      _target = _startPosition;
-      isMoving = true;
+      if (_isMoving) return;
+      
+      if (!_isPanelOpened)
+      {
+         _target = _startPosition;
+         _isMoving = true;
+         _isPanelOpened = true;
+      }
+      else
+      {
+         _target = _endPosition;
+         _isMoving = true;
+         _isPanelOpened = false;
+      }
    }
 }
