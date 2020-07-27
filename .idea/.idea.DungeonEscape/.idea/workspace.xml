@@ -20,46 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider_hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider_hit.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_CoinPickup.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_CoinPickup/Warrior Coin Pickup_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_CoinPickup/Warrior Coin Pickup_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Death Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Death Animation/Warrior Death Animation_V1-01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Death Animation/Warrior Death Animation_V1-01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_FlamingSwordJump.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_FlamingSwordJump/Warrior Jump With Flaming Sword_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_FlamingSwordJump/Warrior Jump With Flaming Sword_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_HealthGain.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_HealthGain/Warrior Health_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_HealthGain/Warrior Health_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Hit Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Hit Animation/Warrior HIt Animation_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Hit Animation/Warrior HIt Animation_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Itemcollection.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Itemcollection/Warrior Item Collection_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Itemcollection/Warrior Item Collection_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jump.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jump/WarriorJump_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jump/WarriorJump_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jumpwithsword.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jumpwithsword/Warrior Jump With Sword_V1-01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Jumpwithsword/Warrior Jump With Sword_V1-01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Squishycut.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Squishycut/Warrior Squishy Cut_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_Squishycut/Warrior Squishy Cut_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSword.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSword/Warrior Swinging Sword_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSword/Warrior Swinging Sword_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSwordflame.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSwordflame/Swingin Sword Flame_V1-01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/WARRIOR/Warrior_SwingingSwordflame/Swingin Sword Flame_V1-01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Spider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Spider.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ShopDisplayUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/InputManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy_Spider.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MainMenu.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDealer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,6 +113,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/Items/Chest.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ShopItems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Audio/SPIDER/Spider_hit.wav.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/_ShopGoods.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameEventsHandler.cs.meta" root0="FORCE_HIGHLIGHTING" />
@@ -434,9 +397,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed tiles on level" />
-    <MESSAGE value="added workspace.xml" />
-    <MESSAGE value="added workspace" />
     <MESSAGE value="ads showing on player death" />
     <MESSAGE value="added game over scene" />
     <MESSAGE value="player now can complete the game" />
@@ -459,7 +419,10 @@
     <MESSAGE value="moss giant now plays sound when he died" />
     <MESSAGE value="enemies now have footsteps, damage and attack sounds" />
     <MESSAGE value="player now have sounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="player now have sounds" />
+    <MESSAGE value="deleted duplicated files" />
+    <MESSAGE value="spider now have and play hit sound" />
+    <MESSAGE value="fixed bug where player form a queue of attack input" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug where player form a queue of attack input" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -554,12 +517,12 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="VCS.FileHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1593591979571" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595578977681">
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595581606558">
       <screen x="1440" y="-67" width="1920" height="1057" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595578977681" />
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595581606558" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
     <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1595189728816" />
