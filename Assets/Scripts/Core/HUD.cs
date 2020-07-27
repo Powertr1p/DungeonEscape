@@ -11,7 +11,6 @@ namespace Core
         [SerializeField] private Image[] _livesUI;
         [SerializeField] private Player.Player _player;
         [SerializeField] private Image _key;
-        [SerializeField] private RectTransform _goalsMenu;
 
         private void OnEnable()
         {
@@ -24,13 +23,7 @@ namespace Core
             GameEventsHandler.Instance.DiamondsCountUpdated += UpdateDiamondsCount;
             GameEventsHandler.Instance.OnKeyBought += ChangeKeyImage;
         }
-
-        public void OnGoalsButtonClicked()
-        {
-            _goalsMenu.gameObject.SetActive(true);
-
-        }
-
+        
         private void UpdateDiamondsCount()
         {
             _diamondsCount.text = GameEventsHandler.Instance.PlayerDiamondsCount.ToString();
