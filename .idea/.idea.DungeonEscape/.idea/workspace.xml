@@ -20,51 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/EmptyCity.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/EmptyCity.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Menu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Menu/Menu Select_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Menu/Menu Select_V1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Menu/Menu Switching_V1-01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Menu/Menu Switching_V1-01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Attack/Spider Attack_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Attack/Spider Attack_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Death/Spider Death_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Death/Spider Death_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Footstep/Spider Footstep_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Footstep/Spider Footstep_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Idle/Spider Idle_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SPIDER/Spider Idle/Spider Idle_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/TremLoadingloopl.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/TremLoadingloopl.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_CoinPickup/Warrior_CoinPickup_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_CoinPickup/Warrior_CoinPickup_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Death Animation/Warrior_Death Animation_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Death Animation/Warrior_Death Animation_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_FlamingSwordJump/Warrior_FlamingSwordJump_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_FlamingSwordJump/Warrior_FlamingSwordJump_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_HealthGain/Warrior_HealthGain_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_HealthGain/Warrior_HealthGain_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Hit Animation/Warrior_Hit Animation_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Hit Animation/Warrior_Hit Animation_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Itemcollection/Warrior_Itemcollection_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Itemcollection/Warrior_Itemcollection_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Jump/Warrior_Jump_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Jump/Warrior_Jump_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Jumpwithsword/Warrior_Jumpwithsword_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Jumpwithsword/Warrior_Jumpwithsword_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_Squishycut/Warrior_Squishycut_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_Squishycut/Warrior_Squishycut_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_SwingingSword/Warrior_SwingingSword_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_SwingingSword/Warrior_SwingingSword_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Warrior_SwingingSwordflame/Warrior_SwingingSwordflame_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Warrior_SwingingSwordflame/Warrior_SwingingSwordflame_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Attack/Moss Giant Attack_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Attack/Moss Giant Attack_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Death Animation/Moss Giant Death Animation_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Death Animation/Moss Giant Death Animation_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Footstep/Moss Giant Footstep_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Footstep/Moss Giant Footstep_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Hit Animation/Moss Giant Hit Animation_V1-01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/moss giant/Moss Giant Hit Animation/Moss Giant Hit Animation_V1-01.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Axe Swoosh/Skeletion Axe Swoosh_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Axe Swoosh/Skeletion Axe Swoosh_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Bone Break/Skeleton Bone Break_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Bone Break/Skeleton Bone Break_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Death Animation/Skeleton Death Animation_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Death Animation/Skeleton Death Animation_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Footstep/Skeleton Footstep_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Footstep/Skeleton Footstep_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Gentle Bone Clacking/Skeleton Gentle Bone Clacking_V1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/skeleton/Skeleton Gentle Bone Clacking/Skeleton Gentle Bone Clacking_V1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSFXHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSFXHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Moss_Giant/Moss_Giant_Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/Moss_Giant/Moss_Giant_Idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Player/Jump_Swing_Fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Player/Jump_Swing_Fire.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Environmental_Tiles/Animated_Tiles/Water/Water.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Environmental_Tiles/Animated_Tiles/Water/Water.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/HUD/Life_Bar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/HUD/Life_Bar.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Main_Menu/BG.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Main_Menu/BG.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Main_Menu/Symbol.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Main_Menu/Symbol.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Merchant/Box_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Merchant/Box_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Player/Warrior_Walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/Player/Warrior_Walk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,13 +147,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IBuyable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Collisions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/FlipSprite.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttackHitbox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDealer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Shop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDisplayUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds/UnityAdsManager.cs" />
@@ -205,7 +166,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySFXHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SpiderAnimationEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Goals/HideButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Goals/Goals.cs" />
@@ -214,6 +174,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSFXHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Diamond.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
       </list>
     </option>
   </component>
@@ -451,7 +414,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="created and added splash screen" />
     <MESSAGE value="deleted custom iphone splash" />
     <MESSAGE value="fixed splash on iOS" />
     <MESSAGE value="deleted menu button" />
@@ -476,7 +438,8 @@
     <MESSAGE value="audio player now singleton (hate this shit) and plating music only in game  scene" />
     <MESSAGE value="fixed issue with tiles flickering" />
     <MESSAGE value="compressed sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="compressed sprites" />
+    <MESSAGE value="changed sfx volume" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed sfx volume" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -571,12 +534,12 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="VCS.FileHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1593591979571" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595928823597">
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2" timestamp="1595933267039">
       <screen x="1440" y="-67" width="1920" height="1057" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@0.23.1440.877" timestamp="1590658221701" />
-    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595928823597" />
+    <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1595933267039" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
     <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1595917074068" />

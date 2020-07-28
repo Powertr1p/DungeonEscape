@@ -12,14 +12,17 @@ namespace Player
     {
         public event Action<bool> IsJumping;
         
+        [SerializeField] private float _movementSpeed = 1f;
+        [SerializeField] private float _jumpForce = 5f;
+        [SerializeField] private float _minMovingSpeed = 0.1f;
+        
         private Rigidbody2D _rigidbody2D;
         private InputHandler _input;
         private Collisions _collisions;
         private Animator _animator;
-
-        [SerializeField] private float _movementSpeed = 1f;
-        [SerializeField] private float _jumpForce = 5f;
-
+        
+        private bool IsPlayerPerformAnAction => _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") &&
+                                                !_animator.GetCurrentAnimatorStateInfo(0).IsName("Jump");
         private void Awake()
         {
             _input = GetComponent<InputHandler>();
@@ -41,15 +44,15 @@ namespace Player
             if (!GameEventsHandler.Instance.IsPlayerAlive)
                 OnPlayerDied();
         }
-
+        
         private void MoveCharacter(float direction)
         {
-            if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !_animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+            if (IsPlayerPerformAnAction || Mathf.Abs(direction) <= _minMovingSpeed)
                 direction = 0;
-            
+                
             _rigidbody2D.velocity = new Vector2(direction * _movementSpeed, _rigidbody2D.velocity.y);
         }
-
+        
         private void TryJump()
         {
             if (!_collisions.IsGrounded()) return;

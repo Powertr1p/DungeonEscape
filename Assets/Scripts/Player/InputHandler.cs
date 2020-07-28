@@ -15,13 +15,13 @@ namespace Player
         {
             if (!GameEventsHandler.Instance.IsPlayerAlive) return;
             
-            var horizontalInput = CrossPlatformInputManager.GetAxisRaw("Horizontal"); //Input.GetAxisRaw("Horizontal")
+            var horizontalInput = CrossPlatformInputManager.GetAxisRaw("Horizontal");
             OnMovementButtonPressed?.Invoke(horizontalInput);
 
-            if (CrossPlatformInputManager.GetButtonDown("B_Button")) //|| Input.GetKeyDown(KeyCode.Space))
+            if (CrossPlatformInputManager.GetButtonDown("B_Button")) 
                 OnJumpButtonPressed?.Invoke();
 
-            if (CrossPlatformInputManager.GetButtonDown("A_Button")) //|| Input.GetKeyDown(KeyCode.Mouse0))
+            if (CrossPlatformInputManager.GetButtonDown("A_Button"))
                 OnAttackButtonPressed?.Invoke();
         }
     }
