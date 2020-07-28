@@ -213,7 +213,7 @@ namespace Enemy
 
         private void PlayDamageSound()
         {
-            _audio.PlayOneShot(DamageSound);
+            _audio.PlayOneShot(DamageSound, 0.1f);
         }
 
         private void InstantiateDamageText(int damage)
@@ -271,7 +271,7 @@ namespace Enemy
 
         private void PlayDeathSound()
         {
-            _audio.PlayOneShot(DeathSound);
+            _audio.PlayOneShot(DeathSound, 0.1f);
         }
 
         protected virtual void SpawnDiamonds(Vector2 spawnPosition)

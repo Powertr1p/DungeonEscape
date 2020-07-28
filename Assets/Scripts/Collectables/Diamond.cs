@@ -26,7 +26,7 @@ namespace Collectables
         
         public void Collect(int value)
         {
-            AudioSource.PlayClipAtPoint(_collectSound, transform.position, 0.2f);
+            AudioSource.PlayClipAtPoint(_collectSound, transform.position, 0.1f);
             GameEventsHandler.Instance.AddDiamonds(value);
             Destroy(gameObject);
         }

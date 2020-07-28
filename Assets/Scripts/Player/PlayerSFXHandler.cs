@@ -11,6 +11,7 @@ namespace Player
         [SerializeField] private AudioClip _jumpEndSound;
         [SerializeField] private AudioClip _regualAttackSound;
         [SerializeField] private AudioClip _flameSwordSound;
+        private float _soundVolume = 0.1f;
         
         private AudioSource _audio;
         private Player _player;
@@ -28,32 +29,32 @@ namespace Player
 
         private void PlayStartJumpSound()
         {
-            _audio.PlayOneShot(_jumpStartSound);
+            _audio.PlayOneShot(_jumpStartSound, _soundVolume);
         }
 
         private void PlayEndJumpSound()
         {
-            _audio.PlayOneShot(_jumpEndSound);
+            _audio.PlayOneShot(_jumpEndSound, _soundVolume);
         }
 
         private void PlayFlameAttackSound()
         {
-            _audio.PlayOneShot(_flameSwordSound);
+            _audio.PlayOneShot(_flameSwordSound, _soundVolume);
         }
 
         private void PlayRegularAttackSound()
         {
-            _audio.PlayOneShot(_regualAttackSound);
+            _audio.PlayOneShot(_regualAttackSound, _soundVolume);
         }
 
         private void PlayHitSound(int dmg)
         {
-            _audio.PlayOneShot(_hitSound);
+            _audio.PlayOneShot(_hitSound, _soundVolume);
         }
         
         private void PlayDeathSound()
         {
-            _audio.PlayOneShot(_deathSound);
+            _audio.PlayOneShot(_deathSound, _soundVolume);
         }
     }
 }
