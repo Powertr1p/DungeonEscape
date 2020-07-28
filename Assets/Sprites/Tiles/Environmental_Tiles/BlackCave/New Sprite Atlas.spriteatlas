@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+    - {fileID: 2800000, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+    totalSpriteSurfaceArea: 2097152
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300016, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300018, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300012, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300014, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300008, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300010, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300004, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300006, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300000, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300002, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300030, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300028, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300022, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300020, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300026, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300024, guid: 0632d5a0d858f4d05aadfec397ba93db, type: 3}
+  - {fileID: 21300030, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300028, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300022, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300020, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300026, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300024, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300016, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300018, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300012, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300014, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300008, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300010, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300004, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300006, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300000, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  - {fileID: 21300002, guid: 34782b33a17a7449080922fa88f9017b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BlackCavern2_8
+  - BlackCavern2_9
+  - BlackCavern2_6
+  - BlackCavern2_7
+  - BlackCavern2_4
+  - BlackCavern2_5
+  - BlackCavern2_2
+  - BlackCavern2_3
+  - BlackCavern2_0
+  - BlackCavern2_1
+  - BlackCavern2_15
+  - BlackCavern2_14
+  - BlackCavern2_11
+  - BlackCavern2_10
+  - BlackCavern2_13
+  - BlackCavern2_12
+  - BlackCavern_15
+  - BlackCavern_14
+  - BlackCavern_11
+  - BlackCavern_10
+  - BlackCavern_13
+  - BlackCavern_12
+  - BlackCavern_8
+  - BlackCavern_9
+  - BlackCavern_6
+  - BlackCavern_7
+  - BlackCavern_4
+  - BlackCavern_5
+  - BlackCavern_2
+  - BlackCavern_3
+  - BlackCavern_0
+  - BlackCavern_1
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
