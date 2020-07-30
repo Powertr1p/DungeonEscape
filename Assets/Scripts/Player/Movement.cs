@@ -20,8 +20,9 @@ namespace Player
         private InputHandler _input;
         private Collisions _collisions;
         private Animator _animator;
-        
-        private bool IsPlayerPerformAnAction => _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") &&
+
+        private bool IsPlayerPerformAnAction => (_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") ||
+                                                _animator.GetCurrentAnimatorStateInfo(0).IsName("FireSwordAttack")) &&
                                                 !_animator.GetCurrentAnimatorStateInfo(0).IsName("Jump");
         private void Awake()
         {
