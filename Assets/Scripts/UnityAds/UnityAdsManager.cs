@@ -13,7 +13,7 @@ namespace UnityAds
         
         private const string rewardedVideo = "rewardedVideo";
         private const string video = "video";
-        private const string gameId = "3651032";
+        private const string gameId = "3651033";
 
         private bool isAdvOnCooldown;
 
