@@ -23,7 +23,6 @@ namespace UnityAds
 
             OnAdsSuccess = () =>
             {
-                Debug.Log("Ad finished");
                 GameEventsHandler.Instance.AddDiamonds(100);
                 ShopDisplayUI.Instance.UpdatePlayerDiamonds();
                 ShopDisplayUI.Instance.ShowSuccessAdShownMessage();
@@ -33,8 +32,6 @@ namespace UnityAds
         public void ShowRewardedAds()
         {
             if (isAdvOnCooldown) return;
-
-            Debug.Log("Showing ads");
 
             if (Advertisement.IsReady(rewardedVideo))
             {
@@ -65,10 +62,8 @@ namespace UnityAds
                     OnAdsSuccess?.Invoke();
                     break;
                 case ShowResult.Skipped:
-                    Debug.Log("Ad skipped");
                     break;
                 case ShowResult.Failed:
-                    Debug.Log("Ad failed");
                     break;
             }
         }
