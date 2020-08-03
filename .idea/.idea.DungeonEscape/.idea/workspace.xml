@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e3520a0-ad72-4b97-a1d7-d0c735fb5757" name="To add" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <list id="a2bb1608-0f54-499f-957d-7612b30c4a86" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -408,7 +409,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="diamonds now play sound when player picked them up" />
     <MESSAGE value="added require of implementation play sound methods to all derived from enemies classes" />
     <MESSAGE value="moss giant now plays sound when he gets hit" />
     <MESSAGE value="moss giant now plays sound when he died" />
@@ -433,7 +433,8 @@
     <MESSAGE value="player now have movement animation" />
     <MESSAGE value="fire sword attack now prevent movement" />
     <MESSAGE value="changed build setting to android" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed build setting to android" />
+    <MESSAGE value="changed gameid to android" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed gameid to android" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1398" height="313" key="GridCell.Tab.0.bottom" timestamp="1590222936740">
@@ -528,7 +529,7 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="VCS.FileHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1593591979571" />
-    <state x="552" y="280" key="Vcs.Push.Dialog.v2" timestamp="1596395070397">
+    <state x="552" y="280" key="Vcs.Push.Dialog.v2" timestamp="1596397120626">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-1368" y="246" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-11.1920.1057@-1920.-11.1920.1057" timestamp="1590734871370" />
@@ -536,7 +537,7 @@
     <state x="1992" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-67.1920.1057@1440.-67.1920.1057" timestamp="1596093456852" />
     <state x="414" y="236" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590232652261" />
     <state x="474" y="272" key="Vcs.Push.Dialog.v2/0.23.1650.1027/-1920.23.1920.1057@0.23.1650.1027" timestamp="1590850014214" />
-    <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1596395070397" />
+    <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1596397120626" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593512123979" />
     <state x="799" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1589393731476">
       <screen x="0" y="0" width="1920" height="1040" />
