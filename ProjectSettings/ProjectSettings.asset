@@ -125,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.03
+  bundleVersion: 1.05
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -172,8 +172,8 @@ PlayerSettings:
     Standalone: com.Company.ProductName
     iPhone: com.DefaultCompany.DungeonEscapeTest
   buildNumber: {}
-  AndroidBundleVersionCode: 3
-  AndroidMinSdkVersion: 29
+  AndroidBundleVersionCode: 5
+  AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 29
   AndroidPreferredInstallLocation: 1
   aotOptions: 
