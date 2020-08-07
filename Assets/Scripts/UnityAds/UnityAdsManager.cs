@@ -19,7 +19,7 @@ namespace UnityAds
 
         private void Start()
         {
-            Advertisement.Initialize(gameId, true);
+            Advertisement.Initialize(gameId, false);
 
             OnAdsSuccess = () =>
             {
