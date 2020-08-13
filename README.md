@@ -1,4 +1,3 @@
 # DungeonEscape
- dungeon crawl game
- latest pet-project atm
- doing it solo
+A hardcore dungeon-crawler. 
+Game has released on Google Play: https://play.google.com/store/apps/details?id=com.SaykinGames.DungeonEscape
